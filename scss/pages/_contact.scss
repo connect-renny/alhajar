@@ -6,7 +6,7 @@
 }
 
 .contact-page-title {
-  font-size: var(--fs-5xl);
+  font-size: var(--fs-4xl);
   font-weight: var(--fw-light);
   color: var(--color-text);
   margin: 0 0 48px;
@@ -72,13 +72,13 @@
   }
 
   &__title {
-    font-size: var(--fs-2xl);
+    font-size: var(--fs-xl);
     font-weight: var(--fw-semibold);
     color: #f7e7cd;
     margin: 0;
 
     @media (max-width: 991px) {
-      font-size: var(--fs-xl);
+      font-size: var(--fs-lg);
     }
   }
 
@@ -132,13 +132,13 @@
 }
 
 .contact-form-title {
-  font-size: var(--fs-3xl);
+  font-size: var(--fs-2xl);
   font-weight: var(--fw-semibold);
   color: var(--color-text);
   margin: 0 0 32px;
 
   @media (max-width: 767px) {
-    font-size: var(--fs-2xl);
+    font-size: var(--fs-xl);
     margin: 0 0 24px;
   }
 }

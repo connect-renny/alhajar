@@ -6,7 +6,7 @@
 }
 
 .bt-page-title {
-  font-size: var(--fs-5xl);
+  font-size: var(--fs-4xl);
   font-weight: var(--fw-light);
   color: var(--color-text);
   margin: 0 0 40px;
@@ -72,13 +72,13 @@
   }
 
   &__title {
-    font-size: var(--fs-2xl);
+    font-size: var(--fs-xl);
     font-weight: var(--fw-semibold);
     color: #1f1a12;
     margin: 0;
 
     @media (max-width: 991px) {
-      font-size: var(--fs-xl);
+      font-size: var(--fs-lg);
     }
   }
 
@@ -156,7 +156,7 @@
 }
 
 .bt-section-title {
-  font-size: var(--fs-3xl);
+  font-size: var(--fs-2xl);
   font-weight: var(--fw-medium);
   color: var(--color-text);
   margin: 0 0 28px;
@@ -459,7 +459,7 @@
   &__title {
     position: relative;
     z-index: 1;
-    font-size: var(--fs-3xl);
+    font-size: var(--fs-2xl);
     font-weight: var(--fw-medium);
     color: #fff;
     margin: 0 0 24px;
@@ -703,7 +703,7 @@
   &__val {
     min-width: 24px;
     text-align: center;
-    font-size: var(--fs-xl);
+    font-size: var(--fs-lg);
     font-weight: var(--fw-medium);
     color: var(--color-text);
     user-select: none;
@@ -754,12 +754,12 @@
   }
 
   &__label {
-    font-size: var(--fs-xl);
+    font-size: var(--fs-lg);
     color: #cac4d0;
   }
 
   &__value {
-    font-size: var(--fs-2xl);
+    font-size: var(--fs-xl);
     font-weight: var(--fw-medium);
     color: var(--white);
     letter-spacing: 0.01em;
@@ -797,7 +797,7 @@
   }
 
   &__total-value {
-    font-size: var(--fs-2xl);
+    font-size: var(--fs-xl);
     font-weight: var(--fw-semibold);
     color: var(--color-text);
     letter-spacing: 0.01em;
@@ -1216,7 +1216,7 @@
     }
 
     .bt-booking-row__value {
-      font-size: var(--fs-xl);
+      font-size: var(--fs-lg);
       font-weight: var(--fw-semibold);
     }
   }

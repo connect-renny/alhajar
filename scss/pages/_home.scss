@@ -169,7 +169,7 @@
   }
 
   &__heading {
-    font-size: var(--fs-9xl);
+    font-size: var(--fs-7xl);
     font-weight: var(--fw-bold);
     color: var(--color-text);
     line-height: 1.1;
@@ -177,15 +177,15 @@
     @include transEase(color, var(--transition-duration), ease);
 
     @media (max-width: 1200px) {
-      font-size: var(--fs-display-sm);
+      font-size: var(--fs-10xl);
     }
 
     @media (max-width: 991px) {
-      font-size: var(--fs-7xl);
+      font-size: var(--fs-5xl);
     }
 
     @media (max-width: 767px) {
-      font-size: var(--fs-5xl);
+      font-size: var(--fs-4xl);
     }
   }
 
@@ -225,7 +225,7 @@
     }
 
     strong {
-      font-size: var(--fs-3xl);
+      font-size: var(--fs-2xl);
       font-weight: var(--fw-bold);
       @include transEase(color, var(--transition-duration), ease);
     }
@@ -313,7 +313,7 @@
   }
 
   &__heading {
-    font-size: var(--fs-9xl);
+    font-size: var(--fs-7xl);
     font-weight: var(--fw-bold);
     color: var(--color-text);
     line-height: 1.1;
@@ -321,21 +321,21 @@
     @include transEase(color, var(--transition-duration), ease);
 
     @media (max-width: 1200px) {
-      font-size: var(--fs-display-sm);
+      font-size: var(--fs-10xl);
     }
 
     @media (max-width: 991px) {
-      font-size: var(--fs-7xl);
+      font-size: var(--fs-5xl);
     }
 
     @media (max-width: 767px) {
-      font-size: var(--fs-5xl);
+      font-size: var(--fs-4xl);
     }
   }
 
   &__subheading {
     color: #938f99;
-    font-size: var(--fs-6xl);
+    font-size: var(--fs-5xl);
     font-weight: var(--fw-normal);
     @include transEase(color, var(--transition-duration), ease);
   }
@@ -419,7 +419,7 @@
   }
 
   &__title {
-    font-size: var(--fs-6xl);
+    font-size: var(--fs-5xl);
     font-weight: var(--fw-medium);
     color: var(--color-text);
     line-height: 1.05;
@@ -427,27 +427,27 @@
     @include transEase(color, var(--transition-duration), ease);
 
     @media (max-width: 1200px) {
-      font-size: var(--fs-display-xs);
+      font-size: var(--fs-10xl);
     }
 
     @media (max-width: 767px) {
-      font-size: var(--fs-5xl);
+      font-size: var(--fs-4xl);
     }
   }
 
   &__subtitle {
-    font-size: var(--fs-3xl);
+    font-size: var(--fs-2xl);
     font-weight: var(--fw-normal);
     color: #938f99;
     margin-bottom: 20px;
     @include transEase(color, var(--transition-duration), ease);
 
     @media (max-width: 1200px) {
-      font-size: var(--fs-display-xs);
+      font-size: var(--fs-10xl);
     }
 
     @media (max-width: 767px) {
-      font-size: var(--fs-5xl);
+      font-size: var(--fs-4xl);
     }
   }
 
@@ -494,7 +494,7 @@
   }
 
   &__name {
-    font-size: var(--fs-2xl);
+    font-size: var(--fs-xl);
     font-weight: var(--fw-medium);
     color: var(--color-text);
     @include transEase(color, var(--transition-duration), ease);
@@ -714,7 +714,7 @@
   }
 
   &__title {
-    font-size: var(--fs-5xl);
+    font-size: var(--fs-4xl);
     font-weight: var(--fw-semibold);
     color: var(--color-text);
     margin-bottom: 20px;
@@ -722,7 +722,7 @@
     @include transEase(color, var(--transition-duration), ease);
 
     @media (max-width: 767px) {
-      font-size: var(--fs-2xl);
+      font-size: var(--fs-xl);
     }
   }
 
@@ -906,7 +906,7 @@
 
   &__title {
     position: relative;
-    font-size: var(--fs-6xl);
+    font-size: var(--fs-5xl);
     font-weight: var(--fw-medium);
     color: var(--color-text);
     line-height: 1.08;
@@ -914,15 +914,15 @@
     @include transEase(color, var(--transition-duration), ease);
 
     @media (max-width: 1199px) {
-      font-size: var(--fs-10xl);
+      font-size: var(--fs-8xl);
     }
 
     @media (max-width: 991px) {
-      font-size: var(--fs-display-xs);
+      font-size: var(--fs-10xl);
     }
 
     @media (max-width: 767px) {
-      font-size: var(--fs-5xl);
+      font-size: var(--fs-4xl);
     }
   }
 }
@@ -1081,7 +1081,7 @@
   &__text {
     position: relative;
     z-index: 1;
-    font-size: var(--fs-xl);
+    font-size: var(--fs-lg);
     font-weight: var(--fw-normal);
     color: var(--color-text);
     line-height: 1.4;
@@ -1137,13 +1137,13 @@
 }
 
 .plan-book__title {
-  font-size: var(--fs-6xl);
+  font-size: var(--fs-5xl);
   font-weight: var(--fw-medium);
   color: #ffffff;
   line-height: 1.1;
   margin-bottom: 24px;
   @media (max-width: 767px) {
-    font-size: var(--fs-3xl);
+    font-size: var(--fs-2xl);
   }
 }
 
@@ -1409,7 +1409,7 @@
 }
 
 .download-app__title {
-  font-size: clamp(2.25rem, 3.5vw, 2.75rem);
+  font-size: clamp(2rem, 3vw, 2.4rem);
   font-weight: var(--fw-medium);
   color: var(--color-text);
   line-height: 1.12;
@@ -1418,7 +1418,7 @@
 }
 
 .download-app__desc {
-  font-size: var(--fs-xl);
+  font-size: var(--fs-lg);
   color: #938f99;
   line-height: 1.65;
   margin-bottom: 36px;

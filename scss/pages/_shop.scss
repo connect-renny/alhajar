@@ -6,7 +6,7 @@
 }
 
 .shop-page-title {
-  font-size: var(--fs-5xl);
+  font-size: var(--fs-4xl);
   font-weight: var(--fw-light);
   color: var(--color-text);
   margin: 0 0 40px;
@@ -79,13 +79,13 @@
   }
 
   &__title {
-    font-size: var(--fs-5xl);
+    font-size: var(--fs-4xl);
     font-weight: var(--fw-medium);
     color: #1a1209;
     margin: 0;
 
     @media (max-width: 991px) {
-      font-size: var(--fs-xl);
+      font-size: var(--fs-lg);
     }
   }
 
@@ -104,7 +104,7 @@
   }
 
   &__price {
-    font-size: var(--fs-xl);
+    font-size: var(--fs-lg);
     font-weight: var(--fw-medium);
     color: #1a1209;
   }
@@ -227,13 +227,13 @@
   }
 
   &__title {
-    font-size: var(--fs-3xl);
+    font-size: var(--fs-2xl);
     font-weight: var(--fw-medium);
     color: #fff;
     margin: 0;
 
     @media (max-width: 991px) {
-      font-size: var(--fs-xl);
+      font-size: var(--fs-lg);
     }
   }
 
@@ -312,7 +312,7 @@
 }
 
 .shop-items-title {
-  font-size: var(--fs-xl);
+  font-size: var(--fs-lg);
   color: var(--white);
   margin: 0;
   letter-spacing: 0.02em;

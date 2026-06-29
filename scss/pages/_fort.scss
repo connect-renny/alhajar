@@ -21,7 +21,7 @@
   .breadcrumb-item {
     display: flex;
     align-items: center;
-    font-size: var(--fs-6xl);
+    font-size: var(--fs-5xl);
     color: #b3b3b3;
 
     a {
@@ -59,7 +59,7 @@
 
 // ─── Page Title ───────────────────────────────────────────────────────────────
 .page-header__title {
-  font-size: var(--fs-5xl);
+  font-size: var(--fs-4xl);
   font-weight: var(--fw-light);
   color: var(--color-text);
   margin: 12px 0 0;
@@ -101,7 +101,7 @@
 }
 
 .section-events__title {
-  font-size: var(--fs-4xl);
+  font-size: var(--fs-3xl);
   font-weight: var(--fw-light);
   color: var(--color-text);
   margin: 0 0 36px;
@@ -171,18 +171,18 @@
   }
 
   &__title {
-    font-size: var(--fs-5xl);
+    font-size: var(--fs-4xl);
     font-weight: var(--fw-semibold);
     color: var(--black);
     margin: 0;
     line-height: 1.15;
 
     @media (max-width: 991px) {
-      font-size: var(--fs-4xl);
+      font-size: var(--fs-3xl);
     }
 
     @media (max-width: 767px) {
-      font-size: var(--fs-3xl);
+      font-size: var(--fs-2xl);
     }
   }
 
@@ -291,7 +291,7 @@
 }
 
 .section-fort-info__title {
-  font-size: var(--fs-4xl);
+  font-size: var(--fs-3xl);
   font-weight: var(--fw-light);
   color: var(--color-text);
   margin: 0 0 40px;
@@ -398,7 +398,7 @@
 }
 
 .section-gallery__title {
-  font-size: var(--fs-4xl);
+  font-size: var(--fs-3xl);
   font-weight: var(--fw-light);
   color: var(--color-text);
   margin: 0 0 36px;
@@ -590,18 +590,18 @@
   }
 
   &__title {
-    font-size: var(--fs-5xl);
+    font-size: var(--fs-4xl);
     font-weight: var(--fw-light);
     color: #fff;
     margin: 0;
     line-height: 1.2;
 
     @media (max-width: 991px) {
-      font-size: var(--fs-4xl);
+      font-size: var(--fs-3xl);
     }
 
     @media (max-width: 767px) {
-      font-size: var(--fs-3xl);
+      font-size: var(--fs-2xl);
     }
   }
 
@@ -660,7 +660,7 @@
   }
 
   &__name {
-    font-size: var(--fs-xl);
+    font-size: var(--fs-lg);
     font-weight: var(--fw-medium);
     color: #fff;
     margin: 0;
@@ -747,18 +747,18 @@
   }
 
   &__title {
-    font-size: var(--fs-6xl);
+    font-size: var(--fs-5xl);
     font-weight: var(--fw-light);
     color: #fff;
     margin: 0;
     line-height: 1.2;
 
     @media (max-width: 991px) {
-      font-size: var(--fs-4xl);
+      font-size: var(--fs-3xl);
     }
 
     @media (max-width: 767px) {
-      font-size: var(--fs-3xl);
+      font-size: var(--fs-2xl);
     }
   }
 
