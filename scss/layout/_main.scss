@@ -1,0 +1,39 @@
+// ─── Lenis smooth scroll ──────────────────────────────────────────────────────
+html {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+.container {
+  @media (min-width: 1366px) {
+    max-width: 1200px;
+  }
+}
+
+// Inner pages need clearance below the fixed header
+.main-inner {
+  padding-top: 150px;
+}
+
+// Common heading for all inner pages
+.page-heading {
+  font-size: var(--fs-4xl);
+  font-weight: var(--fw-light);
+  color: var(--color-text);
+  margin: 0 0 80px;
+}

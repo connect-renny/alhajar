@@ -1,0 +1,399 @@
+// ─── Contact Page ─────────────────────────────────────────────────────────────
+
+// ─── Page Header ─────────────────────────────────────────────────────────────
+.section-contact-header {
+  padding: 48px 0 0;
+}
+
+.contact-page-title {
+  font-size: var(--fs-5xl);
+  font-weight: var(--fw-light);
+  color: var(--color-text);
+  margin: 0 0 48px;
+  line-height: 1.15;
+}
+
+// ─── Event Promo Banner ───────────────────────────────────────────────────────
+.section-event-promo {
+  padding: 0 0 0;
+}
+
+.event-promo-card {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background-color: #625d52;
+  border-radius: 24px;
+  overflow: hidden;
+  min-height: 160px;
+  padding: 16px 48px 0;
+
+  @media (max-width: 991px) {
+    gap: 28px;
+    padding-right: 32px;
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 28px;
+  }
+
+  &__visual {
+    flex: 0 0 180px;
+    align-self: stretch;
+    overflow: hidden;
+
+    @media (max-width: 991px) {
+      flex: 0 0 140px;
+    }
+
+    @media (max-width: 767px) {
+      flex: none;
+      width: 100%;
+      max-height: 160px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+  }
+
+  &__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__title {
+    font-size: var(--fs-2xl);
+    font-weight: var(--fw-semibold);
+    color: #f7e7cd;
+    margin: 0;
+
+    @media (max-width: 991px) {
+      font-size: var(--fs-xl);
+    }
+  }
+
+  &__subtitle {
+    font-size: var(--fs-sm);
+    color: #f7e7cd;
+    margin: 0;
+    line-height: 1.6;
+    max-width: 400px;
+  }
+
+  &__cta-wrap {
+    flex-shrink: 0;
+
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+}
+
+.btn-event-promo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 40px;
+  background-color: var(--color-cta);
+  color: #fff;
+  font-size: var(--fs-base);
+  font-weight: var(--fw-medium);
+  font-family: var(--primary-font), sans-serif;
+  border-radius: 16px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  @include transEase(background-color, 0.2s);
+
+  &:hover {
+    background-color: #dd662a;
+    color: #fff;
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+    padding: 13px 24px;
+  }
+}
+
+// ─── Contact Form Section ─────────────────────────────────────────────────────
+.section-contact-form {
+  padding: 0 0 100px;
+}
+
+.contact-form-title {
+  font-size: var(--fs-3xl);
+  font-weight: var(--fw-semibold);
+  color: var(--color-text);
+  margin: 0 0 32px;
+
+  @media (max-width: 767px) {
+    font-size: var(--fs-2xl);
+    margin: 0 0 24px;
+  }
+}
+
+.contact-form-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 48px;
+
+  @media (max-width: 991px) {
+    padding: 36px 32px;
+  }
+
+  @media (max-width: 575px) {
+    padding: 28px 20px;
+    border-radius: 18px;
+  }
+
+  &__divider {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.08);
+    margin: 40px 0;
+
+    @media (max-width: 767px) {
+      margin: 28px 0;
+    }
+  }
+}
+
+// ─── Inquiry Type ─────────────────────────────────────────────────────────────
+.contact-inquiry {
+  border: none;
+  padding: 0;
+  margin: 0;
+
+  &__label {
+    font-size: var(--fs-base);
+    font-weight: var(--fw-medium);
+    color: var(--color-text);
+    margin: 0 0 20px;
+    display: block;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+
+    @media (max-width: 480px) {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+  }
+
+  &__option {
+    display: block;
+    cursor: pointer;
+  }
+
+  // Visually hide the native radio — keeps it keyboard/screen-reader accessible
+  &__radio {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+  }
+
+  &__btn {
+    display: block;
+    padding: 14px 20px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    background: #282828;
+    color: var(--white);
+    font-size: var(--fs-base);
+    font-weight: var(--fw-medium);
+    line-height: 1.4;
+    text-align: center;
+    @include transEase(all, 0.2s);
+  }
+
+  // Hover — label hover changes the span
+  &__option:hover &__btn {
+    border-color: rgba(207, 99, 45, 0.5);
+    color: var(--color-text);
+  }
+
+  // Checked — radio :checked targets the adjacent span via ~ sibling
+  &__radio:checked ~ &__btn {
+    border-color: #cf632d;
+    color: var(--color-text);
+    background: #28180b;
+  }
+
+  // Keyboard focus ring on the visible span
+  &__radio:focus-visible ~ &__btn {
+    outline: 2px solid var(--color-cta);
+    outline-offset: 2px;
+  }
+}
+
+// ─── Contact Form ─────────────────────────────────────────────────────────────
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  &__section-label {
+    font-size: var(--fs-base);
+    font-weight: var(--fw-medium);
+    color: var(--color-text);
+    margin: 0 0 4px;
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+
+    @media (max-width: 767px) {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__label {
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-medium);
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  &__input {
+    width: 100%;
+    padding: 14px 18px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--color-text);
+    font-size: var(--fs-base);
+    font-family: var(--primary-font), sans-serif;
+    outline: none;
+    @include transEase(border-color, 0.2s);
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.25);
+    }
+
+    &:focus {
+      border-color: rgba(207, 99, 45, 0.6);
+    }
+  }
+
+  // Phone field with flag prefix
+  &__phone-wrap {
+    display: flex;
+    align-items: stretch;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+    @include transEase(border-color, 0.2s);
+
+    &:focus-within {
+      border-color: rgba(207, 99, 45, 0.6);
+    }
+  }
+
+  &__phone-flag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 0 14px;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    flex-shrink: 0;
+    cursor: default;
+  }
+
+  &__flag-img {
+    width: 22px;
+    height: 16px;
+    object-fit: cover;
+    border-radius: 2px;
+    display: block;
+  }
+
+  &__phone-code {
+    font-size: var(--fs-sm);
+    color: rgba(255, 255, 255, 0.6);
+    white-space: nowrap;
+  }
+
+  &__phone-chevron {
+    color: rgba(255, 255, 255, 0.35);
+  }
+
+  &__input--phone {
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    padding-left: 14px;
+    flex: 1;
+
+    &:focus {
+      border-color: transparent;
+    }
+  }
+
+  &__textarea {
+    width: 100%;
+    padding: 14px 18px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--color-text);
+    font-size: var(--fs-base);
+    font-family: var(--primary-font), sans-serif;
+    outline: none;
+    resize: vertical;
+    min-height: 140px;
+    @include transEase(border-color, 0.2s);
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.25);
+    }
+
+    &:focus {
+      border-color: rgba(207, 99, 45, 0.6);
+    }
+  }
+}
+
+.btn-contact-submit {
+  display: block;
+  width: 100%;
+  padding: 16px 24px;
+  background-color: var(--color-cta);
+  color: #fff;
+  font-size: var(--fs-base);
+  font-weight: var(--fw-semibold);
+  font-family: var(--primary-font), sans-serif;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  @include transEase(background-color, 0.2s);
+  margin-top: 8px;
+
+  &:hover {
+    background-color: #dd662a;
+  }
+}

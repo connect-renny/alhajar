@@ -1,0 +1,224 @@
+// ─── Footer ───────────────────────────────────────────────────────────────────
+
+.footer {
+  position: relative;
+  padding: 96px 0 0;
+  overflow: hidden;
+}
+
+.footer__bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 40%;
+  background: linear-gradient(180deg, #121212 0%, #28180b 43.75%, #351f0e 100%);
+}
+
+// ── Fort visual ──────────────────────────────────────────────────────────────
+.footer__visual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  @media (max-width: 991px) {
+    min-height: 360px;
+  }
+
+  @media (max-width: 768px) {
+    min-height: 280px;
+    padding-top: 40px;
+  }
+}
+
+.footer__glow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 900px;
+  height: 480px;
+  background: radial-gradient(
+    ellipse 60% 55% at 50% 90%,
+    rgba(180, 90, 20, 0.28) 0%,
+    rgba(130, 60, 10, 0.12) 50%,
+    transparent 100%
+  );
+  pointer-events: none;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.footer__fort-img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  max-width: 950px;
+  height: auto;
+  object-fit: contain;
+
+  @media (max-width: 1200px) {
+    width: 65%;
+  }
+
+  @media (max-width: 991px) {
+    width: 78%;
+  }
+
+  @media (max-width: 768px) {
+    width: 92%;
+  }
+}
+
+// ── Nav pill ─────────────────────────────────────────────────────────────────
+.footer__bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 175px;
+  z-index: 10;
+
+  @media (max-width: 1200px) {
+    padding: 0 24px 20px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0 16px 16px;
+  }
+}
+
+.footer__pill {
+  position: relative;
+  max-width: 1260px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    rgba(57, 57, 57, 0.1) 0%,
+    rgba(57, 57, 57, 0.06) 100%
+  );
+  box-shadow: inset 10px 10px 15px rgba(219, 219, 219, 0.25);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 40px;
+  padding: 18px 28px;
+
+  // Gradient border via pseudo-element (border-image breaks border-radius)
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(149.49deg, #cf632d 0%, #080808 100%);
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  @media (max-width: 991px) {
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px 20px;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    border-radius: 18px;
+  }
+}
+
+// ── Logo ─────────────────────────────────────────────────────────────────────
+.footer__logo {
+  flex-shrink: 0;
+  display: block;
+
+  img {
+    height: 52px;
+    width: auto;
+    display: block;
+  }
+}
+
+// ── Vertical separator ───────────────────────────────────────────────────────
+.footer__sep {
+  display: block;
+  width: 0;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.14);
+  flex-shrink: 0;
+  margin: 0 24px;
+
+  @media (max-width: 991px) {
+    display: none;
+  }
+}
+
+// ── Nav links ────────────────────────────────────────────────────────────────
+.footer__nav {
+  flex: 1;
+}
+
+.footer__nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: 991px) {
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 480px) {
+    gap: 4px;
+  }
+}
+
+.footer__nav-sep {
+  display: block;
+  width: 1px;
+  height: 18px;
+  background-color: rgba(255, 255, 255, 0.14);
+  flex-shrink: 0;
+
+  @media (max-width: 480px) {
+    display: none;
+  }
+}
+
+.footer__nav-link {
+  display: block;
+  color: var(--color-text);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-normal);
+  padding: 8px 18px;
+  white-space: nowrap;
+  @include transEase(color, 0.2s, ease);
+
+  &:hover {
+    color: var(--color-gold);
+  }
+
+  @media (max-width: 1400px) {
+    padding: 8px 12px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 7px 10px;
+    font-size: var(--fs-xs);
+  }
+}

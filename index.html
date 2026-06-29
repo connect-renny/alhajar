@@ -1,0 +1,1218 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Jibal Al Hajar Heritage Collection — Discover Oman's Venues Heritage"
+    />
+    <title>Jibal Al Hajar</title>
+    <link rel="icon" href="favicon.ico" />
+
+    <!-- Bootstrap Icons -->
+    <link href="assets/css/bootstrap-icons.min.css" rel="stylesheet" />
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- <link href="assets/css/bootstrap.rtl.min.css" rel="stylesheet" /> -->
+    <!-- Swiper -->
+    <link href="assets/css/swiper-bundle.css" rel="stylesheet" />
+    <!-- AOS -->
+    <link href="assets/css/aos.css" rel="stylesheet" />
+    <!-- Custom styles -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ═══════════════════════════ PRELOADER ════════════════════════════════ -->
+    <div class="loader-overlay" aria-label="Loading page" aria-live="polite">
+      <div class="loader-shutter">
+        <div class="loader__shutter-panel"></div>
+        <div class="loader__shutter-panel"></div>
+        <div class="loader__shutter-panel"></div>
+        <div class="loader__shutter-panel"></div>
+        <div class="loader__shutter-panel"></div>
+        <div class="loader__shutter-panel"></div>
+        <div class="loader__shutter-panel"></div>
+      </div>
+      <div class="loader">
+        <div class="loader__logo">
+          <div class="loader__shade"></div>
+          <div class="loader__logo-icon">
+            <img src="assets/images/loader.svg" alt="Jibal Al Hajar" />
+          </div>
+        </div>
+        <div class="loader-line">
+          <div class="loader-line__fill"></div>
+        </div>
+        <div class="loader-progress">
+          <span id="loader-percent">000</span>
+        </div>
+      </div>
+    </div>
+    <!-- /preloader -->
+
+    <!-- ═══════════════════════════ HEADER ═══════════════════════════════════ -->
+    <header class="header" id="header">
+      <div class="header__inner">
+        <!-- Logo -->
+        <a href="index.html" class="header__logo">
+          <img
+            src="assets/images/logo-dark.svg"
+            alt="Jibal Al Hajar"
+            class="logo-dark"
+          />
+          <img
+            src="assets/images/logo-light.svg"
+            alt="Jibal Al Hajar"
+            class="logo-light"
+          />
+        </a>
+
+        <!-- Nav pill -->
+        <nav class="nav-main" aria-label="Main navigation">
+          <ul class="nav-main__list">
+            <li class="nav-main__item active">
+              <a href="index.html" class="nav-main__link">Home</a>
+            </li>
+            <li class="nav-main__item">
+              <a href="venues.html" class="nav-main__link">Venues</a>
+            </li>
+            <li class="nav-main__item">
+              <a href="book-tickets.html" class="nav-main__link"
+                >Book Tickets</a
+              >
+            </li>
+            <li class="nav-main__item">
+              <a href="events.html" class="nav-main__link">Events</a>
+            </li>
+            <li class="nav-main__item">
+              <a href="news.html" class="nav-main__link">News</a>
+            </li>
+            <li class="nav-main__item">
+              <a href="contact.html" class="nav-main__link">Contact Us</a>
+            </li>
+            <li class="nav-main__item">
+              <a href="shop.html" class="nav-main__link">Shop</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Controls -->
+        <div class="header__controls">
+          <button class="btn-lang" aria-label="Switch language">EN</button>
+          <button
+            class="btn-theme"
+            onclick="toggleTheme()"
+            aria-label="Toggle theme"
+          >
+            <i class="bi bi-sun btn-theme__icon--sun"></i>
+            <i class="bi bi-moon btn-theme__icon--moon"></i>
+          </button>
+          <button
+            class="btn-hamburger"
+            id="btnHamburger"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- /header -->
+
+    <!-- Mobile backdrop -->
+    <div class="mobile-backdrop" id="mobileBackdrop"></div>
+
+    <!-- Mobile drawer -->
+    <nav
+      class="mobile-drawer"
+      id="mobileDrawer"
+      aria-label="Mobile navigation"
+      aria-hidden="true"
+    >
+      <div class="mobile-drawer__head">
+        <a href="index.html" class="mobile-drawer__logo">
+          <img
+            src="assets/images/logo-dark.svg"
+            alt="Jibal Al Hajar"
+            class="logo-dark"
+          />
+          <img
+            src="assets/images/logo-light.svg"
+            alt="Jibal Al Hajar"
+            class="logo-light"
+          />
+        </a>
+        <button
+          class="mobile-drawer__close"
+          id="btnDrawerClose"
+          aria-label="Close menu"
+        >
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+
+      <ul class="mobile-drawer__list">
+        <li class="mobile-drawer__item active">
+          <a href="index.html" class="mobile-drawer__link">Home</a>
+        </li>
+        <li class="mobile-drawer__item">
+          <a href="venues.html" class="mobile-drawer__link">Venues</a>
+        </li>
+        <li class="mobile-drawer__item">
+          <a href="book-tickets.html" class="mobile-drawer__link"
+            >Book Tickets</a
+          >
+        </li>
+        <li class="mobile-drawer__item">
+          <a href="events.html" class="mobile-drawer__link">Events</a>
+        </li>
+        <li class="mobile-drawer__item">
+          <a href="news.html" class="mobile-drawer__link">News</a>
+        </li>
+        <li class="mobile-drawer__item">
+          <a href="contact.html" class="mobile-drawer__link">Contact Us</a>
+        </li>
+        <li class="mobile-drawer__item">
+          <a href="shop.html" class="mobile-drawer__link">Shop</a>
+        </li>
+      </ul>
+
+      <div class="mobile-drawer__foot">
+        <button class="btn-lang">EN</button>
+        <button
+          class="btn-theme"
+          onclick="toggleTheme()"
+          aria-label="Toggle theme"
+        >
+          <i class="bi bi-sun btn-theme__icon--sun"></i>
+          <i class="bi bi-moon btn-theme__icon--moon"></i>
+        </button>
+      </div>
+    </nav>
+
+    <main>
+      <!-- ════════════════════════ HERO BANNER ══════════════════════════════ -->
+      <section class="hero-banner">
+        <div class="hero-banner__media">
+          <video
+            id="heroVideo"
+            autoplay
+            muted
+            loop
+            playsinline
+            poster="assets/images/hero-video-poster.jpg"
+          >
+            <source src="assets/videos/hero.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <!-- Magnetic play/pause button -->
+        <div class="hero-play-magnetic" id="heroPlayMagnetic">
+          <div class="hero-play-ring-wrap">
+            <div class="hero-play-ring"></div>
+          </div>
+          <button class="hero-play" id="heroPlayBtn" aria-label="Pause video">
+            <i class="bi bi-play-fill"></i>
+            <i class="bi bi-pause-fill"></i>
+          </button>
+        </div>
+      </section>
+      <!-- /hero-banner -->
+
+      <!-- ═══════════════════════ DISCOVER SECTION ══════════════════════════ -->
+      <section class="section-discover">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="discover-cover">
+                <!-- Left: text -->
+                <div
+                  class="discover-text"
+                  data-aos="fade-right"
+                  data-aos-duration="800"
+                >
+                  <h2 class="discover-text__heading">
+                    Discover<br /><span class="ms-lg-48px">Oman's</span>
+                  </h2>
+                  <div class="ms-lg-48px">
+                    <p class="discover-text__body">
+                      Access tickets, events, guided tours, and private
+                      reservations across all Jabal Al Hajar forts
+                    </p>
+                    <div class="discover-text__badge">
+                      <strong>10% off</strong>
+                      <span>tickets in the app</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Center: visual -->
+                <div
+                  class="discover-visual"
+                  data-aos="fade-up"
+                  data-aos-duration="900"
+                >
+                  <svg
+                    id="discoverBlob"
+                    class="discover-visual__blob"
+                    viewBox="0 0 585 508"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      id="blobPath"
+                      d="M 292,54 C 402.46,54 492,143.54 492,254 L 492,254 C 492,364.46 402.46,454 292,454 C 181.54,454 92,364.46 92,254 L 92,254 C 92,143.54 181.54,54 292,54 Z"
+                      fill="currentColor"
+                    >
+                      <animate
+                        id="blobMorph"
+                        attributeName="d"
+                        from="M 292,54 C 402.46,54 492,143.54 492,254 L 492,254 C 492,364.46 402.46,454 292,454 C 181.54,454 92,364.46 92,254 L 92,254 C 92,143.54 181.54,54 292,54 Z"
+                        to="M 67.63,96.65 C 105,43.2 178.5,30.27 231.87,67.66 L 487.72,246.89 C 541.08,284.26 554.06,357.85 516.7,411.3 C 479.34,464.71 405.83,477.61 352.47,440.24 L 96.62,261.01 C 43.24,223.6 30.27,150.06 67.63,96.65 Z"
+                        dur="1.6s"
+                        begin="indefinite"
+                        fill="freeze"
+                        calcMode="spline"
+                        keySplines="0.34 0 0.48 1"
+                      />
+                    </path>
+                  </svg>
+                  <img
+                    src="assets/images/fort-hero.png"
+                    alt="Al Mirani Fort"
+                    class="discover-visual__img"
+                  />
+                </div>
+                <!-- Right: CTA -->
+                <div
+                  class="discover-cta"
+                  data-aos="fade-left"
+                  data-aos-duration="800"
+                >
+                  <h2 class="discover-cta__heading">
+                    Venues<br />
+                    <div class="ms-lg-48px">heritage</div>
+                    <div class="discover-cta__subheading ms-lg-48px">
+                      All in One<br />Experience
+                    </div>
+                  </h2>
+                  <div class="discover-cta__btns">
+                    <a href="#" class="btn-cta-filled">Download App</a>
+                    <a href="#" class="btn-cta-outline"
+                      >Buy tickets on the website</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /section-discover -->
+
+      <!-- ════════════════════════ FORT SHOWCASE ═════════════════════════════ -->
+      <section class="section-fort-showcase">
+        <div class="container">
+          <!-- Intro block -->
+          <div class="fort-intro" data-aos="fade-up" data-aos-duration="800">
+            <div class="fort-intro__icon">
+              <img src="assets/images/secion-icon.svg" alt="Icon" />
+            </div>
+            <h2 class="fort-intro__title">Jibal Al Hajar</h2>
+            <p class="fort-intro__subtitle">Heritage Collection</p>
+            <p class="fort-intro__desc">
+              A unified cultural platform connecting Oman's most iconic forts
+              &mdash; explore, book, and experience them all in one seamless
+              ecosystem.
+            </p>
+          </div>
+
+          <!-- 3-column grid -->
+          <div class="fort-grid">
+            <!-- Left: info card -->
+            <div
+              class="fort-info"
+              data-aos="fade-right"
+              data-aos-duration="800"
+              data-aos-delay="100"
+            >
+              <div class="fort-info__head">
+                <img
+                  src="assets/images/almirani-logo.png"
+                  alt=""
+                  class="fort-info__logo"
+                  aria-hidden="true"
+                />
+                <span class="fort-info__name">Al Mirani Fort</span>
+              </div>
+              <hr class="fort-info__divider" />
+              <div class="fort-info__row">
+                <p class="fort-info__label">Address</p>
+                <p class="fort-info__value">
+                  Sultanate of Oman<br />Muttrah<br />Muscat Governorate
+                </p>
+              </div>
+              <div class="fort-info__row">
+                <p class="fort-info__label">Phone</p>
+                <p class="fort-info__value">+968 7700 0909</p>
+              </div>
+              <div class="fort-info__row">
+                <p class="fort-info__label">Email</p>
+                <a
+                  href="mailto:info@muttrahfort.om"
+                  class="fort-info__value fort-info__link"
+                  >info@muttrahfort.om</a
+                >
+              </div>
+              <a href="al-mirani-fort.html" class="btn-fort-more"
+                ><svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M16.458 9.77157H3.95801"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M11.4165 4.75116L16.4582 9.77116L11.4165 14.792"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                More Info</a
+              >
+            </div>
+
+            <!-- Center: main visual -->
+            <div
+              class="fort-visual"
+              data-aos="fade-up"
+              data-aos-duration="900"
+              data-aos-delay="50"
+            >
+              <svg
+                class="fort-visual__shape"
+                viewBox="0 0 241 348"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <rect
+                  width="240"
+                  height="348"
+                  rx="120"
+                  transform="matrix(1 0 -0.000675417 1 0.235107 0)"
+                  fill="currentColor"
+                />
+              </svg>
+              <div class="fort-visual__pic">
+                <img
+                  src="assets/images/almirani-fort.png"
+                  alt="Al Mirani Fort"
+                  class="fort-visual__img"
+                />
+              </div>
+            </div>
+
+            <!-- Right: related forts -->
+            <div
+              class="fort-related"
+              data-aos="fade-left"
+              data-aos-duration="800"
+              data-aos-delay="100"
+            >
+              <a href="#" class="fort-related__item">
+                <img
+                  src="assets/images/muttrah-fort.png"
+                  alt="Muttrah Fort"
+                  class="fort-related__img"
+                />
+                <p class="fort-related__name">Muttrah Fort</p>
+              </a>
+              <a href="#" class="fort-related__item">
+                <img
+                  src="assets/images/al-jalali-fort.png"
+                  alt="Al Jalali Fort"
+                  class="fort-related__img"
+                />
+                <p class="fort-related__name">Al Jalali Fort</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /section-fort-showcase -->
+
+      <!-- ════════════════════════ VENUES SECTION ════════════════════════════ -->
+      <section class="section-venues">
+        <div class="container">
+          <!-- Intro -->
+          <div class="fort-intro" data-aos="fade-up" data-aos-duration="800">
+            <div class="fort-intro__icon">
+              <img src="assets/images/secion-icon.svg" alt="Icon" />
+            </div>
+            <h2 class="fort-intro__title">Experience the Venues</h2>
+            <p class="fort-intro__subtitle">
+              Discover the Story Behind the Venues
+            </p>
+          </div>
+
+          <!-- Items -->
+          <div class="venues-list">
+            <!-- Cultural Events -->
+            <div class="venues-item" data-aos="fade-up" data-aos-duration="800">
+              <div class="venues-item__content">
+                <h3 class="venues-item__title">Cultural Events</h3>
+                <p class="venues-item__desc">
+                  Experience cultural events, exhibitions, and seasonal programs
+                  held within the historic fort spaces
+                </p>
+                <a href="#" class="venues-item__link">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M16.458 9.77157H3.95801"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M11.4165 4.75116L16.4582 9.77116L11.4165 14.792"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div class="venues-item__visual">
+                <div class="venues-item__shape"></div>
+                <img
+                  src="assets/images/venues-item-01.png"
+                  alt="Cultural Events"
+                  class="venues-item__img"
+                />
+              </div>
+            </div>
+
+            <!-- Exhibitions -->
+            <div
+              class="venues-item venues-item--reverse"
+              data-aos="fade-up"
+              data-aos-duration="800"
+            >
+              <div class="venues-item__content">
+                <h3 class="venues-item__title">Exhibitions</h3>
+                <p class="venues-item__desc">
+                  Explore exhibitions and curated displays that highlight the
+                  history, architecture, and cultural significance of
+                  Oman&rsquo;s forts
+                </p>
+                <a href="#" class="venues-item__link">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M16.458 9.77157H3.95801"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M11.4165 4.75116L16.4582 9.77116L11.4165 14.792"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div class="venues-item__visual">
+                <div class="venues-item__shape"></div>
+                <img
+                  src="assets/images/venues-item-02.png"
+                  alt="Exhibitions"
+                  class="venues-item__img"
+                />
+              </div>
+            </div>
+
+            <!-- News & Updates -->
+            <div class="venues-item" data-aos="fade-up" data-aos-duration="800">
+              <div class="venues-item__content">
+                <h3 class="venues-item__title">News &amp; Updates</h3>
+                <p class="venues-item__desc">
+                  Stay informed about announcements, upcoming activities, and
+                  developments within the Jabal Al Hajar Heritage Collection
+                </p>
+                <a href="news.html" class="venues-item__link">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M16.458 9.77157H3.95801"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M11.4165 4.75116L16.4582 9.77116L11.4165 14.792"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div class="venues-item__visual">
+                <div class="venues-item__shape"></div>
+                <img
+                  src="assets/images/venues-item-03.png"
+                  alt="News and Updates"
+                  class="venues-item__img"
+                />
+              </div>
+            </div>
+
+            <!-- Fort Cafe -->
+            <div
+              class="venues-item venues-item--reverse"
+              data-aos="fade-up"
+              data-aos-duration="800"
+            >
+              <div class="venues-item__content">
+                <h3 class="venues-item__title">Fort Cafe</h3>
+                <p class="venues-item__desc">
+                  Relax and unwind at the fort&rsquo;s in-house café, where
+                  heritage-inspired flavours meet a setting steeped in history
+                </p>
+                <a href="#" class="venues-item__link">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M16.458 9.77157H3.95801"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M11.4165 4.75116L16.4582 9.77116L11.4165 14.792"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div class="venues-item__visual">
+                <div class="venues-item__shape"></div>
+                <img
+                  src="assets/images/venues-item-04.png"
+                  alt="Fort Cafe"
+                  class="venues-item__img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /section-venues -->
+
+      <!-- ═══════════════════════════ APP SECTION ═══════════════════════════ -->
+      <section class="section-app">
+        <div class="container">
+          <div class="fort-intro__icon">
+            <img
+              src="assets/images/secion-icon.svg"
+              alt=""
+              aria-hidden="true"
+            />
+          </div>
+          <div class="app-layout">
+            <!-- Left: heading + 2 cards -->
+            <div class="app-left">
+              <div class="app-heading">
+                <img
+                  src="assets/images/secion-icon.svg"
+                  class="app-heading__icon"
+                  alt=""
+                  aria-hidden="true"
+                />
+                <h2 class="app-heading__title">
+                  One app&nbsp;&mdash;<br />The full<br />experience<br />of all
+                  Forts
+                </h2>
+              </div>
+              <div class="app-left__cards">
+                <div class="app-card">
+                  <p class="app-card__text">Discover events across all forts</p>
+                  <img
+                    src="assets/images/app-card-bg.png"
+                    class="app-card__deco"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </div>
+                <div class="app-card">
+                  <p class="app-card__text">Fast booking. No queues</p>
+                  <img
+                    src="assets/images/app-card-bg.png"
+                    class="app-card__deco"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Center: phone mockup -->
+            <div class="app-center">
+              <div class="app-shade"></div>
+              <img
+                src="assets/images/app-mockup-base.png"
+                alt="App mockup base"
+                class="app-mockup-base"
+              />
+              <img
+                src="assets/images/app-mockup.png"
+                alt="App mockup"
+                class="app-mockup"
+              />
+            </div>
+
+            <!-- Right: 3 cards -->
+            <div class="app-right">
+              <div class="app-card app-card--highlight">
+                <p class="app-card__text">Save 10% on tickets</p>
+                <img
+                  src="assets/images/app-card-bg.png"
+                  class="app-card__deco"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </div>
+              <div class="app-card">
+                <p class="app-card__text">Reserve forts for private events</p>
+                <img
+                  src="assets/images/app-card-bg.png"
+                  class="app-card__deco"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </div>
+              <div class="app-card">
+                <p class="app-card__text">Order &amp; shop as you explore</p>
+                <img
+                  src="assets/images/app-card-bg.png"
+                  class="app-card__deco"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom card -->
+          <div class="app-bottom">
+            <div class="app-card">
+              <p class="app-card__text">Book guided AI tours</p>
+              <img
+                src="assets/images/app-card-bg.png"
+                class="app-card__deco"
+                alt=""
+                aria-hidden="true"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /section-app -->
+
+      <!-- ════════════════════════ PLAN & BOOK SECTION ══════════════════════ -->
+      <section class="section-plan-book">
+        <div class="container">
+          <div class="fort-intro__icon">
+            <img
+              src="assets/images/secion-icon.svg"
+              alt=""
+              aria-hidden="true"
+            />
+          </div>
+          <div
+            class="plan-book-card"
+            data-aos="fade-up"
+            data-aos-duration="800"
+          >
+            <!-- Left: content -->
+            <div class="plan-book-content">
+              <h2 class="plan-book__title">Plan &amp; book your visit</h2>
+
+              <p class="plan-book__dest-label">Select your destination</p>
+
+              <!-- Tab nav -->
+              <ul class="nav plan-book-tabs" id="planBookTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="plan-book-tab active"
+                    id="pb-tab-muttrah"
+                    data-bs-toggle="tab"
+                    data-bs-target="#pb-pane-muttrah"
+                    type="button"
+                    role="tab"
+                    aria-controls="pb-pane-muttrah"
+                    aria-selected="true"
+                  >
+                    Muttrah Fort
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="plan-book-tab"
+                    id="pb-tab-mirani"
+                    data-bs-toggle="tab"
+                    data-bs-target="#pb-pane-mirani"
+                    type="button"
+                    role="tab"
+                    aria-controls="pb-pane-mirani"
+                    aria-selected="false"
+                  >
+                    Al Mirani Fort
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="plan-book-tab"
+                    id="pb-tab-jalali"
+                    data-bs-toggle="tab"
+                    data-bs-target="#pb-pane-jalali"
+                    type="button"
+                    role="tab"
+                    aria-controls="pb-pane-jalali"
+                    aria-selected="false"
+                  >
+                    Al Jalali Fort
+                  </button>
+                </li>
+              </ul>
+
+              <!-- Tab panes -->
+              <div class="tab-content plan-book-panes" id="planBookTabContent">
+                <!-- Muttrah Fort -->
+                <div
+                  class="tab-pane plan-book-pane fade show active"
+                  id="pb-pane-muttrah"
+                  role="tabpanel"
+                  aria-labelledby="pb-tab-muttrah"
+                >
+                  <div class="plan-book-info">
+                    <div class="plan-book-info__block">
+                      <i class="bi bi-clock plan-book-info__icon"></i>
+                      <div>
+                        <p class="plan-book-info__label">Opening Hours</p>
+                        <p class="plan-book-info__value">
+                          8:00 AM &ndash; 11:00 PM
+                        </p>
+                      </div>
+                    </div>
+                    <div class="plan-book-info__divider"></div>
+                    <div class="plan-book-info__block">
+                      <i class="bi bi-geo-alt plan-book-info__icon"></i>
+                      <div>
+                        <p class="plan-book-info__label">Location</p>
+                        <p class="plan-book-info__value">
+                          Muttrah,<br />Muscat, Oman
+                        </p>
+                      </div>
+                    </div>
+                    <div class="plan-book-info__divider"></div>
+                    <div class="plan-book-info__block">
+                      <i class="bi bi-telephone plan-book-info__icon"></i>
+                      <div>
+                        <p class="plan-book-info__label">Contact</p>
+                        <p class="plan-book-info__value">
+                          +968 9143 8752<br />Mahshid.work@gmail.com
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="plan-book__cta-wrap">
+                    <a href="book-tickets.html" class="plan-book__btn-booking"
+                      >Continue to Booking</a
+                    >
+                    <div class="plan-book__app-promo">
+                      <strong>Want to save 10%?</strong>
+                      <a href="#">Book in the app instead &rarr;</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Al Mirani Fort -->
+                <div
+                  class="tab-pane plan-book-pane fade"
+                  id="pb-pane-mirani"
+                  role="tabpanel"
+                  aria-labelledby="pb-tab-mirani"
+                >
+                  <div class="plan-book-info">
+                    <div class="plan-book-info__block">
+                      <i class="bi bi-clock plan-book-info__icon"></i>
+                      <div>
+                        <p class="plan-book-info__label">Opening Hours</p>
+                        <p class="plan-book-info__value">
+                          9:00 AM &ndash; 10:00 PM
+                        </p>
+                      </div>
+                    </div>
+                    <div class="plan-book-info__divider"></div>
+                    <div class="plan-book-info__block">
+                      <i class="bi bi-geo-alt plan-book-info__icon"></i>
+                      <div>
+                        <p class="plan-book-info__label">Location</p>
+                        <p class="plan-book-info__value">
+                          Muscat Harbor,<br />Muscat, Oman
+                        </p>
+                      </div>
+                    </div>
+                    <div class="plan-book-info__divider"></div>
+                    <div class="plan-book-info__block">
+                      <i class="bi bi-telephone plan-book-info__icon"></i>
+                      <div>
+                        <p class="plan-book-info__label">Contact</p>
+                        <p class="plan-book-info__value">
+                          +968 2473 4000<br />info@almirani.om
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="plan-book__cta-wrap">
+                    <a href="book-tickets.html" class="plan-book__btn-booking"
+                      >Continue to Booking</a
+                    >
+                    <div class="plan-book__app-promo">
+                      <strong>Want to save 10%?</strong>
+                      <a href="#">Book in the app instead &rarr;</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Al Jalali Fort -->
+                <div
+                  class="tab-pane plan-book-pane fade"
+                  id="pb-pane-jalali"
+                  role="tabpanel"
+                  aria-labelledby="pb-tab-jalali"
+                >
+                  <div class="plan-book-info">
+                    <div class="plan-book-info__block">
+                      <i class="bi bi-clock plan-book-info__icon"></i>
+                      <div>
+                        <p class="plan-book-info__label">Opening Hours</p>
+                        <p class="plan-book-info__value">
+                          9:00 AM &ndash; 9:00 PM
+                        </p>
+                      </div>
+                    </div>
+                    <div class="plan-book-info__divider"></div>
+                    <div class="plan-book-info__block">
+                      <i class="bi bi-geo-alt plan-book-info__icon"></i>
+                      <div>
+                        <p class="plan-book-info__label">Location</p>
+                        <p class="plan-book-info__value">
+                          Old Muscat,<br />Muscat, Oman
+                        </p>
+                      </div>
+                    </div>
+                    <div class="plan-book-info__divider"></div>
+                    <div class="plan-book-info__block">
+                      <i class="bi bi-telephone plan-book-info__icon"></i>
+                      <div>
+                        <p class="plan-book-info__label">Contact</p>
+                        <p class="plan-book-info__value">
+                          +968 2473 5000<br />info@aljalali.om
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="plan-book__cta-wrap">
+                    <a href="book-tickets.html" class="plan-book__btn-booking"
+                      >Continue to Booking</a
+                    >
+                    <div class="plan-book__app-promo">
+                      <strong>Want to save 10%?</strong>
+                      <a href="#">Book in the app instead &rarr;</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /tab-content -->
+            </div>
+            <!-- /plan-book-content -->
+
+            <!-- Right: fort image -->
+            <div class="plan-book-visual">
+              <img
+                src="assets/images/plan-book.png"
+                alt="Fort exterior view"
+                class="plan-book-visual__img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /section-plan-book -->
+
+      <!-- ══════════════════════ DOWNLOAD APP SECTION ════════════════════════ -->
+      <section class="section-download-app">
+        <div class="container">
+          <div class="fort-intro__icon">
+            <img
+              src="assets/images/secion-icon.svg"
+              alt=""
+              aria-hidden="true"
+            />
+          </div>
+          <div class="download-app-layout">
+            <!-- Left: phone on rocks -->
+            <div
+              class="download-app-visual"
+              data-aos="fade-right"
+              data-aos-duration="900"
+            >
+              <div class="download-app-blob" aria-hidden="true"></div>
+              <img
+                src="assets/images/download-app.png"
+                alt="Jibal Al Hajar mobile app"
+                class="download-app-phone"
+              />
+            </div>
+
+            <!-- Right: text + CTAs -->
+            <div
+              class="download-app-content"
+              data-aos="fade-left"
+              data-aos-duration="900"
+              data-aos-delay="100"
+            >
+              <h2 class="download-app__title">
+                Before you arrive &mdash; download the app
+              </h2>
+              <p class="download-app__desc">
+                Designed to make your visit seamless, immersive, and memorable
+              </p>
+
+              <!-- Apple Store + Google Play -->
+              <div class="download-app__store-row">
+                <a href="#" class="btn-store-filled">
+                  <img
+                    src="assets/images/applestore-icon.svg"
+                    alt=""
+                    aria-hidden="true"
+                    class="btn-store-filled__icon"
+                  />
+                  Apple Store
+                </a>
+                <a href="#" class="btn-store-filled">
+                  <img
+                    src="assets/images/playstore-icon.svg"
+                    alt=""
+                    aria-hidden="true"
+                    class="btn-store-filled__icon"
+                  />
+                  Google Play
+                </a>
+              </div>
+
+              <!-- QR Code -->
+              <a href="#" class="btn-store-outline">
+                <img
+                  src="assets/images/qr-scanner.svg"
+                  alt=""
+                  aria-hidden="true"
+                  class="btn-store-outline__icon"
+                />
+                QR Code
+              </a>
+
+              <!-- Stats -->
+              <div class="download-app__stats">
+                <div class="download-app__stat-group">
+                  <img
+                    src="assets/images/avatars.png"
+                    alt="Visitors"
+                    class="download-app__avatars"
+                  />
+                  <div class="download-app__stat-text">
+                    <span class="download-app__stat-count">+100 K</span>
+                    <span class="download-app__stat-label"
+                      >Visitor Every Month</span
+                    >
+                  </div>
+                </div>
+                <div class="download-app__stat-divider"></div>
+                <span class="download-app__stat-free">Free to Download</span>
+              </div>
+
+              <!-- Or separator -->
+              <div class="download-app__or">
+                <span class="download-app__or-line"></span>
+                <span class="download-app__or-text">Or</span>
+                <span class="download-app__or-line"></span>
+              </div>
+
+              <!-- Buy tickets -->
+              <a href="book-tickets.html" class="btn-tickets-outline">
+                Buy tickets without the app
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /section-download-app -->
+    </main>
+
+    <!-- ═══════════════════════════════════════════ FOOTER ═══════════════════════════════════════════ -->
+    <footer class="footer">
+      <div class="footer__bg"></div>
+      <div class="fort-intro__icon">
+        <img src="assets/images/secion-icon.svg" alt="" aria-hidden="true" />
+      </div>
+      <!-- Fort visual -->
+      <div class="footer__visual">
+        <img
+          src="assets/images/fort-footer.png"
+          alt="Jibal Al Hajar Fort"
+          class="footer__fort-img"
+        />
+        <div class="footer__fade" aria-hidden="true"></div>
+      </div>
+
+      <!-- Nav bar -->
+      <div class="footer__bar">
+        <div class="footer__pill">
+          <!-- Logo -->
+          <a href="index.html" class="footer__logo">
+            <img
+              src="assets/images/alhajar-logo-footer.svg"
+              alt="Jibal Al Hajar"
+            />
+          </a>
+
+          <!-- Separator -->
+          <span class="footer__sep" aria-hidden="true"></span>
+
+          <!-- Nav links -->
+          <nav class="footer__nav" aria-label="Footer navigation">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a href="venues.html" class="footer__nav-link">Sites</a>
+              </li>
+              <li class="footer__nav-sep" aria-hidden="true"></li>
+              <li class="footer__nav-item">
+                <a href="book-tickets.html" class="footer__nav-link"
+                  >Book Tickets</a
+                >
+              </li>
+              <li class="footer__nav-sep" aria-hidden="true"></li>
+              <li class="footer__nav-item">
+                <a href="events.html" class="footer__nav-link">Events</a>
+              </li>
+              <li class="footer__nav-sep" aria-hidden="true"></li>
+              <li class="footer__nav-item">
+                <a href="news.html" class="footer__nav-link">News</a>
+              </li>
+              <li class="footer__nav-sep" aria-hidden="true"></li>
+              <li class="footer__nav-item">
+                <a href="contact.html" class="footer__nav-link">Contact Us</a>
+              </li>
+              <li class="footer__nav-sep" aria-hidden="true"></li>
+              <li class="footer__nav-item">
+                <a href="shop.html" class="footer__nav-link">Shop</a>
+              </li>
+              <li class="footer__nav-sep" aria-hidden="true"></li>
+              <li class="footer__nav-item">
+                <a href="#section-download-app" class="footer__nav-link"
+                  >Download App</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <!-- /footer -->
+
+    <!-- Return to top -->
+    <a href="javascript:;" id="return-top" class="return-top">
+      <svg class="return-top__ring" viewBox="0 0 50 50" aria-hidden="true">
+        <circle class="return-top__ring-track" cx="25" cy="25" r="22" />
+        <circle class="return-top__ring-progress" cx="25" cy="25" r="22" />
+      </svg>
+      <img src="assets/images/up-icon.svg" alt="Back to top" />
+    </a>
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- Smooth Scroll -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <!-- AOS -->
+    <script src="assets/js/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+    <script>
+      AOS.init({ once: true, offset: 60 });
+    </script>
+  </body>
+</html>

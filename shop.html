@@ -1,0 +1,849 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Jibal Al Hajar Heritage Collection — Shop Cultural Gifts"
+    />
+    <title>Shop — Jibal Al Hajar</title>
+    <link rel="icon" href="favicon.ico" />
+
+    <!-- Bootstrap Icons -->
+    <link href="assets/css/bootstrap-icons.min.css" rel="stylesheet" />
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- AOS -->
+    <link href="assets/css/aos.css" rel="stylesheet" />
+    <!-- Custom styles -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ═══════════════════════════ HEADER ═══════════════════════════════════ -->
+    <header class="header" id="header">
+      <div class="header__inner">
+        <a href="index.html" class="header__logo">
+          <img
+            src="assets/images/logo-dark.svg"
+            alt="Jibal Al Hajar"
+            class="logo-dark"
+          />
+          <img
+            src="assets/images/logo-light.svg"
+            alt="Jibal Al Hajar"
+            class="logo-light"
+          />
+        </a>
+
+        <nav class="nav-main" aria-label="Main navigation">
+          <ul class="nav-main__list">
+            <li class="nav-main__item">
+              <a href="index.html" class="nav-main__link">Home</a>
+            </li>
+            <li class="nav-main__item">
+              <a href="venues.html" class="nav-main__link">Venues</a>
+            </li>
+            <li class="nav-main__item">
+              <a href="book-tickets.html" class="nav-main__link"
+                >Book Tickets</a
+              >
+            </li>
+            <li class="nav-main__item">
+              <a href="events.html" class="nav-main__link">Events</a>
+            </li>
+            <li class="nav-main__item">
+              <a href="news.html" class="nav-main__link">News</a>
+            </li>
+            <li class="nav-main__item">
+              <a href="contact.html" class="nav-main__link">Contact Us</a>
+            </li>
+            <li class="nav-main__item active">
+              <a href="shop.html" class="nav-main__link">Shop</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__controls">
+          <button class="btn-lang" aria-label="Switch language">EN</button>
+          <button
+            class="btn-theme"
+            onclick="toggleTheme()"
+            aria-label="Toggle theme"
+          >
+            <i class="bi bi-sun btn-theme__icon--sun"></i>
+            <i class="bi bi-moon btn-theme__icon--moon"></i>
+          </button>
+          <button
+            class="btn-hamburger"
+            id="btnHamburger"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile backdrop -->
+    <div class="mobile-backdrop" id="mobileBackdrop"></div>
+
+    <!-- Mobile drawer -->
+    <nav
+      class="mobile-drawer"
+      id="mobileDrawer"
+      aria-label="Mobile navigation"
+      aria-hidden="true"
+    >
+      <div class="mobile-drawer__head">
+        <a href="index.html" class="mobile-drawer__logo">
+          <img
+            src="assets/images/logo-dark.svg"
+            alt="Jibal Al Hajar"
+            class="logo-dark"
+          />
+          <img
+            src="assets/images/logo-light.svg"
+            alt="Jibal Al Hajar"
+            class="logo-light"
+          />
+        </a>
+        <button
+          class="mobile-drawer__close"
+          id="btnDrawerClose"
+          aria-label="Close menu"
+        >
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+      <ul class="mobile-drawer__list">
+        <li class="mobile-drawer__item">
+          <a href="index.html" class="mobile-drawer__link">Home</a>
+        </li>
+        <li class="mobile-drawer__item">
+          <a href="venues.html" class="mobile-drawer__link">Venues</a>
+        </li>
+        <li class="mobile-drawer__item">
+          <a href="book-tickets.html" class="mobile-drawer__link"
+            >Book Tickets</a
+          >
+        </li>
+        <li class="mobile-drawer__item">
+          <a href="events.html" class="mobile-drawer__link">Events</a>
+        </li>
+        <li class="mobile-drawer__item">
+          <a href="news.html" class="mobile-drawer__link">News</a>
+        </li>
+        <li class="mobile-drawer__item">
+          <a href="contact.html" class="mobile-drawer__link">Contact Us</a>
+        </li>
+        <li class="mobile-drawer__item active">
+          <a href="shop.html" class="mobile-drawer__link">Shop</a>
+        </li>
+      </ul>
+      <div class="mobile-drawer__foot">
+        <button class="btn-lang">EN</button>
+        <button
+          class="btn-theme"
+          onclick="toggleTheme()"
+          aria-label="Toggle theme"
+        >
+          <i class="bi bi-sun btn-theme__icon--sun"></i>
+          <i class="bi bi-moon btn-theme__icon--moon"></i>
+        </button>
+      </div>
+    </nav>
+
+    <main class="main-inner">
+      <!-- ══════════════════════ PAGE TITLE ═══════════════════════════════════ -->
+      <section class="section-shop-header">
+        <div class="container">
+          <h1 class="shop-page-title">Shop Cultural Gifts</h1>
+        </div>
+      </section>
+
+      <!-- ══════════════════════ FEATURED PRODUCT BANNER ══════════════════════ -->
+      <section class="section-shop-featured">
+        <div class="container">
+          <div
+            class="shop-featured-card"
+            data-aos="fade-up"
+            data-aos-duration="700"
+          >
+            <!-- Left: product image -->
+            <div class="shop-featured-card__visual">
+              <img
+                src="assets/images/souvenirs-item.png"
+                alt="Omani Souvenir"
+                class="shop-featured-card__img"
+              />
+            </div>
+
+            <!-- Center: info -->
+            <div class="shop-featured-card__info">
+              <img
+                src="assets/images/mezrad-shop.png"
+                alt="Mezrad"
+                class="shop-featured-card__logo"
+              />
+              <h2 class="shop-featured-card__title">Buy Souvenirs</h2>
+              <div class="shop-featured-card__price-row">
+                <img
+                  src="assets/images/omr-icon.png"
+                  alt=""
+                  class="shop-featured-card__omr-icon"
+                  aria-hidden="true"
+                />
+                <span class="shop-featured-card__price">2.800</span>
+              </div>
+              <div class="shop-featured-card__tags">
+                <span>Featured Product</span>
+                <span
+                  class="shop-featured-card__tag-sep"
+                  aria-hidden="true"
+                ></span>
+                <span>Highlight of the Week</span>
+              </div>
+            </div>
+
+            <!-- Right: CTA -->
+            <div class="shop-featured-card__cta">
+              <a href="#shop-items" class="btn-buy-now">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M2.29199 2.70825L4.02533 3.00825L4.82783 12.5691C4.89199 13.3499 5.54449 13.9491 6.32783 13.9466H15.4187C16.1662 13.9483 16.8003 13.3983 16.9062 12.6583L17.697 7.19325C17.7853 6.58242 17.3612 6.01575 16.7512 5.92742C16.6978 5.91992 4.30366 5.91575 4.30366 5.91575"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M11.7705 8.99565H14.0813"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M5.96212 16.8354C6.21296 16.8354 6.41546 17.0388 6.41546 17.2888C6.41546 17.5396 6.21296 17.7429 5.96212 17.7429C5.71129 17.7429 5.50879 17.5396 5.50879 17.2888C5.50879 17.0388 5.71129 16.8354 5.96212 16.8354Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M15.3625 16.8354C15.6133 16.8354 15.8167 17.0388 15.8167 17.2888C15.8167 17.5396 15.6133 17.7429 15.3625 17.7429C15.1117 17.7429 14.9092 17.5396 14.9092 17.2888C14.9092 17.0388 15.1117 16.8354 15.3625 16.8354Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                Buy Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════ WORKSHOP CARDS ════════════════════════════════ -->
+      <section class="section-shop-workshops">
+        <div class="container">
+          <div class="workshop-grid">
+            <!-- Book a workshop -->
+            <div
+              class="workshop-card"
+              data-aos="fade-up"
+              data-aos-duration="700"
+            >
+              <div class="workshop-card__overlay"></div>
+              <img
+                src="assets/images/book-workshop-bg.png"
+                alt=""
+                class="workshop-card__bg"
+                aria-hidden="true"
+              />
+
+              <div class="workshop-card__content">
+                <h2 class="workshop-card__title">Book a workshop</h2>
+                <p class="workshop-card__desc">
+                  Discover hands-on cultural experiences and creative workshops.
+                  Inspired by Omani heritage, craftsmanship, and storytelling.
+                  Perfect for individuals, groups, and visitors looking to
+                  connect with local culture.
+                </p>
+              </div>
+              <div class="workshop-card__cta">
+                <a href="#" class="btn-workshop">Explore Workshops</a>
+              </div>
+            </div>
+
+            <!-- Host a workshop -->
+            <div
+              class="workshop-card"
+              data-aos="fade-up"
+              data-aos-duration="700"
+              data-aos-delay="100"
+            >
+              <div
+                class="workshop-card__overlay workshop-card__overlay--brown"
+              ></div>
+              <img
+                src="assets/images/host-workshop-bg.png"
+                alt=""
+                class="workshop-card__bg"
+                aria-hidden="true"
+              />
+              <div class="workshop-card__content">
+                <h2 class="workshop-card__title">Host a workshop</h2>
+                <p class="workshop-card__desc">
+                  Looking to share your craft, skill, or creative practice? Host
+                  your workshop with us and become part of a growing community
+                  celebrating culture, creativity, and meaningful experiences.
+                </p>
+              </div>
+              <div class="workshop-card__cta">
+                <a href="#" class="btn-workshop">Host With Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════ MEZRAD DIVIDER ════════════════════════════════ -->
+      <div class="shop-mezrad-divider">
+        <img src="assets/images/mezrad-logo.svg" alt="Mezrad" />
+      </div>
+
+      <!-- ══════════════════════ ITEMS GRID ════════════════════════════════════ -->
+      <section class="section-shop-items" id="shop-items">
+        <div class="container">
+          <!-- Section header -->
+          <div class="shop-items-header">
+            <p class="shop-items-title">Items</p>
+            <div class="shop-items-actions">
+              <button
+                class="btn-shop-action btn-shop-filter"
+                type="button"
+                aria-label="Filter"
+              >
+                <img
+                  src="assets/images/filter-icon.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </button>
+              <button
+                class="btn-shop-action"
+                type="button"
+                aria-label="Your Wishlist"
+              >
+                <img
+                  src="assets/images/wishlist-icon.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+                Your Wishlist
+              </button>
+              <button
+                class="btn-shop-action"
+                type="button"
+                aria-label="Your Cart"
+              >
+                <img
+                  src="assets/images/cart-icon.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+                Your Cart
+                <span class="cart-count">2</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- 3×3 Product grid -->
+          <div class="shop-grid">
+            <!-- Item 1 -->
+            <div class="shop-item-card">
+              <div class="shop-item-card__img-wrap">
+                <button
+                  class="shop-item-card__wishlist"
+                  type="button"
+                  aria-label="Add to wishlist"
+                >
+                  <img src="assets/images/wishlist-icon.svg" alt="Whish list" />
+                </button>
+                <img
+                  src="assets/images/mezrad-item-01.png"
+                  alt="Omani Khanjar"
+                  class="shop-item-card__img"
+                />
+              </div>
+              <div class="shop-item-card__info">
+                <p class="shop-item-card__name">Omani Khanjar</p>
+                <div class="shop-item-card__price-row">
+                  <span class="shop-item-card__price">25 OR</span>
+                </div>
+                <button class="btn-add-cart btn-add-cart--added" type="button">
+                  Added to Cart
+                </button>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="shop-item-card">
+              <div class="shop-item-card__img-wrap">
+                <button
+                  class="shop-item-card__wishlist"
+                  type="button"
+                  aria-label="Add to wishlist"
+                >
+                  <img src="assets/images/wishlist-icon.svg" alt="Wish list" />
+                </button>
+                <img
+                  src="assets/images/mezrad-item-02.png"
+                  alt="Amber Oud Blend"
+                  class="shop-item-card__img"
+                />
+              </div>
+              <div class="shop-item-card__info">
+                <p class="shop-item-card__name">Amber Oud Blend</p>
+                <div class="shop-item-card__price-row">
+                  <span class="shop-item-card__price">8 OR</span>
+                </div>
+                <button class="btn-add-cart" type="button">Add to Cart</button>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="shop-item-card">
+              <div class="shop-item-card__img-wrap">
+                <button
+                  class="shop-item-card__wishlist"
+                  type="button"
+                  aria-label="Add to wishlist"
+                >
+                  <img src="assets/images/wishlist-icon.svg" alt="Wish list" />
+                </button>
+                <img
+                  src="assets/images/mezrad-item-03.png"
+                  alt="Omani Frankincense"
+                  class="shop-item-card__img"
+                />
+              </div>
+              <div class="shop-item-card__info">
+                <p class="shop-item-card__name">Omani Frankincense</p>
+                <div class="shop-item-card__price-row">
+                  <span class="shop-item-card__price-original">10 OR</span>
+                  <span class="shop-item-card__price-sep" aria-hidden="true">|</span>
+                  <span class="shop-item-card__price">8 OR</span>
+                </div>
+                <button class="btn-add-cart" type="button">Add to Cart</button>
+              </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="shop-item-card">
+              <div class="shop-item-card__img-wrap">
+                <button
+                  class="shop-item-card__wishlist"
+                  type="button"
+                  aria-label="Add to wishlist"
+                >
+                  <img src="assets/images/wishlist-icon.svg" alt="Wish list" />
+                </button>
+                <img
+                  src="assets/images/mezrad-item-01.png"
+                  alt="Omani Khanjar"
+                  class="shop-item-card__img"
+                />
+              </div>
+              <div class="shop-item-card__info">
+                <p class="shop-item-card__name">Omani Khanjar</p>
+                <div class="shop-item-card__price-row">
+                  <span class="shop-item-card__price">25 OR</span>
+                </div>
+                <button class="btn-add-cart" type="button">Add to Cart</button>
+              </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="shop-item-card">
+              <div class="shop-item-card__img-wrap">
+                <button
+                  class="shop-item-card__wishlist"
+                  type="button"
+                  aria-label="Add to wishlist"
+                >
+                  <img src="assets/images/wishlist-icon.svg" alt="Wish list" />
+                </button>
+                <img
+                  src="assets/images/mezrad-item-03.png"
+                  alt="Omani Frankincense"
+                  class="shop-item-card__img"
+                />
+              </div>
+              <div class="shop-item-card__info">
+                <p class="shop-item-card__name">Omani Frankincense</p>
+                <div class="shop-item-card__price-row">
+                  <span class="shop-item-card__price">10 OR</span>
+                </div>
+                <button class="btn-add-cart" type="button">Add to Cart</button>
+              </div>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="shop-item-card">
+              <div class="shop-item-card__img-wrap">
+                <button
+                  class="shop-item-card__wishlist"
+                  type="button"
+                  aria-label="Add to wishlist"
+                >
+                  <img src="assets/images/wishlist-icon.svg" alt="Wish list" />
+                </button>
+                <img
+                  src="assets/images/mezrad-item-02.png"
+                  alt="Amber Oud Blend"
+                  class="shop-item-card__img"
+                />
+              </div>
+              <div class="shop-item-card__info">
+                <p class="shop-item-card__name">Amber Oud Blend</p>
+                <div class="shop-item-card__price-row">
+                  <span class="shop-item-card__price">8 OR</span>
+                </div>
+                <button class="btn-add-cart btn-add-cart--added" type="button">
+                  Added to Cart
+                </button>
+              </div>
+            </div>
+
+            <!-- Item 7 -->
+            <div class="shop-item-card">
+              <div class="shop-item-card__img-wrap">
+                <button
+                  class="shop-item-card__wishlist"
+                  type="button"
+                  aria-label="Add to wishlist"
+                >
+                  <img src="assets/images/wishlist-icon.svg" alt="Wish list" />
+                </button>
+                <img
+                  src="assets/images/mezrad-item-02.png"
+                  alt="Amber Oud Blend"
+                  class="shop-item-card__img"
+                />
+              </div>
+              <div class="shop-item-card__info">
+                <p class="shop-item-card__name">Amber Oud Blend</p>
+                <div class="shop-item-card__price-row">
+                  <span class="shop-item-card__price">8 OR</span>
+                </div>
+                <button class="btn-add-cart" type="button">Add to Cart</button>
+              </div>
+            </div>
+
+            <!-- Item 8 -->
+            <div class="shop-item-card">
+              <div class="shop-item-card__img-wrap">
+                <button
+                  class="shop-item-card__wishlist"
+                  type="button"
+                  aria-label="Add to wishlist"
+                >
+                  <img src="assets/images/wishlist-icon.svg" alt="Wish list" />
+                </button>
+                <img
+                  src="assets/images/mezrad-item-01.png"
+                  alt="Omani Khanjar"
+                  class="shop-item-card__img"
+                />
+              </div>
+              <div class="shop-item-card__info">
+                <p class="shop-item-card__name">Omani Khanjar</p>
+                <div class="shop-item-card__price-row">
+                  <span class="shop-item-card__price">25 OR</span>
+                </div>
+                <button class="btn-add-cart" type="button">Add to Cart</button>
+              </div>
+            </div>
+
+            <!-- Item 9 -->
+            <div class="shop-item-card">
+              <div class="shop-item-card__img-wrap">
+                <button
+                  class="shop-item-card__wishlist"
+                  type="button"
+                  aria-label="Add to wishlist"
+                >
+                  <img src="assets/images/wishlist-icon.svg" alt="Wish list" />
+                </button>
+                <img
+                  src="assets/images/mezrad-item-03.png"
+                  alt="Omani Frankincense"
+                  class="shop-item-card__img"
+                />
+              </div>
+              <div class="shop-item-card__info">
+                <p class="shop-item-card__name">Omani Frankincense</p>
+                <div class="shop-item-card__price-row">
+                  <span class="shop-item-card__price-original">10 OR</span>
+                  <span class="shop-item-card__price-sep" aria-hidden="true">|</span>
+                  <span class="shop-item-card__price">8 OR</span>
+                </div>
+                <button class="btn-add-cart" type="button">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════ SECTION ICON DIVIDER ══════════════════════════ -->
+      <div class="fort-intro__icon">
+        <img src="assets/images/secion-icon.svg" alt="" aria-hidden="true" />
+      </div>
+
+      <!-- ══════════════════════ INFORMATION SECTION ═══════════════════════════ -->
+      <section class="section-fort-info">
+        <div class="container">
+          <h2 class="section-fort-info__title">Information</h2>
+
+          <div class="fort-info-strip">
+            <div class="fort-info-strip__item">
+              <span class="fort-info-strip__icon"
+                ><i class="bi bi-telephone"></i
+              ></span>
+              <div>
+                <p class="fort-info-strip__label">PHONE</p>
+                <p class="fort-info-strip__value">77000909</p>
+              </div>
+            </div>
+            <span class="fort-info-strip__sep" aria-hidden="true"></span>
+            <div class="fort-info-strip__item">
+              <span class="fort-info-strip__icon"
+                ><i class="bi bi-envelope"></i
+              ></span>
+              <div>
+                <p class="fort-info-strip__label">EMAIL</p>
+                <p class="fort-info-strip__value">info@alhajarforts.om</p>
+              </div>
+            </div>
+            <span class="fort-info-strip__sep" aria-hidden="true"></span>
+            <div class="fort-info-strip__item">
+              <span class="fort-info-strip__icon"
+                ><i class="bi bi-clock"></i
+              ></span>
+              <div>
+                <p class="fort-info-strip__label">Working Hours</p>
+                <p class="fort-info-strip__value">8:00am - 5:00pm</p>
+              </div>
+            </div>
+            <span class="fort-info-strip__sep" aria-hidden="true"></span>
+            <div class="fort-info-strip__item">
+              <span class="fort-info-strip__icon"
+                ><i class="bi bi-geo-alt"></i
+              ></span>
+              <div>
+                <p class="fort-info-strip__label">Office Address</p>
+                <p class="fort-info-strip__value">
+                  P.O. Box:1645 - PC:111, Ghala Al Sanaiah, Muscat, Oman
+                </p>
+              </div>
+            </div>
+            <span class="fort-info-strip__sep" aria-hidden="true"></span>
+            <div class="fort-info-strip__item">
+              <span class="fort-info-strip__icon"
+                ><i class="bi bi-clock"></i
+              ></span>
+              <div>
+                <p class="fort-info-strip__label">Opening Hours</p>
+                <p class="fort-info-strip__value">8:00am - 11:00pm</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="fort-info-strip fort-info-strip--insta">
+            <div class="fort-info-strip__item">
+              <span class="fort-info-strip__icon"
+                ><i class="bi bi-instagram"></i
+              ></span>
+              <div><p class="fort-info-strip__label">Instagram Pages</p></div>
+            </div>
+            <span class="fort-info-strip__sep" aria-hidden="true"></span>
+            <a href="#" class="fort-info-strip__handle">muttrahfort</a>
+            <span class="fort-info-strip__sep" aria-hidden="true"></span>
+            <a href="#" class="fort-info-strip__handle">almiranifort</a>
+            <span class="fort-info-strip__sep" aria-hidden="true"></span>
+            <a href="#" class="fort-info-strip__handle">fortcafe.om</a>
+            <span class="fort-info-strip__sep" aria-hidden="true"></span>
+            <a href="#" class="fort-info-strip__handle">alsharqihouse</a>
+            <span class="fort-info-strip__sep" aria-hidden="true"></span>
+            <a href="#" class="fort-info-strip__handle">mezrad.om</a>
+            <span class="fort-info-strip__sep" aria-hidden="true"></span>
+            <a href="#" class="fort-info-strip__handle">mesamuscat</a>
+          </div>
+
+          <div class="fort-map">
+            <img
+              src="assets/images/google-map.jpg"
+              alt="Location on Google Maps"
+              class="fort-map__img"
+            />
+            <a
+              href="https://maps.google.com/?q=Al+Mirani+Fort,+Muscat,+Oman"
+              class="fort-map__btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Open in Google Maps</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ══════════════════════════════════ FOOTER ════════════════════════════════ -->
+    <footer class="footer">
+      <div class="footer__bg"></div>
+      <div class="fort-intro__icon">
+        <img src="assets/images/secion-icon.svg" alt="" aria-hidden="true" />
+      </div>
+      <div class="footer__visual">
+        <img
+          src="assets/images/fort-footer.png"
+          alt="Jibal Al Hajar Fort"
+          class="footer__fort-img"
+        />
+        <div class="footer__fade" aria-hidden="true"></div>
+      </div>
+      <div class="footer__bar">
+        <div class="footer__pill">
+          <a href="index.html" class="footer__logo">
+            <img
+              src="assets/images/alhajar-logo-footer.svg"
+              alt="Jibal Al Hajar"
+            />
+          </a>
+          <span class="footer__sep" aria-hidden="true"></span>
+          <nav class="footer__nav" aria-label="Footer navigation">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a href="venues.html" class="footer__nav-link">Sites</a>
+              </li>
+              <li class="footer__nav-sep" aria-hidden="true"></li>
+              <li class="footer__nav-item">
+                <a href="book-tickets.html" class="footer__nav-link"
+                  >Book Tickets</a
+                >
+              </li>
+              <li class="footer__nav-sep" aria-hidden="true"></li>
+              <li class="footer__nav-item">
+                <a href="events.html" class="footer__nav-link">Events</a>
+              </li>
+              <li class="footer__nav-sep" aria-hidden="true"></li>
+              <li class="footer__nav-item">
+                <a href="news.html" class="footer__nav-link">News</a>
+              </li>
+              <li class="footer__nav-sep" aria-hidden="true"></li>
+              <li class="footer__nav-item">
+                <a href="contact.html" class="footer__nav-link">Contact Us</a>
+              </li>
+              <li class="footer__nav-sep" aria-hidden="true"></li>
+              <li class="footer__nav-item">
+                <a href="shop.html" class="footer__nav-link">Shop</a>
+              </li>
+              <li class="footer__nav-sep" aria-hidden="true"></li>
+              <li class="footer__nav-item">
+                <a href="#section-download-app" class="footer__nav-link"
+                  >Download App</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Return to top -->
+    <a href="javascript:;" id="return-top" class="return-top">
+      <svg class="return-top__ring" viewBox="0 0 50 50" aria-hidden="true">
+        <circle class="return-top__ring-track" cx="25" cy="25" r="22" />
+        <circle class="return-top__ring-progress" cx="25" cy="25" r="22" />
+      </svg>
+      <img src="assets/images/up-icon.svg" alt="Back to top" />
+    </a>
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Smooth Scroll -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <!-- AOS -->
+    <script src="assets/js/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+    <script>
+      AOS.init({ once: true, offset: 60 });
+
+      // Wishlist toggle — swap outline ↔ filled icon + pop animation
+      var HEART_OUTLINE = 'assets/images/wishlist-icon.svg';
+      var HEART_FILLED  = "data:image/svg+xml," + encodeURIComponent(
+        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">' +
+        '<path fill="#cf632d" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5' +
+        ' 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3' +
+        ' 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>' +
+        '</svg>'
+      );
+
+      document.querySelectorAll('.shop-item-card__wishlist').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var img = this.querySelector('img');
+          var isWishlisted = this.classList.toggle('is-wishlisted');
+          img.src = isWishlisted ? HEART_FILLED : HEART_OUTLINE;
+
+          // Pop animation
+          this.classList.remove('is-popping');
+          void this.offsetWidth;
+          this.classList.add('is-popping');
+          this.addEventListener('animationend', function () {
+            this.classList.remove('is-popping');
+          }, { once: true });
+        });
+      });
+
+      // Add to cart toggle
+      document
+        .querySelectorAll(".btn-add-cart:not(.btn-add-cart--added)")
+        .forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            this.textContent = "Added to Cart";
+            this.classList.add("btn-add-cart--added");
+            var countEl = document.querySelector(".cart-count");
+            if (countEl)
+              countEl.textContent = parseInt(countEl.textContent || "0") + 1;
+          });
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+# OS / editor
+Thumbs.db
+.DS_Store
+
+# Claude Code local data
+.claude/
+
+# Dependencies (if ever added)
+node_modules/

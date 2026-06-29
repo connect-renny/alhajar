@@ -1,0 +1,281 @@
+// ─── Light theme overrides ────────────────────────────────────────────────────
+// Only non-variable overrides live here — colours are handled via
+// [data-theme="light"] token swaps in abstracts/_variables.scss.
+
+[data-theme="light"] .loader__shade {
+  background-color: #121212;
+}
+[data-theme="light"] body {
+  background-color: var(--white);
+}
+
+[data-theme="light"] .nav-main__link {
+  color: #605d66;
+}
+
+// ─── Home — Hero ──────────────────────────────────────────────────────────────
+[data-theme="light"] .hero-play-ring {
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+// ─── Home — Discover ──────────────────────────────────────────────────────────
+[data-theme="light"] .discover-text__heading {
+  color: var(--black);
+}
+
+[data-theme="light"] .discover-text__body {
+  color: var(--dark-550);
+}
+
+[data-theme="light"] .discover-text__badge {
+  color: #625d52;
+  background: linear-gradient(
+    180deg,
+    rgba(57, 57, 57, 0.1) 0%,
+    rgba(57, 57, 57, 0.06) 100%
+  );
+  box-shadow: inset 10px 10px 15px #fcded3;
+  backdrop-filter: blur(20px);
+  border-image-source: linear-gradient(149.49deg, #cf632d 0%, #080808 100%);
+}
+
+[data-theme="light"] .discover-cta__heading {
+  color: var(--black);
+}
+
+[data-theme="light"] .discover-cta__subheading {
+  color: var(--dark-550);
+}
+
+[data-theme="light"] .btn-cta-filled {
+  color: var(--white);
+  background-color: #cf632d;
+  border-color: #cf632d;
+  &:hover {
+    background-color: #dd662a;
+  }
+}
+
+[data-theme="light"] .btn-cta-outline {
+  color: #cf632d;
+  border-color: #cf632d;
+  &:hover {
+    color: var(--white);
+    background-color: #cf632d;
+  }
+}
+
+// ─── Home — Fort Showcase ─────────────────────────────────────────────────────
+
+[data-theme="light"] .fort-info__divider {
+  background: linear-gradient(90deg, #c8b4a0 0%, #f2e9de 100%);
+}
+
+[data-theme="light"] .fort-intro__title {
+  color: var(--black);
+}
+
+[data-theme="light"] .fort-intro__subtitle {
+  color: var(--dark-450);
+}
+
+[data-theme="light"] .fort-intro__desc {
+  color: var(--dark-450);
+}
+
+[data-theme="light"] .fort-info__name {
+  color: var(--black);
+}
+
+[data-theme="light"] .fort-info__label {
+  color: var(--black);
+}
+
+[data-theme="light"] .fort-info__value {
+  color: var(--dark-450);
+}
+
+[data-theme="light"] .fort-visual__shape {
+  color: var(--color-fort-circle);
+}
+
+[data-theme="light"] .fort-related__name {
+  color: var(--dark-450);
+}
+[data-theme="light"] .btn-fort-more {
+  color: #cf632d;
+  border-color: #cf632d;
+  &:hover {
+    color: var(--white);
+    background-color: #cf632d;
+  }
+}
+
+// ─── Home — Venues ────────────────────────────────────────────────────────────
+[data-theme="light"] .venues-item__shape {
+  background-color: #c4baa3;
+}
+
+[data-theme="light"] .venues-item__title {
+  color: var(--black);
+}
+
+[data-theme="light"] .venues-item__desc {
+  color: var(--black);
+}
+
+[data-theme="light"] .venues-item__link {
+  color: var(--dark-550);
+}
+
+// ─── Home — App ───────────────────────────────────────────────────────────────
+[data-theme="light"] .app-heading__title {
+  color: var(--black);
+}
+
+[data-theme="light"] .app-shade {
+  background: #8e7565;
+  opacity: 0.2;
+}
+
+[data-theme="light"] .app-mockup {
+  filter: drop-shadow(-18px -9px 41.6px rgba(0, 0, 0, 0.12))
+    drop-shadow(-10px 6px 15.1px rgba(150, 80, 20, 0.18));
+}
+
+[data-theme="light"] .app-left__cards {
+  .app-card {
+    p {
+      color: var(--white);
+    }
+  }
+  .app-card:nth-child(1) {
+    background: #8e7565;
+    border: 1px solid;
+    border-image-source: linear-gradient(90deg, #cf632d 0%, #422813 100%);
+  }
+
+  .app-card:nth-child(2) {
+    background: #b39c8f;
+  }
+}
+
+[data-theme="light"] .app-right {
+  .app-card {
+    p {
+      color: var(--white);
+    }
+  }
+  .app-card:nth-child(1) {
+    background: #b39c8f;
+    box-shadow: -14px 10px 15px rgba(0, 0, 0, 0.5);
+    border: 1px solid;
+    border-image-source: linear-gradient(90deg, #cf632d 0%, #422813 100%);
+  }
+
+  .app-card:nth-child(2) {
+    background: #b39c8f;
+  }
+
+  .app-card:nth-child(3) {
+    background: #8e7565;
+  }
+}
+
+[data-theme="light"] .app-bottom .app-card {
+  background: #b39c8f;
+}
+
+[data-theme="light"] .plan-book-card {
+  background-color: #b39c8f;
+}
+
+[data-theme="light"] .plan-book__title {
+  color: var(--black);
+}
+
+[data-theme="light"] .plan-book__dest-label {
+  color: var(--black);
+}
+[data-theme="light"] .plan-book-info__icon {
+  color: var(--black);
+}
+[data-theme="light"] .plan-book-info__label {
+  color: var(--black);
+}
+[data-theme="light"] .plan-book-info__value {
+  color: var(--black);
+}
+[data-theme="light"] .plan-book__btn-booking {
+  background-color: #cf632d;
+}
+[data-theme="light"] .plan-book__app-promo strong {
+  color: var(--dark-550);
+}
+[data-theme="light"] .plan-book__app-promo a {
+  color: var(--dark-550);
+}
+
+// ─── Home — Download App ──────────────────────────────────────────────────────
+
+[data-theme="light"] .download-app__title {
+  color: var(--black);
+}
+
+[data-theme="light"] .download-app-blob {
+  background-color: var(--color-blob);
+}
+
+[data-theme="light"] .download-app__desc {
+  color: var(--dark-450);
+}
+
+[data-theme="light"] .btn-store-outline {
+  color: #cf632d;
+  border-radius: #cf632d;
+  &:hover {
+    color: var(--white);
+    background-color: #cf632d;
+  }
+}
+
+[data-theme="light"] .download-app__stat-divider {
+  background-color: #605d66;
+}
+
+[data-theme="light"] .download-app__stat-count {
+  color: var(--black);
+}
+
+[data-theme="light"] .download-app__stat-label {
+  color: #79747e;
+}
+
+[data-theme="light"] .download-app__or-line {
+  background-color: #605d66;
+}
+
+[data-theme="light"] .download-app__or-text {
+  color: var(--black);
+}
+
+[data-theme="light"] .btn-tickets-outline {
+  color: #cf632d;
+  border-radius: #cf632d;
+  &:hover {
+    color: var(--white);
+    background-color: #cf632d;
+  }
+}
+
+// ─── Footer ───────────────────────────────────────────────────────────────────
+[data-theme="light"] .footer__bg {
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #ffffff 22.12%,
+    #cca789 60.58%,
+    #a97851 75.48%,
+    #351f0e 100%
+  );
+}

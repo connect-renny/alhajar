@@ -1,0 +1,1265 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Jibal Al Hajar Heritage Collection — Book Tickets"
+    />
+    <title>Book Tickets — Jibal Al Hajar</title>
+    <link rel="icon" href="favicon.ico" />
+
+    <!-- Bootstrap Icons -->
+    <link href="assets/css/bootstrap-icons.min.css" rel="stylesheet" />
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- AOS -->
+    <link href="assets/css/aos.css" rel="stylesheet" />
+    <!-- Custom styles -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ═══════════════════════════ HEADER ═══════════════════════════════════ -->
+    <header class="header" id="header">
+      <div class="header__inner">
+        <!-- Logo -->
+        <a href="index.html" class="header__logo">
+          <img
+            src="assets/images/logo-dark.svg"
+            alt="Jibal Al Hajar"
+            class="logo-dark"
+          />
+          <img
+            src="assets/images/logo-light.svg"
+            alt="Jibal Al Hajar"
+            class="logo-light"
+          />
+        </a>
+
+        <!-- Nav pill -->
+        <nav class="nav-main" aria-label="Main navigation">
+          <ul class="nav-main__list">
+            <li class="nav-main__item">
+              <a href="index.html" class="nav-main__link">Home</a>
+            </li>
+            <li class="nav-main__item">
+              <a href="venues.html" class="nav-main__link">Venues</a>
+            </li>
+            <li class="nav-main__item active">
+              <a href="book-tickets.html" class="nav-main__link"
+                >Book Tickets</a
+              >
+            </li>
+            <li class="nav-main__item">
+              <a href="events.html" class="nav-main__link">Events</a>
+            </li>
+            <li class="nav-main__item">
+              <a href="news.html" class="nav-main__link">News</a>
+            </li>
+            <li class="nav-main__item">
+              <a href="contact.html" class="nav-main__link">Contact Us</a>
+            </li>
+            <li class="nav-main__item">
+              <a href="shop.html" class="nav-main__link">Shop</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Controls -->
+        <div class="header__controls">
+          <button class="btn-lang" aria-label="Switch language">EN</button>
+          <button
+            class="btn-theme"
+            onclick="toggleTheme()"
+            aria-label="Toggle theme"
+          >
+            <i class="bi bi-sun btn-theme__icon--sun"></i>
+            <i class="bi bi-moon btn-theme__icon--moon"></i>
+          </button>
+          <button
+            class="btn-hamburger"
+            id="btnHamburger"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- /header -->
+
+    <!-- Mobile backdrop -->
+    <div class="mobile-backdrop" id="mobileBackdrop"></div>
+
+    <!-- Mobile drawer -->
+    <nav
+      class="mobile-drawer"
+      id="mobileDrawer"
+      aria-label="Mobile navigation"
+      aria-hidden="true"
+    >
+      <div class="mobile-drawer__head">
+        <a href="index.html" class="mobile-drawer__logo">
+          <img
+            src="assets/images/logo-dark.svg"
+            alt="Jibal Al Hajar"
+            class="logo-dark"
+          />
+          <img
+            src="assets/images/logo-light.svg"
+            alt="Jibal Al Hajar"
+            class="logo-light"
+          />
+        </a>
+        <button
+          class="mobile-drawer__close"
+          id="btnDrawerClose"
+          aria-label="Close menu"
+        >
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+
+      <ul class="mobile-drawer__list">
+        <li class="mobile-drawer__item">
+          <a href="index.html" class="mobile-drawer__link">Home</a>
+        </li>
+        <li class="mobile-drawer__item">
+          <a href="venues.html" class="mobile-drawer__link">Venues</a>
+        </li>
+        <li class="mobile-drawer__item active">
+          <a href="book-tickets.html" class="mobile-drawer__link"
+            >Book Tickets</a
+          >
+        </li>
+        <li class="mobile-drawer__item">
+          <a href="events.html" class="mobile-drawer__link">Events</a>
+        </li>
+        <li class="mobile-drawer__item">
+          <a href="news.html" class="mobile-drawer__link">News</a>
+        </li>
+        <li class="mobile-drawer__item">
+          <a href="contact.html" class="mobile-drawer__link">Contact Us</a>
+        </li>
+        <li class="mobile-drawer__item">
+          <a href="shop.html" class="mobile-drawer__link">Shop</a>
+        </li>
+      </ul>
+
+      <div class="mobile-drawer__foot">
+        <button class="btn-lang">EN</button>
+        <button
+          class="btn-theme"
+          onclick="toggleTheme()"
+          aria-label="Toggle theme"
+        >
+          <i class="bi bi-sun btn-theme__icon--sun"></i>
+          <i class="bi bi-moon btn-theme__icon--moon"></i>
+        </button>
+      </div>
+    </nav>
+
+    <main class="main-inner">
+      <!-- ══════════════════════ PAGE TITLE ════════════════════════════════ -->
+      <section class="bt-section-header">
+        <div class="container">
+          <h1 class="bt-page-title">Book Ticket</h1>
+        </div>
+      </section>
+      <!-- /bt-section-header -->
+
+      <!-- ══════════════════════ EVENT BANNER ═════════════════════════════ -->
+      <section class="bt-section-event">
+        <div class="container">
+          <div class="bt-event-card" data-aos="fade-up" data-aos-duration="700">
+            <!-- Left: venue image -->
+            <div class="bt-event-card__visual">
+              <img
+                src="assets/images/event-item-01.png"
+                alt="Al Mirani Fort musical event"
+                class="bt-event-card__img"
+              />
+            </div>
+
+            <!-- Center: text -->
+            <div class="bt-event-card__content">
+              <h2 class="bt-event-card__title">Musical Event</h2>
+              <a href="events.html" class="bt-event-card__more">
+                More Info <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+
+            <!-- Right: CTA -->
+            <div class="bt-event-card__cta-wrap">
+              <a href="#" class="bt-btn-book-event">Book Event</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /bt-section-event -->
+
+      <!-- ══════════════════════ SELECT VENUES ════════════════════════════ -->
+      <section class="bt-section-venues">
+        <div class="container">
+          <h2 class="bt-section-title">Select Venues</h2>
+
+          <div class="bt-venue-grid">
+            <!-- Venue 1: Al Mirani Fort — selected by default -->
+            <label
+              class="bt-venue-card is-selected"
+              data-venue="al-mirani"
+              data-aos="fade-up"
+              data-aos-duration="600"
+            >
+              <input
+                type="radio"
+                name="bt_venue"
+                value="al-mirani"
+                class="bt-venue-card__radio"
+                checked
+              />
+              <div class="bt-venue-card__glow" aria-hidden="true"></div>
+              <div class="bt-venue-card__top">
+                <span class="bt-venue-card__name">Al Mirani Fort</span>
+                <span class="bt-venue-card__radio-indicator"></span>
+              </div>
+              <div class="bt-venue-card__img-wrap">
+                <img
+                  src="assets/images/venue-input-item-01.png"
+                  alt="Al Mirani Fort"
+                  class="bt-venue-card__img"
+                />
+              </div>
+              <div class="bt-venue-card__footer">
+                <button
+                  type="button"
+                  class="bt-venue-more-btn"
+                  onclick="event.preventDefault()"
+                >
+                  <i class="bi bi-chevron-down"></i> More Info
+                </button>
+              </div>
+            </label>
+
+            <!-- Venue 2: Muttrah Fort -->
+            <label
+              class="bt-venue-card"
+              data-venue="muttrah"
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-delay="80"
+            >
+              <input
+                type="radio"
+                name="bt_venue"
+                value="muttrah"
+                class="bt-venue-card__radio"
+              />
+              <div class="bt-venue-card__glow" aria-hidden="true"></div>
+              <div class="bt-venue-card__top">
+                <span class="bt-venue-card__name">Muttrah Fort</span>
+                <span class="bt-venue-card__radio-indicator"></span>
+              </div>
+              <div class="bt-venue-card__img-wrap">
+                <img
+                  src="assets/images/venue-input-item-02.png"
+                  alt="Muttrah Fort"
+                  class="bt-venue-card__img"
+                />
+              </div>
+              <div class="bt-venue-card__footer">
+                <button
+                  type="button"
+                  class="bt-venue-more-btn"
+                  onclick="event.preventDefault()"
+                >
+                  <i class="bi bi-chevron-down"></i> More Info
+                </button>
+              </div>
+            </label>
+
+            <!-- Venue 3: Al Jalali Fort — Coming Soon -->
+            <label
+              class="bt-venue-card is-disabled"
+              data-venue="al-jalali"
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-delay="160"
+            >
+              <input
+                type="radio"
+                name="bt_venue"
+                value="al-jalali"
+                class="bt-venue-card__radio"
+                disabled
+              />
+              <div class="bt-venue-card__glow" aria-hidden="true"></div>
+              <div class="bt-venue-card__top">
+                <span class="bt-venue-card__name">Al Jalali Fort</span>
+                <span class="bt-venue-card__radio-indicator"></span>
+              </div>
+              <div class="bt-venue-card__img-wrap">
+                <img
+                  src="assets/images/venue-input-item-03.png"
+                  alt="Al Jalali Fort"
+                  class="bt-venue-card__img"
+                />
+                <div class="bt-venue-card__coming-soon">Coming Soon</div>
+              </div>
+              <div class="bt-venue-card__footer">
+                <button type="button" class="bt-venue-more-btn" disabled>
+                  <i class="bi bi-chevron-down"></i> More Info
+                </button>
+              </div>
+            </label>
+          </div>
+        </div>
+      </section>
+      <!-- /bt-section-venues -->
+
+      <!-- ══════════════════════ SELECT PACKAGE ════════════════════════════ -->
+      <section class="bt-section-packages">
+        <div class="container">
+          <h2 class="bt-section-title">Select Package</h2>
+
+          <div class="bt-package-grid">
+            <!-- Package 1: Fort Visit — selected -->
+            <div
+              class="bt-package-card"
+              data-package="fort-visit"
+              data-aos="fade-up"
+              data-aos-duration="600"
+            >
+              <img
+                src="assets/images/package-item-bg.svg"
+                alt=""
+                class="bt-package-card__pattern"
+                aria-hidden="true"
+              />
+              <p class="bt-package-card__type">Single Site</p>
+              <h3 class="bt-package-card__title">Fort Visit</h3>
+              <div class="bt-package-card__cta">
+                <button
+                  type="button"
+                  class="bt-btn-package bt-btn-package--chosen"
+                  data-package-btn="fort-visit"
+                >
+                  <i class="bi bi-check-lg"></i> Chosen Package
+                </button>
+              </div>
+              <ul class="bt-package-card__features">
+                <li class="bt-package-card__feature">
+                  Access to public events when available
+                </li>
+                <li class="bt-package-card__feature">Access to 1 Fort</li>
+                <li class="bt-package-card__feature">Valid for 3 Days</li>
+                <li class="bt-package-card__feature">10% Discount (in App)</li>
+              </ul>
+            </div>
+
+            <!-- Package 2: Heritage Journey — featured -->
+            <div
+              class="bt-package-card bt-package-card--featured"
+              data-package="heritage-journey"
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-delay="80"
+            >
+              <div class="bt-package-card__glow" aria-hidden="true"></div>
+              <img
+                src="assets/images/package-item-bg-premium.svg"
+                alt=""
+                class="bt-package-card__pattern"
+                aria-hidden="true"
+              />
+              <p class="bt-package-card__type">Premium Experience</p>
+              <h3 class="bt-package-card__title">Heritage Journey</h3>
+              <div class="bt-package-card__cta">
+                <button
+                  type="button"
+                  class="bt-btn-package"
+                  data-package-btn="heritage-journey"
+                >
+                  Choose Package
+                </button>
+              </div>
+              <ul class="bt-package-card__features">
+                <li class="bt-package-card__feature">
+                  Access to public events when available
+                </li>
+                <li class="bt-package-card__feature">Access to All Forts</li>
+                <li class="bt-package-card__feature">Valid for 1 Month</li>
+                <li class="bt-package-card__feature">40% Discount</li>
+                <li class="bt-package-card__feature">10% Shop Discount</li>
+              </ul>
+            </div>
+
+            <!-- Package 3: Explorer Pass -->
+            <div
+              class="bt-package-card"
+              data-package="explorer-pass"
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-delay="160"
+            >
+              <img
+                src="assets/images/package-item-bg.svg"
+                alt=""
+                class="bt-package-card__pattern"
+                aria-hidden="true"
+              />
+              <p class="bt-package-card__type">2 Sites Bundle</p>
+              <h3 class="bt-package-card__title">Explorer Pass</h3>
+              <div class="bt-package-card__cta">
+                <button
+                  type="button"
+                  class="bt-btn-package"
+                  data-package-btn="explorer-pass"
+                >
+                  Choose Package
+                </button>
+              </div>
+              <ul class="bt-package-card__features">
+                <li class="bt-package-card__feature">
+                  Access to public events when available
+                </li>
+                <li class="bt-package-card__feature">Access to 2 Forts</li>
+                <li class="bt-package-card__feature">Valid for 1 Week</li>
+                <li class="bt-package-card__feature">20% Discount</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /bt-section-packages -->
+
+      <!-- ══════════════════════ SELECT VISITORS ═══════════════════════════ -->
+      <section class="bt-section-visitors">
+        <div class="container">
+          <h2 class="bt-section-title">Select Visitors</h2>
+
+          <div
+            class="bt-visitors-card"
+            data-aos="fade-up"
+            data-aos-duration="700"
+          >
+            <!-- Visitor Type -->
+            <div class="bt-visitor-type">
+              <span class="bt-visitor-type__label">Visitor Type</span>
+              <div class="bt-visitor-type__btns">
+                <button
+                  type="button"
+                  class="bt-visitor-type-btn is-active"
+                  data-visitor-type="Omani"
+                  data-adult-price="3.000"
+                  data-child-price="1.500"
+                >
+                  Omani
+                </button>
+                <button
+                  type="button"
+                  class="bt-visitor-type-btn"
+                  data-visitor-type="GCC"
+                  data-adult-price="5.000"
+                  data-child-price="2.500"
+                >
+                  GCC
+                </button>
+                <button
+                  type="button"
+                  class="bt-visitor-type-btn"
+                  data-visitor-type="Resident"
+                  data-adult-price="4.000"
+                  data-child-price="2.000"
+                >
+                  Resident
+                </button>
+                <button
+                  type="button"
+                  class="bt-visitor-type-btn"
+                  data-visitor-type="Non-Omani"
+                  data-adult-price="7.000"
+                  data-child-price="3.500"
+                >
+                  Non-Omani
+                </button>
+              </div>
+            </div>
+
+            <!-- Visitor Age -->
+            <div class="bt-visitor-age">
+              <span class="bt-visitor-age__label">Visitor Age</span>
+
+              <!-- Adults row -->
+              <div class="bt-visitor-age__row">
+                <div class="bt-visitor-age__info">
+                  <span class="bt-visitor-age__category">Adult</span>
+                  <span class="bt-visitor-age__price" id="bt-adult-price"
+                    >3.000 OR</span
+                  >
+                </div>
+                <div class="bt-counter" id="bt-counter-adult">
+                  <button
+                    type="button"
+                    class="bt-counter__btn"
+                    data-counter="adult"
+                    data-action="dec"
+                    aria-label="Decrease adult count"
+                  >
+                    &minus;
+                  </button>
+                  <span class="bt-counter__val" id="bt-adult-count">2</span>
+                  <button
+                    type="button"
+                    class="bt-counter__btn"
+                    data-counter="adult"
+                    data-action="inc"
+                    aria-label="Increase adult count"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+
+              <!-- Children row -->
+              <div class="bt-visitor-age__row">
+                <div class="bt-visitor-age__info">
+                  <span class="bt-visitor-age__category">Children</span>
+                  <span class="bt-visitor-age__price" id="bt-child-price"
+                    >1.500 OR</span
+                  >
+                </div>
+                <div class="bt-counter" id="bt-counter-child">
+                  <button
+                    type="button"
+                    class="bt-counter__btn"
+                    data-counter="child"
+                    data-action="dec"
+                    aria-label="Decrease children count"
+                  >
+                    &minus;
+                  </button>
+                  <span class="bt-counter__val" id="bt-child-count">1</span>
+                  <button
+                    type="button"
+                    class="bt-counter__btn"
+                    data-counter="child"
+                    data-action="inc"
+                    aria-label="Increase children count"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Add another visitor type -->
+            <button type="button" class="bt-btn-add-visitor">
+              + Add Another Visitor Type
+            </button>
+
+            <!-- Booking summary -->
+            <div class="bt-summary" id="bt-summary">
+              <div class="bt-summary__row">
+                <span class="bt-summary__label" id="bt-summary-adult-label"
+                  >Omani Adults</span
+                >
+                <span class="bt-summary__value" id="bt-summary-adult-value"
+                  >6.000 OR</span
+                >
+              </div>
+              <div class="bt-summary__row">
+                <span class="bt-summary__label" id="bt-summary-child-label"
+                  >Omani Children</span
+                >
+                <span class="bt-summary__value" id="bt-summary-child-value"
+                  >1.500 OR</span
+                >
+              </div>
+              <div class="bt-summary__divider"></div>
+              <div class="bt-summary__total">
+                <span class="bt-summary__total-icon"
+                  ><img src="assets/images/total-icon.svg" alt="Icon"
+                /></span>
+                <span
+                  class="bt-summary__total-label"
+                  id="bt-summary-total-label"
+                  >Total &mdash; (Single Site)</span
+                >
+                <span
+                  class="bt-summary__total-value"
+                  id="bt-summary-total-value"
+                  >7.500 OR</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /bt-section-visitors -->
+      <!-- ══════════════════════ SELECT DATE ════════════════════════════════ -->
+      <section class="bt-section-date">
+        <div class="container">
+          <h2 class="bt-section-title">Select Date</h2>
+
+          <div
+            class="bt-calendar-card"
+            data-aos="fade-up"
+            data-aos-duration="700"
+          >
+            <!-- Nav header -->
+            <div class="bt-cal-head">
+              <button
+                type="button"
+                class="bt-cal-nav-btn"
+                id="btCalPrev"
+                aria-label="Previous month"
+              >
+                <i class="bi bi-chevron-left"></i>
+              </button>
+              <span class="bt-cal-head-label" id="btCalLabel">Today</span>
+              <button
+                type="button"
+                class="bt-cal-nav-btn"
+                id="btCalNext"
+                aria-label="Next month"
+              >
+                <i class="bi bi-chevron-right"></i>
+              </button>
+            </div>
+
+            <!-- Two-month grid — rendered by JS -->
+            <div class="bt-calendar-months" id="btCalMonths"></div>
+          </div>
+        </div>
+      </section>
+      <!-- /bt-section-date -->
+
+      <!-- ══════════════════════ YOUR INFORMATION ══════════════════════════ -->
+      <section class="bt-section-info">
+        <div class="container">
+          <h2 class="bt-section-title">Your Information</h2>
+
+          <div class="bt-info-card" data-aos="fade-up" data-aos-duration="700">
+            <!-- Phone -->
+            <div class="bt-info-field">
+              <label class="bt-info-label" for="bt-phone">
+                Phone Number <span class="bt-info-required">*</span>
+              </label>
+              <div class="bt-info-phone-wrap">
+                <span class="bt-info-flag">
+                  <img
+                    src="assets/images/flag-om.svg"
+                    alt="Oman"
+                    class="bt-info-flag-img"
+                  />
+                </span>
+                <input
+                  type="tel"
+                  id="bt-phone"
+                  class="bt-info-input"
+                  placeholder="Phone Number"
+                />
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="bt-info-field">
+              <label class="bt-info-label" for="bt-email">
+                Email Address
+                <span class="bt-info-optional">(Optional)</span>
+              </label>
+              <input
+                type="email"
+                id="bt-email"
+                class="bt-info-input"
+                placeholder="Email Address"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /bt-section-info -->
+
+      <!-- ══════════════════════ BOOKING SUMMARY ═══════════════════════════ -->
+      <section class="bt-section-booking-summary">
+        <div class="container">
+          <h2 class="bt-section-title">Booking Summary</h2>
+
+          <div
+            class="bt-booking-summary-card"
+            data-aos="fade-up"
+            data-aos-duration="700"
+          >
+            <div class="bt-booking-row">
+              <span class="bt-booking-row__label">
+                <span class="bt-booking-row__icon"
+                  ><img src="assets/images/summary-icon-01.svg" alt=""
+                /></span>
+                Package
+              </span>
+              <span class="bt-booking-row__value" id="bts-package"
+                >Fort Visit</span
+              >
+            </div>
+
+            <div class="bt-booking-row">
+              <span class="bt-booking-row__label">
+                <span class="bt-booking-row__icon"
+                  ><img src="assets/images/summary-icon-02.svg" alt=""
+                /></span>
+                Sites
+              </span>
+              <span class="bt-booking-row__value" id="bts-sites"
+                >Al Mirani Fort</span
+              >
+            </div>
+
+            <div class="bt-booking-row">
+              <span class="bt-booking-row__label">
+                <span class="bt-booking-row__icon"
+                  ><img src="assets/images/summary-icon-03.svg" alt=""
+                /></span>
+                Date
+              </span>
+              <span
+                class="bt-booking-row__value bt-booking-row__value--muted"
+                id="bts-date"
+                >&mdash;</span
+              >
+            </div>
+
+            <div class="bt-booking-row">
+              <span class="bt-booking-row__label">
+                <span class="bt-booking-row__icon"
+                  ><img src="assets/images/summary-icon-04.svg" alt=""
+                /></span>
+                Visitor Type
+              </span>
+              <span class="bt-booking-row__value" id="bts-visitor-type"
+                >Omani</span
+              >
+            </div>
+
+            <div class="bt-booking-row">
+              <span class="bt-booking-row__label">
+                <span class="bt-booking-row__icon"
+                  ><img src="assets/images/summary-icon-05.svg" alt=""
+                /></span>
+                Visitors
+              </span>
+              <span class="bt-booking-row__value" id="bts-visitors"
+                >2 Adults &mdash; 1 Children</span
+              >
+            </div>
+
+            <div class="bt-booking-row">
+              <span class="bt-booking-row__label">
+                <span class="bt-booking-row__icon"
+                  ><img src="assets/images/summary-icon-06.svg" alt=""
+                /></span>
+                Discount
+              </span>
+              <span class="bt-booking-row__value bt-booking-row__value--muted"
+                >&mdash;</span
+              >
+            </div>
+
+            <div class="bt-booking-row bt-booking-row--total">
+              <span class="bt-booking-row__label">
+                <span class="bt-booking-row__icon"
+                  ><img src="assets/images/summary-icon-07.svg" alt=""
+                /></span>
+                Total Price
+              </span>
+              <span class="bt-booking-row__value" id="bts-total">7.500 OR</span>
+            </div>
+
+            <div class="bt-review-pay-wrap">
+              <button type="button" class="bt-btn-review-pay">
+                Review &amp; Pay
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /bt-section-booking-summary -->
+    </main>
+
+    <!-- ════════════════════════════ FOOTER ═════════════════════════════════ -->
+    <footer class="footer">
+      <div class="footer__bg"></div>
+      <div class="fort-intro__icon">
+        <img src="assets/images/secion-icon.svg" alt="" aria-hidden="true" />
+      </div>
+      <div class="footer__visual">
+        <img
+          src="assets/images/fort-footer.png"
+          alt="Jibal Al Hajar Fort"
+          class="footer__fort-img"
+        />
+        <div class="footer__fade" aria-hidden="true"></div>
+      </div>
+      <div class="footer__bar">
+        <div class="footer__pill">
+          <a href="index.html" class="footer__logo">
+            <img
+              src="assets/images/alhajar-logo-footer.svg"
+              alt="Jibal Al Hajar"
+            />
+          </a>
+          <span class="footer__sep" aria-hidden="true"></span>
+          <nav class="footer__nav" aria-label="Footer navigation">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a href="venues.html" class="footer__nav-link">Sites</a>
+              </li>
+              <li class="footer__nav-sep" aria-hidden="true"></li>
+              <li class="footer__nav-item">
+                <a href="book-tickets.html" class="footer__nav-link"
+                  >Book Tickets</a
+                >
+              </li>
+              <li class="footer__nav-sep" aria-hidden="true"></li>
+              <li class="footer__nav-item">
+                <a href="events.html" class="footer__nav-link">Events</a>
+              </li>
+              <li class="footer__nav-sep" aria-hidden="true"></li>
+              <li class="footer__nav-item">
+                <a href="news.html" class="footer__nav-link">News</a>
+              </li>
+              <li class="footer__nav-sep" aria-hidden="true"></li>
+              <li class="footer__nav-item">
+                <a href="contact.html" class="footer__nav-link">Contact Us</a>
+              </li>
+              <li class="footer__nav-sep" aria-hidden="true"></li>
+              <li class="footer__nav-item">
+                <a href="shop.html" class="footer__nav-link">Shop</a>
+              </li>
+              <li class="footer__nav-sep" aria-hidden="true"></li>
+              <li class="footer__nav-item">
+                <a href="#section-download-app" class="footer__nav-link"
+                  >Download App</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Return to top -->
+    <a href="javascript:;" id="return-top" class="return-top">
+      <svg class="return-top__ring" viewBox="0 0 50 50" aria-hidden="true">
+        <circle class="return-top__ring-track" cx="25" cy="25" r="22" />
+        <circle class="return-top__ring-progress" cx="25" cy="25" r="22" />
+      </svg>
+      <img src="assets/images/up-icon.svg" alt="Back to top" />
+    </a>
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Smooth Scroll -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <!-- AOS -->
+    <script src="assets/js/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+    <script>
+      AOS.init({ once: true, offset: 60 });
+
+      // ── Venue selection ──────────────────────────────────────────────────
+      document
+        .querySelectorAll(".bt-venue-card:not(.is-disabled)")
+        .forEach(function (card) {
+          card.addEventListener("click", function () {
+            document.querySelectorAll(".bt-venue-card").forEach(function (c) {
+              c.classList.remove("is-selected");
+            });
+            this.classList.add("is-selected");
+          });
+        });
+
+      // ── Package selection ────────────────────────────────────────────────
+      document.querySelectorAll("[data-package-btn]").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          if (this.classList.contains("bt-btn-package--chosen")) return;
+          document.querySelectorAll("[data-package-btn]").forEach(function (b) {
+            b.classList.remove("bt-btn-package--chosen");
+            b.innerHTML = "Choose Package";
+          });
+          this.classList.add("bt-btn-package--chosen");
+          this.innerHTML = '<i class="bi bi-check-lg"></i> Chosen Package';
+          updateSummaryPackageLabel();
+        });
+      });
+
+      function updateSummaryPackageLabel() {
+        var chosenBtn = document.querySelector(
+          "[data-package-btn].bt-btn-package--chosen",
+        );
+        if (!chosenBtn) return;
+        var card = chosenBtn.closest("[data-package]");
+        if (!card) return;
+        var typeEl = card.querySelector(".bt-package-card__type");
+        var label = typeEl ? typeEl.textContent.trim() : "";
+        document.getElementById("bt-summary-total-label").innerHTML =
+          "Total &mdash; (" + label + ")";
+      }
+
+      // ── Visitor type selection ───────────────────────────────────────────
+      var btVisitorType = "Omani";
+      var btAdultPrice = 3.0;
+      var btChildPrice = 1.5;
+
+      document.querySelectorAll(".bt-visitor-type-btn").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          document
+            .querySelectorAll(".bt-visitor-type-btn")
+            .forEach(function (b) {
+              b.classList.remove("is-active");
+            });
+          this.classList.add("is-active");
+          btVisitorType = this.getAttribute("data-visitor-type");
+          btAdultPrice = parseFloat(this.getAttribute("data-adult-price"));
+          btChildPrice = parseFloat(this.getAttribute("data-child-price"));
+
+          document.getElementById("bt-adult-price").textContent =
+            formatPrice(btAdultPrice) + " OR";
+          document.getElementById("bt-child-price").textContent =
+            formatPrice(btChildPrice) + " OR";
+          updateSummary();
+        });
+      });
+
+      // ── Visitor counters ─────────────────────────────────────────────────
+      var btAdultCount = 2;
+      var btChildCount = 1;
+
+      document.querySelectorAll(".bt-counter__btn").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          var counter = this.getAttribute("data-counter");
+          var action = this.getAttribute("data-action");
+
+          if (counter === "adult") {
+            if (action === "inc") btAdultCount++;
+            if (action === "dec" && btAdultCount > 0) btAdultCount--;
+            document.getElementById("bt-adult-count").textContent =
+              btAdultCount;
+          } else {
+            if (action === "inc") btChildCount++;
+            if (action === "dec" && btChildCount > 0) btChildCount--;
+            document.getElementById("bt-child-count").textContent =
+              btChildCount;
+          }
+          updateSummary();
+          updateDecButtons();
+        });
+      });
+
+      function updateDecButtons() {
+        var adultDec = document.querySelector(
+          '[data-counter="adult"][data-action="dec"]',
+        );
+        var childDec = document.querySelector(
+          '[data-counter="child"][data-action="dec"]',
+        );
+        if (adultDec) adultDec.disabled = btAdultCount === 0;
+        if (childDec) childDec.disabled = btChildCount === 0;
+      }
+
+      function formatPrice(val) {
+        return val.toFixed(3);
+      }
+
+      function updateSummary() {
+        var adultTotal = btAdultCount * btAdultPrice;
+        var childTotal = btChildCount * btChildPrice;
+        var grandTotal = adultTotal + childTotal;
+
+        document.getElementById("bt-summary-adult-label").textContent =
+          btVisitorType + " Adults";
+        document.getElementById("bt-summary-child-label").textContent =
+          btVisitorType + " Children";
+        document.getElementById("bt-summary-adult-value").textContent =
+          formatPrice(adultTotal) + " OR";
+        document.getElementById("bt-summary-child-value").textContent =
+          formatPrice(childTotal) + " OR";
+        document.getElementById("bt-summary-total-value").textContent =
+          formatPrice(grandTotal) + " OR";
+
+        // Mirror into final booking summary card
+        updateBookingCard();
+      }
+
+      // ── Booking summary card sync ────────────────────────────────────────
+      function updateBookingCard() {
+        var grandTotal =
+          btAdultCount * btAdultPrice + btChildCount * btChildPrice;
+
+        // Package name
+        var chosenBtn = document.querySelector(
+          "[data-package-btn].bt-btn-package--chosen",
+        );
+        if (chosenBtn) {
+          var pkgCard = chosenBtn.closest("[data-package]");
+          var pkgTitle = pkgCard
+            ? pkgCard.querySelector(".bt-package-card__title")
+            : null;
+          var pkgEl = document.getElementById("bts-package");
+          if (pkgEl && pkgTitle)
+            pkgEl.textContent = pkgTitle.textContent.trim();
+        }
+
+        // Selected venue
+        var selVenue = document.querySelector(
+          ".bt-venue-card.is-selected .bt-venue-card__name",
+        );
+        var sitesEl = document.getElementById("bts-sites");
+        if (sitesEl && selVenue)
+          sitesEl.textContent = selVenue.textContent.trim();
+
+        // Visitor type
+        var vtEl = document.getElementById("bts-visitor-type");
+        if (vtEl) vtEl.textContent = btVisitorType;
+
+        // Visitors breakdown
+        var visEl = document.getElementById("bts-visitors");
+        if (visEl)
+          visEl.textContent =
+            btAdultCount + " Adults — " + btChildCount + " Children";
+
+        // Total
+        var totEl = document.getElementById("bts-total");
+        if (totEl) totEl.textContent = formatPrice(grandTotal) + " OR";
+      }
+
+      updateDecButtons();
+      updateBookingCard();
+
+      // ── Calendar ─────────────────────────────────────────────────────────
+      var MONTH_NAMES = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ];
+
+      // Calendar view state (start at current month)
+      var _today = new Date();
+      var btCalYear = _today.getFullYear();
+      var btCalMonth = _today.getMonth();
+      var btSelectedDate = null;
+
+      // Sample event data — scattered pattern matching the design screenshot
+      var btCalEvents = (function () {
+        var e = {};
+        function mark(y, m, days, type) {
+          days.forEach(function (d) {
+            var k =
+              y +
+              "-" +
+              String(m + 1).padStart(2, "0") +
+              "-" +
+              String(d).padStart(2, "0");
+            e[k] = type;
+          });
+        }
+        // Current month
+        mark(btCalYear, btCalMonth, [4, 18], "exhibition");
+        mark(btCalYear, btCalMonth, [5, 13, 14, 22, 28], "public");
+        mark(btCalYear, btCalMonth, [6, 7, 10, 27], "private");
+        // Next month
+        mark(btCalYear, btCalMonth + 1, [3, 17], "exhibition");
+        mark(btCalYear, btCalMonth + 1, [4, 12, 13, 21, 27], "public");
+        mark(btCalYear, btCalMonth + 1, [5, 9, 26], "private");
+        return e;
+      })();
+
+      function getPackageValidity() {
+        var chosenBtn = document.querySelector(
+          "[data-package-btn].bt-btn-package--chosen",
+        );
+        if (!chosenBtn) return 3;
+        var pkg = chosenBtn.getAttribute("data-package-btn");
+        if (pkg === "heritage-journey") return 30;
+        if (pkg === "explorer-pass") return 7;
+        return 3;
+      }
+
+      function renderCalendar() {
+        var container = document.getElementById("btCalMonths");
+        if (!container) return;
+        container.innerHTML = "";
+
+        var todayStr =
+          _today.getFullYear() +
+          "-" +
+          String(_today.getMonth() + 1).padStart(2, "0") +
+          "-" +
+          String(_today.getDate()).padStart(2, "0");
+
+        for (var offset = 0; offset < 2; offset++) {
+          var rawMonth = btCalMonth + offset;
+          var y = btCalYear + Math.floor(rawMonth / 12);
+          var m = ((rawMonth % 12) + 12) % 12;
+
+          var monthEl = document.createElement("div");
+          monthEl.className = "bt-cal-month";
+
+          // Title
+          var titleEl = document.createElement("h3");
+          titleEl.className = "bt-cal-month__title";
+          titleEl.textContent = MONTH_NAMES[m] + " " + y;
+          monthEl.appendChild(titleEl);
+
+          // Legend
+          var legEl = document.createElement("div");
+          legEl.className = "bt-cal-legend";
+          legEl.innerHTML =
+            '<span class="bt-cal-legend__item"><span class="bt-cal-legend__icon bt-cal-legend__icon--exhibition"><img src="assets/images/date-exhibition-icon.svg" alt=""></span> = Exhibition</span>' +
+            '<span class="bt-cal-legend__item"><span class="bt-cal-legend__icon bt-cal-legend__icon--public"><img src="assets/images/date-public-icon.svg" alt=""></span> = Public Event</span>' +
+            '<span class="bt-cal-legend__item"><span class="bt-cal-legend__icon bt-cal-legend__icon--private"><img src="assets/images/date-private-icon.svg" alt=""></span> = Private Event</span>';
+          monthEl.appendChild(legEl);
+
+          // Grid
+          var gridEl = document.createElement("div");
+          gridEl.className = "bt-cal-grid";
+
+          // Weekday headers
+          ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"].forEach(
+            function (wd) {
+              var wdEl = document.createElement("div");
+              wdEl.className = "bt-cal-weekday";
+              wdEl.textContent = wd;
+              gridEl.appendChild(wdEl);
+            },
+          );
+
+          // Empty cells before month starts
+          var firstDay = new Date(y, m, 1).getDay();
+          for (var i = 0; i < firstDay; i++) {
+            var emp = document.createElement("div");
+            emp.className = "bt-date-cell bt-date-cell--empty";
+            gridEl.appendChild(emp);
+          }
+
+          // Day cells
+          var daysInMonth = new Date(y, m + 1, 0).getDate();
+          for (var day = 1; day <= daysInMonth; day++) {
+            var dateStr =
+              y +
+              "-" +
+              String(m + 1).padStart(2, "0") +
+              "-" +
+              String(day).padStart(2, "0");
+            var evType = btCalEvents[dateStr];
+            var isToday = dateStr === todayStr;
+            var isSel = dateStr === btSelectedDate;
+
+            var cell = document.createElement("div");
+            var cls = ["bt-date-cell"];
+            if (evType) cls.push("bt-date-cell--" + evType);
+            if (isToday) cls.push("bt-date-cell--today");
+            if (isSel) cls.push("bt-date-cell--selected");
+            cell.className = cls.join(" ");
+
+            if (evType) {
+              var iconEl = document.createElement("img");
+              iconEl.className = "bt-date-cell__icon";
+              iconEl.src = "assets/images/date-" + evType + "-icon.svg";
+              iconEl.alt = "";
+              cell.appendChild(iconEl);
+            }
+
+            var numEl = document.createElement("span");
+            numEl.className = "bt-date-cell__num";
+            numEl.textContent = day;
+            cell.appendChild(numEl);
+
+            cell.addEventListener(
+              "click",
+              (function (ds) {
+                return function () {
+                  btSelectDate(ds);
+                };
+              })(dateStr),
+            );
+
+            gridEl.appendChild(cell);
+          }
+
+          monthEl.appendChild(gridEl);
+          container.appendChild(monthEl);
+        }
+
+        // Update header label
+        var labelEl = document.getElementById("btCalLabel");
+        if (labelEl) {
+          labelEl.textContent =
+            "Today " + _today.getDate() + " " + MONTH_NAMES[_today.getMonth()];
+        }
+      }
+
+      function btSelectDate(dateStr) {
+        btSelectedDate = dateStr;
+        renderCalendar();
+
+        // Update booking summary date row
+        var dateEl = document.getElementById("bts-date");
+        if (dateEl) {
+          var parts = dateStr.split("-");
+          var formatted = parts[2] + "/" + parts[1] + "/" + parts[0];
+          var validity = getPackageValidity();
+          var suffix = validity >= 30 ? "1 month" : validity + " days";
+          dateEl.textContent = formatted + " (Valid for " + suffix + ")";
+          dateEl.classList.remove("bt-booking-row__value--muted");
+        }
+      }
+
+      // Nav buttons
+      document
+        .getElementById("btCalPrev")
+        .addEventListener("click", function () {
+          btCalMonth--;
+          if (btCalMonth < 0) {
+            btCalMonth = 11;
+            btCalYear--;
+          }
+          renderCalendar();
+        });
+      document
+        .getElementById("btCalNext")
+        .addEventListener("click", function () {
+          btCalMonth++;
+          if (btCalMonth > 11) {
+            btCalMonth = 0;
+            btCalYear++;
+          }
+          renderCalendar();
+        });
+
+      renderCalendar();
+    </script>
+  </body>
+</html>

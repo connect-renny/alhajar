@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Jibal Al Hajar Heritage Collection — Discover Oman's Venues Heritage"
+    />
+    <title>Venues — Jibal Al Hajar</title>
+    <link rel="icon" href="favicon.ico" />
+
+    <!-- Bootstrap Icons -->
+    <link href="assets/css/bootstrap-icons.min.css" rel="stylesheet" />
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Swiper -->
+    <link href="assets/css/swiper-bundle.css" rel="stylesheet" />
+    <!-- AOS -->
+    <link href="assets/css/aos.css" rel="stylesheet" />
+    <!-- Custom styles -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ═══════════════════════════ HEADER ═══════════════════════════════════ -->
+    <header class="header" id="header">
+      <div class="header__inner">
+        <!-- Logo -->
+        <a href="index.html" class="header__logo">
+          <img
+            src="assets/images/logo-dark.svg"
+            alt="Jibal Al Hajar"
+            class="logo-dark"
+          />
+          <img
+            src="assets/images/logo-light.svg"
+            alt="Jibal Al Hajar"
+            class="logo-light"
+          />
+        </a>
+
+        <!-- Nav pill -->
+        <nav class="nav-main" aria-label="Main navigation">
+          <ul class="nav-main__list">
+            <li class="nav-main__item">
+              <a href="index.html" class="nav-main__link">Home</a>
+            </li>
+            <li class="nav-main__item active">
+              <a href="venues.html" class="nav-main__link">Venues</a>
+            </li>
+            <li class="nav-main__item">
+              <a href="book-tickets.html" class="nav-main__link"
+                >Book Tickets</a
+              >
+            </li>
+            <li class="nav-main__item">
+              <a href="events.html" class="nav-main__link">Events</a>
+            </li>
+            <li class="nav-main__item">
+              <a href="news.html" class="nav-main__link">News</a>
+            </li>
+            <li class="nav-main__item">
+              <a href="contact.html" class="nav-main__link">Contact Us</a>
+            </li>
+            <li class="nav-main__item">
+              <a href="shop.html" class="nav-main__link">Shop</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Controls -->
+        <div class="header__controls">
+          <button class="btn-lang" aria-label="Switch language">EN</button>
+          <button
+            class="btn-theme"
+            onclick="toggleTheme()"
+            aria-label="Toggle theme"
+          >
+            <i class="bi bi-sun btn-theme__icon--sun"></i>
+            <i class="bi bi-moon btn-theme__icon--moon"></i>
+          </button>
+          <button
+            class="btn-hamburger"
+            id="btnHamburger"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- /header -->
+
+    <!-- Mobile backdrop -->
+    <div class="mobile-backdrop" id="mobileBackdrop"></div>
+
+    <!-- Mobile drawer -->
+    <nav
+      class="mobile-drawer"
+      id="mobileDrawer"
+      aria-label="Mobile navigation"
+      aria-hidden="true"
+    >
+      <div class="mobile-drawer__head">
+        <a href="index.html" class="mobile-drawer__logo">
+          <img
+            src="assets/images/logo-dark.svg"
+            alt="Jibal Al Hajar"
+            class="logo-dark"
+          />
+          <img
+            src="assets/images/logo-light.svg"
+            alt="Jibal Al Hajar"
+            class="logo-light"
+          />
+        </a>
+        <button
+          class="mobile-drawer__close"
+          id="btnDrawerClose"
+          aria-label="Close menu"
+        >
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+
+      <ul class="mobile-drawer__list">
+        <li class="mobile-drawer__item">
+          <a href="index.html" class="mobile-drawer__link">Home</a>
+        </li>
+        <li class="mobile-drawer__item active">
+          <a href="venues.html" class="mobile-drawer__link">Venues</a>
+        </li>
+        <li class="mobile-drawer__item">
+          <a href="book-tickets.html" class="mobile-drawer__link"
+            >Book Tickets</a
+          >
+        </li>
+        <li class="mobile-drawer__item">
+          <a href="events.html" class="mobile-drawer__link">Events</a>
+        </li>
+        <li class="mobile-drawer__item">
+          <a href="news.html" class="mobile-drawer__link">News</a>
+        </li>
+        <li class="mobile-drawer__item">
+          <a href="contact.html" class="mobile-drawer__link">Contact Us</a>
+        </li>
+        <li class="mobile-drawer__item">
+          <a href="shop.html" class="mobile-drawer__link">Shop</a>
+        </li>
+      </ul>
+
+      <div class="mobile-drawer__foot">
+        <button class="btn-lang">EN</button>
+        <button
+          class="btn-theme"
+          onclick="toggleTheme()"
+          aria-label="Toggle theme"
+        >
+          <i class="bi bi-sun btn-theme__icon--sun"></i>
+          <i class="bi bi-moon btn-theme__icon--moon"></i>
+        </button>
+      </div>
+    </nav>
+
+    <main class="main-inner">
+      <!-- ════════════════════════ VENUES LISTING ════════════════════════════ -->
+      <section class="venues-sec">
+        <div class="container">
+          <h1 class="page-heading">Venues</h1>
+
+          <div class="venue-list">
+            <!-- ── Al Mirani Fort ─────────────────────────────────────────── -->
+            <div class="venue-card" data-aos="fade-up" data-aos-duration="700">
+              <div class="venue-card__content">
+                <div class="venue-card__head">
+                  <img
+                    src="assets/images/almirani-logo.png"
+                    alt=""
+                    class="venue-card__logo"
+                    aria-hidden="true"
+                  />
+                  <h2 class="venue-card__name">Al Mirani Fort</h2>
+                </div>
+                <a href="al-mirani-fort.html" class="venue-card__more">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M16.458 9.77157H3.95801"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M11.4165 4.75116L16.4582 9.77116L11.4165 14.792"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  More Info
+                </a>
+              </div>
+              <div class="venue-card__visual">
+                <div class="venue-card__glow"></div>
+                <img
+                  src="assets/images/venue-item-bg-pattern-01.svg"
+                  alt=""
+                  class="venue-card__bg-pattern"
+                  aria-hidden="true"
+                />
+                <img
+                  src="assets/images/venue-item-01.png"
+                  alt="Al Mirani Fort"
+                  class="venue-card__img"
+                />
+              </div>
+            </div>
+            <!-- /Al Mirani Fort -->
+
+            <!-- ── Muttrah Fort ───────────────────────────────────────────── -->
+            <div
+              class="venue-card"
+              data-aos="fade-up"
+              data-aos-duration="700"
+              data-aos-delay="100"
+            >
+              <div class="venue-card__content">
+                <div class="venue-card__head">
+                  <span
+                    class="venue-card__logo-placeholder"
+                    aria-hidden="true"
+                  ></span>
+                  <h2 class="venue-card__name">Muttrah Fort</h2>
+                </div>
+                <a href="#" class="venue-card__more">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M16.458 9.77157H3.95801"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M11.4165 4.75116L16.4582 9.77116L11.4165 14.792"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  More Info
+                </a>
+              </div>
+              <div class="venue-card__visual">
+                <div class="venue-card__glow"></div>
+                <img
+                  src="assets/images/venue-item-bg-pattern-02.svg"
+                  alt=""
+                  class="venue-card__bg-pattern"
+                  aria-hidden="true"
+                />
+                <img
+                  src="assets/images/venue-item-02.png"
+                  alt="Muttrah Fort"
+                  class="venue-card__img"
+                />
+              </div>
+            </div>
+            <!-- /Muttrah Fort -->
+
+            <!-- ── Al Jalali Fort (Coming Soon) ──────────────────────────── -->
+            <div
+              class="venue-card venue-card--soon"
+              data-aos="fade-up"
+              data-aos-duration="700"
+              data-aos-delay="200"
+            >
+              <div class="venue-card__content">
+                <div class="venue-card__head">
+                  <span
+                    class="venue-card__logo-placeholder"
+                    aria-hidden="true"
+                  ></span>
+                  <h2 class="venue-card__name">Al Jalali Fort</h2>
+                </div>
+                <a href="#" class="venue-card__more">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M16.458 9.77157H3.95801"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M11.4165 4.75116L16.4582 9.77116L11.4165 14.792"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  More Info
+                </a>
+              </div>
+              <div class="venue-card__visual">
+                <div class="venue-card__glow"></div>
+                <img
+                  src="assets/images/venue-item-bg-pattern-03.svg"
+                  alt=""
+                  class="venue-card__bg-pattern"
+                  aria-hidden="true"
+                />
+                <img
+                  src="assets/images/venue-item-03.png"
+                  alt="Al Jalali Fort"
+                  class="venue-card__img"
+                />
+                <span class="venue-card__badge">Coming Soon</span>
+              </div>
+            </div>
+            <!-- /Al Jalali Fort -->
+          </div>
+        </div>
+      </section>
+      <!-- /venues-sec -->
+    </main>
+
+    <!-- ═══════════════════════════════ FOOTER ════════════════════════════════ -->
+    <footer class="footer">
+      <div class="footer__bg"></div>
+      <div class="fort-intro__icon">
+        <img src="assets/images/secion-icon.svg" alt="" aria-hidden="true" />
+      </div>
+      <!-- Fort visual -->
+      <div class="footer__visual">
+        <img
+          src="assets/images/fort-footer.png"
+          alt="Jibal Al Hajar Fort"
+          class="footer__fort-img"
+        />
+        <div class="footer__fade" aria-hidden="true"></div>
+      </div>
+
+      <!-- Nav bar -->
+      <div class="footer__bar">
+        <div class="footer__pill">
+          <!-- Logo -->
+          <a href="index.html" class="footer__logo">
+            <img
+              src="assets/images/alhajar-logo-footer.svg"
+              alt="Jibal Al Hajar"
+            />
+          </a>
+
+          <!-- Separator -->
+          <span class="footer__sep" aria-hidden="true"></span>
+
+          <!-- Nav links -->
+          <nav class="footer__nav" aria-label="Footer navigation">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a href="venues.html" class="footer__nav-link">Sites</a>
+              </li>
+              <li class="footer__nav-sep" aria-hidden="true"></li>
+              <li class="footer__nav-item">
+                <a href="book-tickets.html" class="footer__nav-link"
+                  >Book Tickets</a
+                >
+              </li>
+              <li class="footer__nav-sep" aria-hidden="true"></li>
+              <li class="footer__nav-item">
+                <a href="events.html" class="footer__nav-link">Events</a>
+              </li>
+              <li class="footer__nav-sep" aria-hidden="true"></li>
+              <li class="footer__nav-item">
+                <a href="news.html" class="footer__nav-link">News</a>
+              </li>
+              <li class="footer__nav-sep" aria-hidden="true"></li>
+              <li class="footer__nav-item">
+                <a href="contact.html" class="footer__nav-link">Contact Us</a>
+              </li>
+              <li class="footer__nav-sep" aria-hidden="true"></li>
+              <li class="footer__nav-item">
+                <a href="shop.html" class="footer__nav-link">Shop</a>
+              </li>
+              <li class="footer__nav-sep" aria-hidden="true"></li>
+              <li class="footer__nav-item">
+                <a href="#section-download-app" class="footer__nav-link"
+                  >Download App</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <!-- /footer -->
+
+    <!-- Return to top -->
+    <a href="javascript:;" id="return-top" class="return-top">
+      <svg class="return-top__ring" viewBox="0 0 50 50" aria-hidden="true">
+        <circle class="return-top__ring-track" cx="25" cy="25" r="22" />
+        <circle class="return-top__ring-progress" cx="25" cy="25" r="22" />
+      </svg>
+      <img src="assets/images/up-icon.svg" alt="Back to top" />
+    </a>
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- Smooth Scroll -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <!-- AOS -->
+    <script src="assets/js/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+    <script>
+      AOS.init({ once: true, offset: 60 });
+    </script>
+  </body>
+</html>

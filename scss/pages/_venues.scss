@@ -1,0 +1,229 @@
+// ─── Venues Page ──────────────────────────────────────────────────────────────
+
+.venues-sec {
+  background-color: var(--color-bg);
+  padding: 48px 0 80px;
+}
+
+// ─── Venue List ───────────────────────────────────────────────────────────────
+.venue-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+// ─── Venue Card ───────────────────────────────────────────────────────────────
+.venue-card {
+  display: flex;
+  background-color: #1d1d1d;
+  border-radius: 16px;
+  overflow: hidden;
+  min-height: 280px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+    border-radius: inherit;
+    background: radial-gradient(
+      circle at var(--mx, 50%) var(--my, -20%),
+      rgba(200, 150, 100, 0.14) 0%,
+      transparent 55%
+    );
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
+
+  // ── Content (left) ──────────────────────────────────────────────────────────
+  &__content {
+    flex: 0 0 38%;
+    padding: 44px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  &__logo {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
+
+  &__logo-placeholder {
+    width: 44px;
+    height: 44px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.12);
+    flex-shrink: 0;
+  }
+
+  &__name {
+    font-size: var(--fs-4xl);
+    font-weight: var(--fw-medium);
+    color: var(--color-text);
+    margin: 0;
+    line-height: 1.2;
+    @include transEase(color, 0.25s);
+  }
+
+  &__more {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-primary);
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-medium);
+    text-decoration: none;
+    @include transEase(opacity, 0.2s);
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    svg {
+      flex-shrink: 0;
+    }
+  }
+
+  // ── Visual (right) ──────────────────────────────────────────────────────────
+  &__visual {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__glow {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(10%, -20%);
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: rgba(53, 31, 14, 0.95);
+    filter: blur(150px);
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  &__bg-pattern {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+    object-fit: cover;
+    opacity: 0.45;
+    pointer-events: none;
+  }
+
+  &__img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 700px;
+    object-fit: contain;
+    display: block;
+    filter: drop-shadow(0 16px 48px rgba(0, 0, 0, 0.65));
+  }
+
+  // ── Coming Soon modifier ────────────────────────────────────────────────────
+  &--soon {
+    .venue-card__img {
+      filter: grayscale(1) drop-shadow(0 16px 48px rgba(0, 0, 0, 0.65));
+    }
+  }
+
+  &__badge {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(
+      90deg,
+      rgba(185, 123, 101, 0.56) 0%,
+      rgba(83, 55, 46, 0.24) 100%
+    );
+    border: 1px solid #351f0e;
+    box-shadow: -6px 6px 10px rgba(18, 18, 18, 0.8);
+    backdrop-filter: blur(10px);
+    color: var(--color-text);
+    padding: 8px 24px;
+    border-radius: 8px;
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-medium);
+    white-space: nowrap;
+    letter-spacing: 0.03em;
+  }
+}
+
+// ─── Responsive ───────────────────────────────────────────────────────────────
+@media (max-width: 1200px) {
+  .venue-card {
+    &__content {
+      flex: 0 0 40%;
+    }
+
+    &__name {
+      font-size: var(--fs-3xl);
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .venue-card {
+    &__content {
+      flex: 0 0 44%;
+      padding: 32px 28px;
+    }
+
+    &__name {
+      font-size: var(--fs-2xl);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .venue-card {
+    flex-direction: column;
+
+    &__content {
+      flex: none;
+      padding: 28px 24px;
+    }
+
+    &__visual {
+      min-height: 200px;
+    }
+
+    &__img {
+      max-height: 180px;
+    }
+
+    &__name {
+      font-size: var(--fs-xl);
+    }
+  }
+}

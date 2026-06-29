@@ -1,0 +1,20 @@
+// ─── Line clamp ───────────────────────────────────────────────────────────────
+$line-clamp: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15;
+
+@each $i in $line-clamp {
+  .line-clamp-#{$i} {
+    display: -webkit-box;
+    -webkit-line-clamp: #{$i};
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+// ─── Font weight ──────────────────────────────────────────────────────────────
+$font-weight: 100 200 300 400 500 600 700 800;
+
+@each $i in $font-weight {
+  .fw-#{$i} {
+    font-weight: #{$i} !important;
+  }
+}

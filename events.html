@@ -1,0 +1,982 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Jibal Al Hajar Heritage Collection — Exclusive Events at the Fort"
+    />
+    <title>Events — Jibal Al Hajar</title>
+    <link rel="icon" href="favicon.ico" />
+
+    <!-- Bootstrap Icons -->
+    <link href="assets/css/bootstrap-icons.min.css" rel="stylesheet" />
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- AOS -->
+    <link href="assets/css/aos.css" rel="stylesheet" />
+    <!-- Global styles -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ═══════════════════════════ HEADER ═══════════════════════════════════ -->
+    <header class="header" id="header">
+      <div class="header__inner">
+        <!-- Logo -->
+        <a href="index.html" class="header__logo">
+          <img
+            src="assets/images/logo-dark.svg"
+            alt="Jibal Al Hajar"
+            class="logo-dark"
+          />
+          <img
+            src="assets/images/logo-light.svg"
+            alt="Jibal Al Hajar"
+            class="logo-light"
+          />
+        </a>
+
+        <!-- Nav pill -->
+        <nav class="nav-main" aria-label="Main navigation">
+          <ul class="nav-main__list">
+            <li class="nav-main__item">
+              <a href="index.html" class="nav-main__link">Home</a>
+            </li>
+            <li class="nav-main__item">
+              <a href="venues.html" class="nav-main__link">Venues</a>
+            </li>
+            <li class="nav-main__item">
+              <a href="book-tickets.html" class="nav-main__link"
+                >Book Tickets</a
+              >
+            </li>
+            <li class="nav-main__item active">
+              <a href="events.html" class="nav-main__link">Events</a>
+            </li>
+            <li class="nav-main__item">
+              <a href="news.html" class="nav-main__link">News</a>
+            </li>
+            <li class="nav-main__item">
+              <a href="contact.html" class="nav-main__link">Contact Us</a>
+            </li>
+            <li class="nav-main__item">
+              <a href="shop.html" class="nav-main__link">Shop</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Controls -->
+        <div class="header__controls">
+          <button class="btn-lang" aria-label="Switch language">EN</button>
+          <button
+            class="btn-theme"
+            onclick="toggleTheme()"
+            aria-label="Toggle theme"
+          >
+            <i class="bi bi-sun btn-theme__icon--sun"></i>
+            <i class="bi bi-moon btn-theme__icon--moon"></i>
+          </button>
+          <button
+            class="btn-hamburger"
+            id="btnHamburger"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- /header -->
+
+    <!-- Mobile backdrop -->
+    <div class="mobile-backdrop" id="mobileBackdrop"></div>
+
+    <!-- Mobile drawer -->
+    <nav
+      class="mobile-drawer"
+      id="mobileDrawer"
+      aria-label="Mobile navigation"
+      aria-hidden="true"
+    >
+      <div class="mobile-drawer__head">
+        <a href="index.html" class="mobile-drawer__logo">
+          <img
+            src="assets/images/logo-dark.svg"
+            alt="Jibal Al Hajar"
+            class="logo-dark"
+          />
+          <img
+            src="assets/images/logo-light.svg"
+            alt="Jibal Al Hajar"
+            class="logo-light"
+          />
+        </a>
+        <button
+          class="mobile-drawer__close"
+          id="btnDrawerClose"
+          aria-label="Close menu"
+        >
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+
+      <ul class="mobile-drawer__list">
+        <li class="mobile-drawer__item">
+          <a href="index.html" class="mobile-drawer__link">Home</a>
+        </li>
+        <li class="mobile-drawer__item">
+          <a href="venues.html" class="mobile-drawer__link">Venues</a>
+        </li>
+        <li class="mobile-drawer__item">
+          <a href="book-tickets.html" class="mobile-drawer__link"
+            >Book Tickets</a
+          >
+        </li>
+        <li class="mobile-drawer__item active">
+          <a href="events.html" class="mobile-drawer__link">Events</a>
+        </li>
+        <li class="mobile-drawer__item">
+          <a href="news.html" class="mobile-drawer__link">News</a>
+        </li>
+        <li class="mobile-drawer__item">
+          <a href="contact.html" class="mobile-drawer__link">Contact Us</a>
+        </li>
+        <li class="mobile-drawer__item">
+          <a href="shop.html" class="mobile-drawer__link">Shop</a>
+        </li>
+      </ul>
+
+      <div class="mobile-drawer__foot">
+        <button class="btn-lang">EN</button>
+        <button
+          class="btn-theme"
+          onclick="toggleTheme()"
+          aria-label="Toggle theme"
+        >
+          <i class="bi bi-sun btn-theme__icon--sun"></i>
+          <i class="bi bi-moon btn-theme__icon--moon"></i>
+        </button>
+      </div>
+    </nav>
+
+    <main class="main-inner">
+      <!-- ══════════════════════ HERO ══════════════════════════════════════ -->
+      <section class="evx-hero">
+        <div class="container">
+          <h1
+            class="evx-hero__title"
+            data-aos="fade-up"
+            data-aos-duration="700"
+          >
+            Exclusive events at the fort
+          </h1>
+        </div>
+      </section>
+      <!-- /evx-hero -->
+
+      <!-- ══════════════════════ VIDEO BANNER ══════════════════════════════ -->
+      <section class="evx-video">
+        <div class="container">
+          <div
+            class="evx-video__frame"
+            data-aos="fade-up"
+            data-aos-duration="700"
+          >
+            <video
+              class="evx-video__media"
+              poster="assets/images/events-video-poster.png"
+              preload="metadata"
+              playsinline
+              loop
+            >
+              <source src="assets/videos/hero.mp4" type="video/mp4" />
+            </video>
+            <button
+              type="button"
+              class="evx-video__play"
+              aria-label="Play event highlights video"
+            >
+              <i class="bi bi-play-fill"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- /evx-video -->
+
+      <!-- ══════════════════════ DIVIDER ═══════════════════════════════════ -->
+      <div class="evx-divider" aria-hidden="true">
+        <img
+          src="assets/images/secion-icon.svg"
+          alt=""
+          class="evx-divider__icon"
+        />
+      </div>
+      <!-- /evx-divider -->
+
+      <!-- ══════════════════════ HOST YOUR EVENTS ══════════════════════════ -->
+      <section class="evx-host">
+        <div class="container">
+          <div
+            class="evx-host__card"
+            data-aos="fade-up"
+            data-aos-duration="700"
+          >
+            <span class="evx-host__glow" aria-hidden="true"></span>
+
+            <div class="evx-host__content">
+              <h2 class="evx-host__title">
+                Host your Events at Our Heritage Venues
+              </h2>
+              <p class="evx-host__text">
+                Host your next event in a setting where history meets
+                exceptional service
+              </p>
+
+              <a href="contact.html" class="evx-host__cta">
+                Contact Our Events Team
+              </a>
+
+              <div class="evx-host__contact">
+                <a
+                  href="mailto:info@alhajarforts.om"
+                  class="evx-host__contact-item"
+                  >info@alhajarforts.om</a
+                >
+                <span class="evx-host__contact-sep"></span>
+                <a href="tel:77000909" class="evx-host__contact-item"
+                  >77000909</a
+                >
+                <span class="evx-host__contact-sep"></span>
+                <a href="tel:95666065" class="evx-host__contact-item"
+                  >95666065</a
+                >
+              </div>
+            </div>
+
+            <div class="evx-host__visual">
+              <img
+                src="assets/images/host-event.png"
+                alt="Elegant outdoor dining event set up beside a heritage fort tower"
+                class="evx-host__img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /evx-host -->
+
+      <!-- ══════════════════════ EVENT FEATURES ════════════════════════════ -->
+      <section class="evf">
+        <div class="evf__divider" aria-hidden="true">
+          <img
+            src="assets/images/secion-icon.svg"
+            alt=""
+            class="evf__divider-icon"
+          />
+        </div>
+
+        <div class="container">
+          <div class="evf__list">
+            <!-- End-to-End Event Solutions -->
+            <article
+              class="evf-feature"
+              data-aos="fade-up"
+              data-aos-duration="800"
+            >
+              <div class="evf-feature__content">
+                <h2 class="evf-feature__title">
+                  End-to-End<br />Event Solutions
+                </h2>
+                <p class="evf-feature__desc">
+                  We manage every aspect of your event — from planning and setup
+                  to on-site coordination — ensuring a seamless experience from
+                  start to finish
+                </p>
+              </div>
+              <div class="evf-feature__visual">
+                <div class="evf-feature__shape" aria-hidden="true"></div>
+                <img
+                  src="assets/images/event-type-item-01.png"
+                  alt="Host arranging an elegant event table setting"
+                  class="evf-feature__img"
+                />
+              </div>
+            </article>
+
+            <!-- Event Types -->
+            <article
+              class="evf-feature evf-feature--reverse"
+              data-aos="fade-up"
+              data-aos-duration="800"
+            >
+              <div class="evf-feature__content">
+                <h2 class="evf-feature__title">Event Types</h2>
+                <p class="evf-feature__lead">
+                  Suitable for a wide range of experiences:
+                </p>
+                <ul class="evf-feature__list">
+                  <li>Corporate Events &amp; Meetings</li>
+                  <li>Private Gatherings</li>
+                  <li>Dining Experiences</li>
+                  <li>Cultural &amp; Heritage Experiences</li>
+                  <li>Product Launches &amp; Activations</li>
+                  <li>VIP Receptions</li>
+                </ul>
+              </div>
+              <div class="evf-feature__visual">
+                <div class="evf-feature__shape" aria-hidden="true"></div>
+                <img
+                  src="assets/images/event-type-item-02.png"
+                  alt="Heritage fort tower lit with festive lights"
+                  class="evf-feature__img"
+                />
+              </div>
+            </article>
+
+            <!-- A Tailored Experience -->
+            <article
+              class="evf-feature"
+              data-aos="fade-up"
+              data-aos-duration="800"
+            >
+              <div class="evf-feature__content">
+                <h2 class="evf-feature__title">A Tailored<br />Experience</h2>
+                <p class="evf-feature__desc">
+                  From corporate gatherings to large-scale events, we deliver
+                  fully customized experiences with attention to every detail —
+                  from initial inquiry to final execution
+                </p>
+              </div>
+              <div class="evf-feature__visual">
+                <div class="evf-feature__shape" aria-hidden="true"></div>
+                <img
+                  src="assets/images/event-type-item-03.png"
+                  alt="Omani couple in traditional dress at a reception"
+                  class="evf-feature__img"
+                />
+              </div>
+            </article>
+
+            <!-- Catering & Services -->
+            <article
+              class="evf-feature evf-feature--reverse"
+              data-aos="fade-up"
+              data-aos-duration="800"
+            >
+              <div class="evf-feature__content">
+                <h2 class="evf-feature__title">Catering<br />&amp; Services</h2>
+                <p class="evf-feature__desc">
+                  We work with trusted partners to provide tailored catering and
+                  event enhancements, with additional services available upon
+                  request
+                </p>
+              </div>
+              <div class="evf-feature__visual">
+                <div class="evf-feature__shape" aria-hidden="true"></div>
+                <img
+                  src="assets/images/event-type-item-04.png"
+                  alt="Traditional Omani feast served on a golden platter"
+                  class="evf-feature__img"
+                />
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- /evf -->
+
+      <!-- ══════════════════════ CHECK AVAILABILITY ════════════════════════ -->
+      <div class="evx-divider" aria-hidden="true">
+        <img
+          src="assets/images/secion-icon.svg"
+          alt=""
+          class="evx-divider__icon"
+        />
+      </div>
+
+      <section class="eva">
+        <div class="container">
+          <h2 class="eva__title" data-aos="fade-up" data-aos-duration="600">
+            Check Availability
+          </h2>
+
+          <form
+            class="eva-form"
+            onsubmit="event.preventDefault();"
+            data-aos="fade-up"
+            data-aos-duration="700"
+          >
+            <div class="eva-form__card">
+              <!-- Event Type -->
+              <div class="eva-field">
+                <span class="eva-field__label">Event Type</span>
+                <div class="eva-type">
+                  <button
+                    type="button"
+                    class="eva-type__btn is-active"
+                    data-eva-type="Corporate"
+                  >
+                    Corporate
+                  </button>
+                  <button
+                    type="button"
+                    class="eva-type__btn"
+                    data-eva-type="Private"
+                  >
+                    Private
+                  </button>
+                  <button
+                    type="button"
+                    class="eva-type__btn"
+                    data-eva-type="VIP"
+                  >
+                    VIP
+                  </button>
+                  <button
+                    type="button"
+                    class="eva-type__btn"
+                    data-eva-type="Schools"
+                  >
+                    Schools
+                  </button>
+                </div>
+              </div>
+
+              <!-- Venues -->
+              <div class="eva-field">
+                <span class="eva-field__label">Venues</span>
+                <div class="eva-venues">
+                  <button
+                    type="button"
+                    class="eva-venues__btn is-active"
+                    data-eva-venue="Al Mirani Fort"
+                  >
+                    Al Mirani Fort
+                  </button>
+                  <button
+                    type="button"
+                    class="eva-venues__btn"
+                    data-eva-venue="Muttrah Fort"
+                  >
+                    Muttrah Fort
+                  </button>
+                  <button
+                    type="button"
+                    class="eva-venues__btn"
+                    data-eva-venue="Al Jalali Fort"
+                  >
+                    Al Jalali Fort
+                  </button>
+                  <button
+                    type="button"
+                    class="eva-venues__btn"
+                    data-eva-venue="Al Bait Al Sharqi"
+                  >
+                    Al Bait Al Sharqi
+                  </button>
+                  <button
+                    type="button"
+                    class="eva-venues__btn eva-venues__btn--wide"
+                    data-eva-venue="Majan dhow"
+                  >
+                    Majan dhow
+                  </button>
+                </div>
+              </div>
+
+              <!-- Estimated Guests -->
+              <div class="eva-field">
+                <span class="eva-field__label">Estimated Guests</span>
+                <input
+                  type="number"
+                  class="eva-input"
+                  placeholder="Enter number of guests"
+                  min="20"
+                  max="300"
+                />
+                <span class="eva-field__hint">Minimum 20 - 300 Maximum</span>
+              </div>
+
+              <!-- Date -->
+              <div class="eva-field">
+                <span class="eva-field__label">Date</span>
+                <div class="eva-cal-card">
+                  <div class="eva-cal-head">
+                    <button
+                      type="button"
+                      class="eva-cal-nav"
+                      id="evaCalPrev"
+                      aria-label="Previous month"
+                    >
+                      <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <span class="eva-cal-label" id="evaCalLabel">Today</span>
+                    <button
+                      type="button"
+                      class="eva-cal-nav"
+                      id="evaCalNext"
+                      aria-label="Next month"
+                    >
+                      <i class="bi bi-chevron-right"></i>
+                    </button>
+                  </div>
+                  <div class="eva-cal-months" id="evaCalMonths"></div>
+                </div>
+              </div>
+
+              <!-- Contact Info -->
+              <div class="eva-field">
+                <span class="eva-field__label">Contact Info</span>
+                <div class="eva-contact">
+                  <div class="eva-contact__field">
+                    <label class="eva-contact__label" for="eva-name">
+                      Full Name <span class="eva-req">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="eva-name"
+                      class="eva-input"
+                      placeholder="Full Name"
+                    />
+                  </div>
+
+                  <div class="eva-contact__field">
+                    <label class="eva-contact__label" for="eva-phone">
+                      Phone Number <span class="eva-req">*</span>
+                    </label>
+                    <div class="eva-phone">
+                      <span class="eva-phone__flag">
+                        <img src="assets/images/flag-om.svg" alt="Oman" />
+                      </span>
+                      <input
+                        type="tel"
+                        id="eva-phone"
+                        class="eva-input"
+                        placeholder="Phone Number"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="eva-contact__field">
+                    <label class="eva-contact__label" for="eva-email">
+                      Email Address <span class="eva-req">*</span>
+                    </label>
+                    <input
+                      type="email"
+                      id="eva-email"
+                      class="eva-input"
+                      placeholder="Email Address"
+                    />
+                  </div>
+
+                  <div class="eva-contact__field">
+                    <label class="eva-contact__label" for="eva-note">
+                      Note <span class="eva-optional">(Optional)</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="eva-note"
+                      class="eva-input"
+                      placeholder="Note"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Submit -->
+              <button type="submit" class="eva-submit">
+                Submit Event Request
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- /eva -->
+    </main>
+
+    <!-- ════════════════════════════ FOOTER ═════════════════════════════════ -->
+    <footer class="footer">
+      <div class="footer__bg"></div>
+      <div class="fort-intro__icon">
+        <img src="assets/images/secion-icon.svg" alt="" aria-hidden="true" />
+      </div>
+      <div class="footer__visual">
+        <img
+          src="assets/images/fort-footer.png"
+          alt="Jibal Al Hajar Fort"
+          class="footer__fort-img"
+        />
+        <div class="footer__fade" aria-hidden="true"></div>
+      </div>
+      <div class="footer__bar">
+        <div class="footer__pill">
+          <a href="index.html" class="footer__logo">
+            <img
+              src="assets/images/alhajar-logo-footer.svg"
+              alt="Jibal Al Hajar"
+            />
+          </a>
+          <span class="footer__sep" aria-hidden="true"></span>
+          <nav class="footer__nav" aria-label="Footer navigation">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a href="venues.html" class="footer__nav-link">Sites</a>
+              </li>
+              <li class="footer__nav-sep" aria-hidden="true"></li>
+              <li class="footer__nav-item">
+                <a href="book-tickets.html" class="footer__nav-link"
+                  >Book Tickets</a
+                >
+              </li>
+              <li class="footer__nav-sep" aria-hidden="true"></li>
+              <li class="footer__nav-item">
+                <a href="events.html" class="footer__nav-link">Events</a>
+              </li>
+              <li class="footer__nav-sep" aria-hidden="true"></li>
+              <li class="footer__nav-item">
+                <a href="news.html" class="footer__nav-link">News</a>
+              </li>
+              <li class="footer__nav-sep" aria-hidden="true"></li>
+              <li class="footer__nav-item">
+                <a href="contact.html" class="footer__nav-link">Contact Us</a>
+              </li>
+              <li class="footer__nav-sep" aria-hidden="true"></li>
+              <li class="footer__nav-item">
+                <a href="shop.html" class="footer__nav-link">Shop</a>
+              </li>
+              <li class="footer__nav-sep" aria-hidden="true"></li>
+              <li class="footer__nav-item">
+                <a href="#section-download-app" class="footer__nav-link"
+                  >Download App</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Return to top -->
+    <a href="javascript:;" id="return-top" class="return-top">
+      <svg class="return-top__ring" viewBox="0 0 50 50" aria-hidden="true">
+        <circle class="return-top__ring-track" cx="25" cy="25" r="22" />
+        <circle class="return-top__ring-progress" cx="25" cy="25" r="22" />
+      </svg>
+      <img src="assets/images/up-icon.svg" alt="Back to top" />
+    </a>
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Smooth Scroll -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <!-- AOS -->
+    <script src="assets/js/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+    <script>
+      AOS.init({ once: true, offset: 60 });
+
+      // ── Hero video — play / pause toggle ─────────────────────────────────
+      (function () {
+        var frame = document.querySelector(".evx-video__frame");
+        if (!frame) return;
+        var video = frame.querySelector(".evx-video__media");
+        var btn = frame.querySelector(".evx-video__play");
+        if (!video || !btn) return;
+        var icon = btn.querySelector("i");
+
+        function sync() {
+          if (icon)
+            icon.className = video.paused
+              ? "bi bi-play-fill"
+              : "bi bi-pause-fill";
+          btn.setAttribute(
+            "aria-label",
+            video.paused ? "Play event highlights video" : "Pause video",
+          );
+        }
+
+        btn.addEventListener("click", function () {
+          if (video.paused) video.play();
+          else video.pause();
+        });
+
+        video.addEventListener("play", function () {
+          frame.classList.add("is-playing");
+          sync();
+        });
+        video.addEventListener("pause", function () {
+          frame.classList.remove("is-playing");
+          sync();
+        });
+        video.addEventListener("ended", function () {
+          frame.classList.remove("is-playing");
+          sync();
+        });
+
+        sync();
+      })();
+
+      // ── Event feature rows — shape + image reveal on scroll ──────────────
+      (function () {
+        if (!window.gsap) return;
+        var feats = document.querySelectorAll(".evf-feature");
+        if (!feats.length) return;
+
+        // Initial hidden state (set via JS so it degrades gracefully if GSAP
+        // is unavailable — the CSS default leaves everything visible).
+        feats.forEach(function (feat) {
+          var img = feat.querySelector(".evf-feature__img");
+          var shape = feat.querySelector(".evf-feature__shape");
+          if (img)
+            gsap.set(img, {
+              scale: 1.14,
+              opacity: 0,
+              transformOrigin: "center center",
+            });
+          if (shape)
+            gsap.set(shape, {
+              scaleY: 0,
+              opacity: 0,
+              transformOrigin: "center bottom",
+            });
+        });
+
+        var observer = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (!entry.isIntersecting) return;
+              var img = entry.target.querySelector(".evf-feature__img");
+              var shape = entry.target.querySelector(".evf-feature__shape");
+              var tl = gsap.timeline();
+              if (shape)
+                tl.to(shape, {
+                  scaleY: 1,
+                  opacity: 1,
+                  duration: 0.75,
+                  ease: "expo.out",
+                });
+              if (img)
+                tl.to(
+                  img,
+                  {
+                    scale: 1,
+                    opacity: 1,
+                    duration: 0.75,
+                    ease: "power3.out",
+                  },
+                  "-=0.55",
+                );
+              observer.unobserve(entry.target);
+            });
+          },
+          { threshold: 0.2 },
+        );
+
+        feats.forEach(function (feat) {
+          observer.observe(feat);
+        });
+      })();
+
+      // ── Check Availability — pill toggles ────────────────────────────────
+      (function () {
+        function singleSelect(selector) {
+          var btns = document.querySelectorAll(selector);
+          btns.forEach(function (btn) {
+            btn.addEventListener("click", function () {
+              btns.forEach(function (b) {
+                b.classList.remove("is-active");
+              });
+              btn.classList.add("is-active");
+            });
+          });
+        }
+        singleSelect(".eva-type__btn");
+        singleSelect(".eva-venues__btn");
+      })();
+
+      // ── Check Availability — calendar ────────────────────────────────────
+      (function () {
+        var container = document.getElementById("evaCalMonths");
+        if (!container) return;
+
+        var MONTHS = [
+          "January", "February", "March", "April", "May", "June",
+          "July", "August", "September", "October", "November", "December",
+        ];
+        var WEEKDAYS = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+
+        var today = new Date();
+        var viewYear = today.getFullYear();
+        var viewMonth = today.getMonth();
+        var selectedDate = null;
+
+        // Sample event data, scattered across the two visible months.
+        var events = (function () {
+          var e = {};
+          function mark(y, m, days, type) {
+            days.forEach(function (d) {
+              var k =
+                y +
+                "-" +
+                String(m + 1).padStart(2, "0") +
+                "-" +
+                String(d).padStart(2, "0");
+              e[k] = type;
+            });
+          }
+          mark(viewYear, viewMonth, [4, 18], "exhibition");
+          mark(viewYear, viewMonth, [5, 13, 14, 22, 28], "public");
+          mark(viewYear, viewMonth, [6, 7, 10, 27], "private");
+          mark(viewYear, viewMonth + 1, [3, 17], "exhibition");
+          mark(viewYear, viewMonth + 1, [4, 12, 13, 21, 27], "public");
+          mark(viewYear, viewMonth + 1, [5, 9, 26], "private");
+          return e;
+        })();
+
+        function key(y, m, d) {
+          return (
+            y +
+            "-" +
+            String(m + 1).padStart(2, "0") +
+            "-" +
+            String(d).padStart(2, "0")
+          );
+        }
+
+        function render() {
+          container.innerHTML = "";
+          var todayStr = key(
+            today.getFullYear(),
+            today.getMonth(),
+            today.getDate(),
+          );
+
+          for (var offset = 0; offset < 2; offset++) {
+            var raw = viewMonth + offset;
+            var y = viewYear + Math.floor(raw / 12);
+            var m = ((raw % 12) + 12) % 12;
+
+            var monthEl = document.createElement("div");
+            monthEl.className = "eva-cal-month";
+
+            var titleEl = document.createElement("h3");
+            titleEl.className = "eva-cal-month__title";
+            titleEl.textContent = MONTHS[m] + " " + y;
+            monthEl.appendChild(titleEl);
+
+            var legEl = document.createElement("div");
+            legEl.className = "eva-cal-legend";
+            legEl.innerHTML =
+              '<span class="eva-cal-legend__item"><span class="eva-cal-legend__icon"><img src="assets/images/date-exhibition-icon.svg" alt=""></span> = Exhibition</span>' +
+              '<span class="eva-cal-legend__item"><span class="eva-cal-legend__icon"><img src="assets/images/date-public-icon.svg" alt=""></span> = Public Event</span>' +
+              '<span class="eva-cal-legend__item"><span class="eva-cal-legend__icon"><img src="assets/images/date-private-icon.svg" alt=""></span> = Private Event</span>';
+            monthEl.appendChild(legEl);
+
+            var gridEl = document.createElement("div");
+            gridEl.className = "eva-cal-grid";
+
+            WEEKDAYS.forEach(function (wd) {
+              var wdEl = document.createElement("div");
+              wdEl.className = "eva-cal-weekday";
+              wdEl.textContent = wd;
+              gridEl.appendChild(wdEl);
+            });
+
+            var firstDay = new Date(y, m, 1).getDay();
+            for (var i = 0; i < firstDay; i++) {
+              var emp = document.createElement("div");
+              emp.className = "eva-date-cell eva-date-cell--empty";
+              gridEl.appendChild(emp);
+            }
+
+            var daysInMonth = new Date(y, m + 1, 0).getDate();
+            for (var day = 1; day <= daysInMonth; day++) {
+              var dateStr = key(y, m, day);
+              var evType = events[dateStr];
+
+              var cell = document.createElement("div");
+              var cls = ["eva-date-cell"];
+              if (evType) cls.push("eva-date-cell--" + evType);
+              if (dateStr === todayStr) cls.push("eva-date-cell--today");
+              if (dateStr === selectedDate)
+                cls.push("eva-date-cell--selected");
+              cell.className = cls.join(" ");
+
+              if (evType) {
+                var icon = document.createElement("img");
+                icon.className = "eva-date-cell__icon";
+                icon.src = "assets/images/date-" + evType + "-icon.svg";
+                icon.alt = "";
+                cell.appendChild(icon);
+              }
+
+              var numEl = document.createElement("span");
+              numEl.className = "eva-date-cell__num";
+              numEl.textContent = day;
+              cell.appendChild(numEl);
+
+              cell.addEventListener(
+                "click",
+                (function (ds) {
+                  return function () {
+                    selectedDate = ds;
+                    render();
+                  };
+                })(dateStr),
+              );
+
+              gridEl.appendChild(cell);
+            }
+
+            monthEl.appendChild(gridEl);
+            container.appendChild(monthEl);
+          }
+
+          var label = document.getElementById("evaCalLabel");
+          if (label)
+            label.textContent =
+              "Today " +
+              today.getDate() +
+              " " +
+              MONTHS[today.getMonth()];
+        }
+
+        var prev = document.getElementById("evaCalPrev");
+        var next = document.getElementById("evaCalNext");
+        if (prev)
+          prev.addEventListener("click", function () {
+            viewMonth--;
+            if (viewMonth < 0) {
+              viewMonth = 11;
+              viewYear--;
+            }
+            render();
+          });
+        if (next)
+          next.addEventListener("click", function () {
+            viewMonth++;
+            if (viewMonth > 11) {
+              viewMonth = 0;
+              viewYear++;
+            }
+            render();
+          });
+
+        render();
+      })();
+    </script>
+  </body>
+</html>

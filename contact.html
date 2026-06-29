@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Jibal Al Hajar Heritage Collection — Contact Us"
+    />
+    <title>Contact Us — Jibal Al Hajar</title>
+    <link rel="icon" href="favicon.ico" />
+
+    <!-- Bootstrap Icons -->
+    <link href="assets/css/bootstrap-icons.min.css" rel="stylesheet" />
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- AOS -->
+    <link href="assets/css/aos.css" rel="stylesheet" />
+    <!-- Custom styles -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ═══════════════════════════ HEADER ═══════════════════════════════════ -->
+    <header class="header" id="header">
+      <div class="header__inner">
+        <!-- Logo -->
+        <a href="index.html" class="header__logo">
+          <img
+            src="assets/images/logo-dark.svg"
+            alt="Jibal Al Hajar"
+            class="logo-dark"
+          />
+          <img
+            src="assets/images/logo-light.svg"
+            alt="Jibal Al Hajar"
+            class="logo-light"
+          />
+        </a>
+
+        <!-- Nav pill -->
+        <nav class="nav-main" aria-label="Main navigation">
+          <ul class="nav-main__list">
+            <li class="nav-main__item">
+              <a href="index.html" class="nav-main__link">Home</a>
+            </li>
+            <li class="nav-main__item">
+              <a href="venues.html" class="nav-main__link">Venues</a>
+            </li>
+            <li class="nav-main__item">
+              <a href="book-tickets.html" class="nav-main__link"
+                >Book Tickets</a
+              >
+            </li>
+            <li class="nav-main__item">
+              <a href="events.html" class="nav-main__link">Events</a>
+            </li>
+            <li class="nav-main__item">
+              <a href="news.html" class="nav-main__link">News</a>
+            </li>
+            <li class="nav-main__item active">
+              <a href="contact.html" class="nav-main__link">Contact Us</a>
+            </li>
+            <li class="nav-main__item">
+              <a href="shop.html" class="nav-main__link">Shop</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Controls -->
+        <div class="header__controls">
+          <button class="btn-lang" aria-label="Switch language">EN</button>
+          <button
+            class="btn-theme"
+            onclick="toggleTheme()"
+            aria-label="Toggle theme"
+          >
+            <i class="bi bi-sun btn-theme__icon--sun"></i>
+            <i class="bi bi-moon btn-theme__icon--moon"></i>
+          </button>
+          <button
+            class="btn-hamburger"
+            id="btnHamburger"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- /header -->
+
+    <!-- Mobile backdrop -->
+    <div class="mobile-backdrop" id="mobileBackdrop"></div>
+
+    <!-- Mobile drawer -->
+    <nav
+      class="mobile-drawer"
+      id="mobileDrawer"
+      aria-label="Mobile navigation"
+      aria-hidden="true"
+    >
+      <div class="mobile-drawer__head">
+        <a href="index.html" class="mobile-drawer__logo">
+          <img
+            src="assets/images/logo-dark.svg"
+            alt="Jibal Al Hajar"
+            class="logo-dark"
+          />
+          <img
+            src="assets/images/logo-light.svg"
+            alt="Jibal Al Hajar"
+            class="logo-light"
+          />
+        </a>
+        <button
+          class="mobile-drawer__close"
+          id="btnDrawerClose"
+          aria-label="Close menu"
+        >
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+
+      <ul class="mobile-drawer__list">
+        <li class="mobile-drawer__item">
+          <a href="index.html" class="mobile-drawer__link">Home</a>
+        </li>
+        <li class="mobile-drawer__item">
+          <a href="venues.html" class="mobile-drawer__link">Venues</a>
+        </li>
+        <li class="mobile-drawer__item">
+          <a href="book-tickets.html" class="mobile-drawer__link"
+            >Book Tickets</a
+          >
+        </li>
+        <li class="mobile-drawer__item">
+          <a href="events.html" class="mobile-drawer__link">Events</a>
+        </li>
+        <li class="mobile-drawer__item">
+          <a href="news.html" class="mobile-drawer__link">News</a>
+        </li>
+        <li class="mobile-drawer__item active">
+          <a href="contact.html" class="mobile-drawer__link">Contact Us</a>
+        </li>
+        <li class="mobile-drawer__item">
+          <a href="shop.html" class="mobile-drawer__link">Shop</a>
+        </li>
+      </ul>
+
+      <div class="mobile-drawer__foot">
+        <button class="btn-lang">EN</button>
+        <button
+          class="btn-theme"
+          onclick="toggleTheme()"
+          aria-label="Toggle theme"
+        >
+          <i class="bi bi-sun btn-theme__icon--sun"></i>
+          <i class="bi bi-moon btn-theme__icon--moon"></i>
+        </button>
+      </div>
+    </nav>
+
+    <main class="main-inner">
+      <!-- ══════════════════════ PAGE TITLE ════════════════════════════════ -->
+      <section class="section-contact-header">
+        <div class="container">
+          <h1 class="contact-page-title">Contact Us</h1>
+        </div>
+      </section>
+      <!-- /section-contact-header -->
+
+      <!-- ══════════════════════ EVENT PROMO BANNER ════════════════════════ -->
+      <section class="section-event-promo pb-lg-90px">
+        <div class="container">
+          <div
+            class="event-promo-card"
+            data-aos="fade-up"
+            data-aos-duration="700"
+          >
+            <!-- Left: person image -->
+            <div class="event-promo-card__visual">
+              <img
+                src="assets/images/event-promo-person.png"
+                alt="Event planning"
+                class="event-promo-card__img"
+              />
+            </div>
+
+            <!-- Center: text -->
+            <div class="event-promo-card__content">
+              <h2 class="event-promo-card__title">Planning an event?</h2>
+              <p class="event-promo-card__subtitle">
+                Host your event at our historic forts and create an
+                unforgettable experience
+              </p>
+            </div>
+
+            <!-- Right: CTA -->
+            <div class="event-promo-card__cta-wrap">
+              <a href="book-tickets.html" class="btn-event-promo">Book Event</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /section-event-promo -->
+
+      <!-- ══════════════════════ SECTION ICON DIVIDER ══════════════════════ -->
+      <div class="fort-intro__icon">
+        <img src="assets/images/secion-icon.svg" alt="" aria-hidden="true" />
+      </div>
+
+      <!-- ══════════════════════ INFORMATION SECTION ═══════════════════════ -->
+      <section class="section-fort-info">
+        <div class="container">
+          <h2 class="section-fort-info__title">Information</h2>
+
+          <!-- Contact & Hours strip -->
+          <div class="fort-info-strip">
+            <div class="fort-info-strip__item">
+              <span class="fort-info-strip__icon">
+                <i class="bi bi-telephone"></i>
+              </span>
+              <div>
+                <p class="fort-info-strip__label">PHONE</p>
+                <p class="fort-info-strip__value">77000909</p>
+              </div>
+            </div>
+            <span class="fort-info-strip__sep" aria-hidden="true"></span>
+            <div class="fort-info-strip__item">
+              <span class="fort-info-strip__icon">
+                <i class="bi bi-envelope"></i>
+              </span>
+              <div>
+                <p class="fort-info-strip__label">EMAIL</p>
+                <p class="fort-info-strip__value">info@alhajarforts.om</p>
+              </div>
+            </div>
+            <span class="fort-info-strip__sep" aria-hidden="true"></span>
+            <div class="fort-info-strip__item">
+              <span class="fort-info-strip__icon">
+                <i class="bi bi-clock"></i>
+              </span>
+              <div>
+                <p class="fort-info-strip__label">Working Hours</p>
+                <p class="fort-info-strip__value">8:00am - 5:00pm</p>
+              </div>
+            </div>
+            <span class="fort-info-strip__sep" aria-hidden="true"></span>
+            <div class="fort-info-strip__item">
+              <span class="fort-info-strip__icon">
+                <i class="bi bi-geo-alt"></i>
+              </span>
+              <div>
+                <p class="fort-info-strip__label">Office Address</p>
+                <p class="fort-info-strip__value">
+                  P.O. Box:1645 - PC:111, Ghala Al Sanaiah, Muscat, Oman
+                </p>
+              </div>
+            </div>
+            <span class="fort-info-strip__sep" aria-hidden="true"></span>
+            <div class="fort-info-strip__item">
+              <span class="fort-info-strip__icon">
+                <i class="bi bi-clock"></i>
+              </span>
+              <div>
+                <p class="fort-info-strip__label">Opening Hours</p>
+                <p class="fort-info-strip__value">8:00am - 11:00pm</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Instagram strip -->
+          <div class="fort-info-strip fort-info-strip--insta">
+            <div class="fort-info-strip__item">
+              <span class="fort-info-strip__icon">
+                <i class="bi bi-instagram"></i>
+              </span>
+              <div>
+                <p class="fort-info-strip__label">Instagram Pages</p>
+              </div>
+            </div>
+            <span class="fort-info-strip__sep" aria-hidden="true"></span>
+            <a href="#" class="fort-info-strip__handle">muttrahfort</a>
+            <span class="fort-info-strip__sep" aria-hidden="true"></span>
+            <a href="#" class="fort-info-strip__handle">almiranifort</a>
+            <span class="fort-info-strip__sep" aria-hidden="true"></span>
+            <a href="#" class="fort-info-strip__handle">fortcafe.om</a>
+            <span class="fort-info-strip__sep" aria-hidden="true"></span>
+            <a href="#" class="fort-info-strip__handle">alsharqihouse</a>
+            <span class="fort-info-strip__sep" aria-hidden="true"></span>
+            <a href="#" class="fort-info-strip__handle">mezrad.om</a>
+            <span class="fort-info-strip__sep" aria-hidden="true"></span>
+            <a href="#" class="fort-info-strip__handle">mesamuscat</a>
+          </div>
+
+          <!-- Map -->
+          <div class="fort-map">
+            <img
+              src="assets/images/google-map.jpg"
+              alt="Office location on Google Maps"
+              class="fort-map__img"
+            />
+            <a
+              href="https://maps.google.com/?q=Al+Mirani+Fort,+Muscat,+Oman"
+              class="fort-map__btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Open in Google Maps</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- /section-fort-info -->
+
+      <!-- ══════════════════════ SECTION ICON DIVIDER ══════════════════════ -->
+      <div class="fort-intro__icon">
+        <img src="assets/images/secion-icon.svg" alt="" aria-hidden="true" />
+      </div>
+
+      <!-- ══════════════════════ CONTACT FORM SECTION ══════════════════════ -->
+      <section class="section-contact-form">
+        <div class="container">
+          <h2 class="contact-form-title">Contact Form</h2>
+
+          <div
+            class="contact-form-card"
+            data-aos="fade-up"
+            data-aos-duration="700"
+          >
+            <!-- Inquiry Type -->
+            <fieldset class="contact-inquiry">
+              <legend class="contact-inquiry__label">Inquiry Type</legend>
+              <div class="contact-inquiry__grid">
+                <label class="contact-inquiry__option">
+                  <input
+                    type="radio"
+                    name="inquiry_type"
+                    value="general"
+                    class="contact-inquiry__radio"
+                    checked
+                  />
+                  <span class="contact-inquiry__btn">General Inquiry</span>
+                </label>
+                <label class="contact-inquiry__option">
+                  <input
+                    type="radio"
+                    name="inquiry_type"
+                    value="ticket"
+                    class="contact-inquiry__radio"
+                  />
+                  <span class="contact-inquiry__btn">Ticket Support</span>
+                </label>
+                <label class="contact-inquiry__option">
+                  <input
+                    type="radio"
+                    name="inquiry_type"
+                    value="event"
+                    class="contact-inquiry__radio"
+                  />
+                  <span class="contact-inquiry__btn">Event Booking</span>
+                </label>
+                <label class="contact-inquiry__option">
+                  <input
+                    type="radio"
+                    name="inquiry_type"
+                    value="partnership"
+                    class="contact-inquiry__radio"
+                  />
+                  <span class="contact-inquiry__btn">Partnerships</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <!-- Divider -->
+            <div class="contact-form-card__divider" aria-hidden="true"></div>
+
+            <!-- Contact Info Form -->
+            <form class="contact-form" novalidate>
+              <p class="contact-form__section-label">Contact Info</p>
+
+              <!-- Full Name -->
+              <div class="contact-form__field">
+                <label class="contact-form__label" for="contactFullName"
+                  >Full Name</label
+                >
+                <input
+                  type="text"
+                  id="contactFullName"
+                  name="full_name"
+                  class="contact-form__input"
+                  placeholder="Enter your full name"
+                  autocomplete="name"
+                />
+              </div>
+
+              <!-- Phone Number -->
+              <div class="contact-form__field">
+                <label class="contact-form__label" for="contactPhone"
+                  >Phone Number</label
+                >
+                <div class="contact-form__phone-wrap">
+                  <span class="contact-form__phone-flag" aria-hidden="true">
+                    <img
+                      src="assets/images/flag-om.svg"
+                      alt="Oman"
+                      class="contact-form__flag-img"
+                    />
+                    <span class="contact-form__phone-code">+968</span>
+                    <svg
+                      class="contact-form__phone-chevron"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M2 4l4 4 4-4"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                  <input
+                    type="tel"
+                    id="contactPhone"
+                    name="phone"
+                    class="contact-form__input contact-form__input--phone"
+                    placeholder="00 000 000"
+                    autocomplete="tel"
+                  />
+                </div>
+              </div>
+
+              <!-- Email Address -->
+              <div class="contact-form__field">
+                <label class="contact-form__label" for="contactEmail"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  id="contactEmail"
+                  name="email"
+                  class="contact-form__input"
+                  placeholder="Enter your email address"
+                  autocomplete="email"
+                />
+              </div>
+
+              <!-- Message -->
+              <div class="contact-form__field">
+                <label class="contact-form__label" for="contactMessage"
+                  >How can we help you</label
+                >
+                <textarea
+                  id="contactMessage"
+                  name="message"
+                  class="contact-form__textarea"
+                  rows="5"
+                  placeholder="Write your message here..."
+                ></textarea>
+              </div>
+
+              <!-- Submit -->
+              <button type="submit" class="btn-contact-submit">
+                Submit Request
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- /section-contact-form -->
+    </main>
+
+    <!-- ══════════════════════════════════ FOOTER ════════════════════════════════ -->
+    <footer class="footer">
+      <div class="footer__bg"></div>
+      <div class="fort-intro__icon">
+        <img src="assets/images/secion-icon.svg" alt="" aria-hidden="true" />
+      </div>
+      <!-- Fort visual -->
+      <div class="footer__visual">
+        <img
+          src="assets/images/fort-footer.png"
+          alt="Jibal Al Hajar Fort"
+          class="footer__fort-img"
+        />
+        <div class="footer__fade" aria-hidden="true"></div>
+      </div>
+
+      <!-- Nav bar -->
+      <div class="footer__bar">
+        <div class="footer__pill">
+          <!-- Logo -->
+          <a href="index.html" class="footer__logo">
+            <img
+              src="assets/images/alhajar-logo-footer.svg"
+              alt="Jibal Al Hajar"
+            />
+          </a>
+
+          <!-- Separator -->
+          <span class="footer__sep" aria-hidden="true"></span>
+
+          <!-- Nav links -->
+          <nav class="footer__nav" aria-label="Footer navigation">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a href="venues.html" class="footer__nav-link">Sites</a>
+              </li>
+              <li class="footer__nav-sep" aria-hidden="true"></li>
+              <li class="footer__nav-item">
+                <a href="book-tickets.html" class="footer__nav-link"
+                  >Book Tickets</a
+                >
+              </li>
+              <li class="footer__nav-sep" aria-hidden="true"></li>
+              <li class="footer__nav-item">
+                <a href="events.html" class="footer__nav-link">Events</a>
+              </li>
+              <li class="footer__nav-sep" aria-hidden="true"></li>
+              <li class="footer__nav-item">
+                <a href="news.html" class="footer__nav-link">News</a>
+              </li>
+              <li class="footer__nav-sep" aria-hidden="true"></li>
+              <li class="footer__nav-item">
+                <a href="contact.html" class="footer__nav-link">Contact Us</a>
+              </li>
+              <li class="footer__nav-sep" aria-hidden="true"></li>
+              <li class="footer__nav-item">
+                <a href="shop.html" class="footer__nav-link">Shop</a>
+              </li>
+              <li class="footer__nav-sep" aria-hidden="true"></li>
+              <li class="footer__nav-item">
+                <a href="#section-download-app" class="footer__nav-link"
+                  >Download App</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <!-- /footer -->
+
+    <!-- Return to top -->
+    <a href="javascript:;" id="return-top" class="return-top">
+      <svg class="return-top__ring" viewBox="0 0 50 50" aria-hidden="true">
+        <circle class="return-top__ring-track" cx="25" cy="25" r="22" />
+        <circle class="return-top__ring-progress" cx="25" cy="25" r="22" />
+      </svg>
+      <img src="assets/images/up-icon.svg" alt="Back to top" />
+    </a>
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Smooth Scroll -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <!-- AOS -->
+    <script src="assets/js/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+    <script>
+      AOS.init({ once: true, offset: 60 });
+    </script>
+  </body>
+</html>
