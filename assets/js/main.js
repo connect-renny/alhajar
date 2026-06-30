@@ -702,3 +702,32 @@ returnTopButton.addEventListener("click", scrollToTop);
     ring.style.strokeDashoffset = circumference * (1 - progress);
   });
 })();
+
+// ─── Home — Fort showcase switcher (tabs) ────────────────────────────────────
+(function () {
+  const tabs = document.querySelectorAll(".fort-related__item[data-fort]");
+  if (!tabs.length) return;
+
+  function select(fort) {
+    tabs.forEach(function (t) {
+      const on = t.getAttribute("data-fort") === fort;
+      t.classList.toggle("is-active", on);
+      t.setAttribute("aria-selected", on ? "true" : "false");
+    });
+    document.querySelectorAll("[data-fort-panel]").forEach(function (p) {
+      p.classList.toggle(
+        "is-active",
+        p.getAttribute("data-fort-panel") === fort,
+      );
+    });
+    document.querySelectorAll("[data-fort-img]").forEach(function (im) {
+      im.classList.toggle("is-active", im.getAttribute("data-fort-img") === fort);
+    });
+  }
+
+  tabs.forEach(function (t) {
+    t.addEventListener("click", function () {
+      select(t.getAttribute("data-fort"));
+    });
+  });
+})();

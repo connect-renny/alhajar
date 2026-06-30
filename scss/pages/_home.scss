@@ -599,9 +599,46 @@
     z-index: 1;
     width: 100%;
     height: auto;
-    display: block;
+    display: none;
     object-fit: contain;
     filter: drop-shadow(0 20px 50px rgba(0, 0, 0, 0.5));
+
+    &.is-active {
+      display: block;
+    }
+  }
+
+  // Al Jalali — Coming Soon visual
+  &__soon-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    filter: grayscale(1) drop-shadow(0 20px 50px rgba(0, 0, 0, 0.5));
+  }
+
+  &__soon-pill {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background: linear-gradient(
+      90deg,
+      rgba(185, 123, 101, 0.56) 0%,
+      rgba(83, 55, 46, 0.24) 100%
+    );
+    border: 1px solid #cf632d;
+    box-shadow: -6px 6px 10px rgba(18, 18, 18, 0.4);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    padding: 8px 24px;
+    border-radius: 8px;
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-semibold);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    white-space: nowrap;
   }
 }
 
@@ -642,11 +679,23 @@
 
   &__item {
     display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    background: transparent;
+    font-family: inherit;
     text-align: center;
-    @include transEase(opacity, 0.2s, ease);
+    cursor: pointer;
+    opacity: 0.5;
+    @include transEase(opacity, 0.25s, ease);
 
     &:hover {
-      opacity: 0.75;
+      opacity: 0.85;
+    }
+
+    &.is-active {
+      opacity: 1;
+      cursor: default;
     }
   }
 
@@ -654,9 +703,15 @@
     width: 100%;
     max-width: 230px;
     object-fit: cover;
+    border: 2px solid transparent;
     border-radius: 10px;
     display: block;
     margin: 0 auto;
+    @include transEase(border-color, 0.25s, ease);
+  }
+
+  &__item.is-active &__img {
+    border-color: var(--color-cta);
   }
 
   &__name {
@@ -664,6 +719,40 @@
     color: #938f99;
     margin-top: 8px;
     @include transEase(color, var(--transition-duration), ease);
+  }
+
+  &__item.is-active &__name {
+    color: var(--color-text);
+  }
+}
+
+// Fort switcher — info panels + Coming Soon
+.fort-info__panel {
+  display: none;
+
+  &.is-active {
+    display: block;
+  }
+}
+
+.fort-coming-soon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  min-height: 240px;
+
+  &__title {
+    font-size: var(--fs-2xl);
+    font-weight: var(--fw-medium);
+    color: var(--color-text);
+  }
+
+  &__text {
+    font-size: var(--fs-base);
+    color: var(--color-text-body);
+    line-height: 1.7;
+    max-width: 280px;
   }
 }
 
