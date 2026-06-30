@@ -2,7 +2,7 @@
 (function () {
   const html = document.documentElement;
   const saved = localStorage.getItem("theme");
-  if (saved === "light") html.setAttribute("data-theme", "light");
+  if (saved === "dark") html.setAttribute("data-theme", "dark");
 
   window.toggleTheme = function () {
     const current = html.getAttribute("data-theme");
