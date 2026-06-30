@@ -87,7 +87,6 @@
     position: relative;
     display: block;
     color: var(--color-text);
-    font-size: var(--fs-sm);
     font-weight: var(--fw-normal);
     padding: 8px 18px;
     border-radius: 50px;
@@ -161,7 +160,7 @@
   height: 52px;
   color: var(--color-cta);
   font-family: var(--primary-font);
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   font-weight: var(--fw-medium);
   padding: 7px 16px;
   border-radius: 50px;

@@ -217,7 +217,7 @@
 
   &__contact-item {
     color: var(--color-text);
-    font-size: var(--fs-sm);
+    font-size: var(--fs-base);
     text-decoration: none;
     transition: color 0.2s ease-out;
 
@@ -442,7 +442,7 @@
   }
 
   &__hint {
-    font-size: var(--fs-sm);
+    font-size: var(--fs-base);
     color: rgba(255, 255, 255, 0.4);
     margin-top: 10px;
   }
@@ -752,7 +752,7 @@
   }
 
   &__label {
-    font-size: var(--fs-sm);
+    font-size: var(--fs-base);
     color: rgba(255, 255, 255, 0.6);
   }
 }

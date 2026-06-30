@@ -144,7 +144,7 @@
   background-color: var(--color-cta);
   color: #fff;
   border-radius: 16px;
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   font-weight: var(--fw-medium);
   font-family: var(--primary-font), sans-serif;
   text-decoration: none;
@@ -238,7 +238,7 @@
   }
 
   &__desc {
-    font-size: var(--fs-sm);
+    font-size: var(--fs-base);
     color: var(--white);
     margin: 0;
     line-height: 1.75;
@@ -265,7 +265,7 @@
   background-color: var(--color-cta);
   color: #fff;
   border-radius: 16px;
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   font-weight: var(--fw-medium);
   font-family: var(--primary-font), sans-serif;
   text-decoration: none;
@@ -333,7 +333,7 @@
   border: 1px solid #cf632d;
   background: transparent;
   color: #cf632d;
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   font-weight: var(--fw-medium);
   cursor: pointer;
   @include transEase(all, 0.2s);
@@ -505,7 +505,7 @@
   &__name {
     grid-column: 1;
     grid-row: 1;
-    font-size: var(--fs-sm);
+    font-size: var(--fs-base);
     color: rgba(255, 255, 255, 0.8);
     margin: 0;
     line-height: 1.4;
@@ -520,7 +520,7 @@
   }
 
   &__price {
-    font-size: var(--fs-sm);
+    font-size: var(--fs-base);
     font-weight: var(--fw-semibold);
     color: var(--color-text);
   }
@@ -554,7 +554,7 @@
   color: #fff;
   border: none;
   border-radius: 8px;
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   font-weight: var(--fw-medium);
   font-family: var(--primary-font), sans-serif;
   cursor: pointer;

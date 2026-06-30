@@ -86,7 +86,7 @@
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    font-size: var(--fs-sm);
+    font-size: var(--fs-base);
     color: rgba(31, 26, 18, 0.6);
     text-decoration: none;
     @include transEase(color, 0.2s);
@@ -238,7 +238,7 @@
   }
 
   &__name {
-    font-size: var(--fs-sm);
+    font-size: var(--fs-base);
     font-weight: var(--fw-medium);
     color: var(--color-text);
   }
@@ -306,7 +306,7 @@
     backdrop-filter: blur(10px);
     border-radius: 8px;
     padding: 8px 24px;
-    font-size: var(--fs-sm);
+    font-size: var(--fs-base);
     font-weight: var(--fw-semibold);
     color: rgba(255, 255, 255, 0.8);
     letter-spacing: 0.05em;
@@ -332,7 +332,7 @@
   border: 1px solid #cf632d;
   background: transparent;
   color: #cf632d;
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   font-weight: var(--fw-medium);
   font-family: var(--primary-font), sans-serif;
   cursor: pointer;
@@ -489,7 +489,7 @@
     display: flex;
     align-items: flex-start;
     gap: 12px;
-    font-size: var(--fs-sm);
+    font-size: var(--fs-base);
     color: rgba(255, 255, 255, 0.65);
     line-height: 1.5;
 
@@ -590,7 +590,7 @@
   border: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(255, 255, 255, 0.04);
   color: rgba(255, 255, 255, 0.7);
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   font-weight: var(--fw-medium);
   font-family: var(--primary-font), sans-serif;
   cursor: pointer;
@@ -650,7 +650,7 @@
   }
 
   &__price {
-    font-size: var(--fs-sm);
+    font-size: var(--fs-base);
     color: rgba(255, 255, 255, 0.4);
   }
 }
@@ -722,7 +722,7 @@
   border: 1px solid #cf632d;
   background: transparent;
   color: #cf632d;
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   font-weight: var(--fw-medium);
   font-family: var(--primary-font), sans-serif;
   cursor: pointer;
@@ -1063,7 +1063,7 @@
 }
 
 .bt-info-label {
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   color: var(--white);
   margin: 0;
 }

@@ -83,7 +83,7 @@
   }
 
   &__subtitle {
-    font-size: var(--fs-sm);
+    font-size: var(--fs-base);
     color: #f7e7cd;
     margin: 0;
     line-height: 1.6;
@@ -273,7 +273,7 @@
   }
 
   &__label {
-    font-size: var(--fs-sm);
+    font-size: var(--fs-base);
     font-weight: var(--fw-medium);
     color: rgba(255, 255, 255, 0.7);
   }
@@ -333,7 +333,7 @@
   }
 
   &__phone-code {
-    font-size: var(--fs-sm);
+    font-size: var(--fs-base);
     color: rgba(255, 255, 255, 0.6);
     white-space: nowrap;
   }

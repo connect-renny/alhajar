@@ -38,7 +38,7 @@
   --dark-900: #0f0f0f;
   --dark-950: #0a0a0a;
   --transition-duration: 0.3s;
-  --primary-font: "Poppins";
+  --primary-font: "Futura PT";
   --fw-lighter: 200;
   --fw-light: 300;
   --fw-normal: 400;
@@ -10356,37 +10356,37 @@
   }
 }
 @font-face {
-  font-family: "Poppins";
-  src: url("../fonts/Poppins-SemiBold.woff2") format("woff2"), url("../fonts/Poppins-SemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("../fonts/Poppins-ExtraBold.woff2") format("woff2"), url("../fonts/Poppins-ExtraBold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("../fonts/Poppins-Light.woff2") format("woff2"), url("../fonts/Poppins-Light.woff") format("woff");
+  font-family: "Futura PT";
+  src: url("../fonts/FuturaCyrillicLight.woff2") format("woff2"), url("../fonts/FuturaCyrillicLight.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Poppins";
-  src: url("../fonts/Poppins-Medium.woff2") format("woff2"), url("../fonts/Poppins-Medium.woff") format("woff");
+  font-family: "Futura PT";
+  src: url("../fonts/FuturaCyrillicBook.woff2") format("woff2"), url("../fonts/FuturaCyrillicBook.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Futura PT";
+  src: url("../fonts/FuturaCyrillicMedium.woff2") format("woff2"), url("../fonts/FuturaCyrillicMedium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Poppins";
-  src: url("../fonts/Poppins-Regular.woff2") format("woff2"), url("../fonts/Poppins-Regular.woff") format("woff");
-  font-weight: normal;
+  font-family: "Futura PT";
+  src: url("../fonts/FuturaCyrillic-Demi.woff2") format("woff2"), url("../fonts/FuturaCyrillic-Demi.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Futura PT";
+  src: url("../fonts/FuturaCyrillic-Bold.woff2") format("woff2"), url("../fonts/FuturaCyrillic-Bold.woff") format("woff");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -10527,7 +10527,6 @@ input[type=number]::-webkit-inner-spin-button {
   position: relative;
   display: block;
   color: var(--color-text);
-  font-size: var(--fs-sm);
   font-weight: var(--fw-normal);
   padding: 8px 18px;
   border-radius: 50px;
@@ -10586,7 +10585,7 @@ input[type=number]::-webkit-inner-spin-button {
   height: 52px;
   color: var(--color-cta);
   font-family: var(--primary-font);
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   font-weight: var(--fw-medium);
   padding: 7px 16px;
   border-radius: 50px;
@@ -11086,7 +11085,7 @@ html {
 .footer__nav-link {
   display: block;
   color: var(--color-text);
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   font-weight: var(--fw-normal);
   padding: 8px 18px;
   white-space: nowrap;
@@ -11519,7 +11518,7 @@ html {
   }
 }
 .discover-text__body {
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   color: #aea9b4;
   line-height: 1.7;
   max-width: 280px;
@@ -11859,7 +11858,7 @@ html {
   border: 1px solid var(--color-cta);
   color: var(--color-cta);
   background: transparent;
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   font-weight: var(--fw-medium);
   padding: 10px 28px;
   border-radius: 16px;
@@ -11942,7 +11941,7 @@ html {
   color: #fff;
   padding: 8px 24px;
   border-radius: 8px;
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   font-weight: var(--fw-semibold);
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -12514,7 +12513,7 @@ html {
 }
 
 .plan-book__dest-label {
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 10px;
 }
@@ -12538,7 +12537,7 @@ html {
   color: rgba(255, 255, 255, 0.85);
   border-radius: 8px;
   padding: 7px 18px;
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   font-weight: var(--fw-medium);
   font-family: var(--primary-font), sans-serif;
   line-height: 1.5;
@@ -12613,7 +12612,7 @@ html {
   line-height: 1.3;
 }
 .plan-book-info__value {
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   color: #fffbfe;
   margin: 0;
   line-height: 1.55;
@@ -12651,12 +12650,12 @@ html {
   gap: 12px;
 }
 .plan-book__app-promo strong {
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   font-weight: var(--fw-medium);
   color: #ffffff;
 }
 .plan-book__app-promo a {
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   color: rgba(255, 255, 255, 0.65);
   text-decoration: none;
   transition: color 0.2s ease 0s;
@@ -12881,7 +12880,7 @@ html {
 }
 
 .download-app__stat-count {
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   font-weight: var(--fw-semibold);
   color: var(--color-text);
   line-height: 1.2;
@@ -12904,7 +12903,7 @@ html {
 }
 
 .download-app__stat-free {
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   color: var(--color-text-body);
   transition: color var(--transition-duration) ease 0s;
 }
@@ -12925,7 +12924,7 @@ html {
 }
 
 .download-app__or-text {
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   color: var(--white);
   flex-shrink: 0;
   transition: color var(--transition-duration) ease 0s;
@@ -13027,7 +13026,7 @@ html {
   align-items: center;
   gap: 8px;
   color: var(--color-primary);
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   font-weight: var(--fw-medium);
   text-decoration: none;
   transition: opacity 0.2s ease-out 0s;
@@ -13095,7 +13094,7 @@ html {
   color: var(--color-text);
   padding: 8px 24px;
   border-radius: 8px;
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   font-weight: var(--fw-medium);
   white-space: nowrap;
   letter-spacing: 0.03em;
@@ -13337,13 +13336,13 @@ html {
   padding-top: 4px;
 }
 .event-card__meta-label {
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   font-weight: var(--fw-semibold);
   color: #1a1208;
   line-height: 1;
 }
 .event-card__meta-value {
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   color: rgba(26, 18, 8, 0.6);
   line-height: 1.45;
 }
@@ -13434,14 +13433,14 @@ html {
   font-size: 17px;
 }
 .fort-info-strip__label {
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   font-weight: var(--fw-semibold);
   color: var(--color-text);
   margin: 0 0 3px;
   line-height: 1;
 }
 .fort-info-strip__value {
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   color: #ecdcd3;
   margin: 0;
   line-height: 1.35;
@@ -13454,7 +13453,7 @@ html {
   margin: 0 24px;
 }
 .fort-info-strip__handle {
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   color: rgba(255, 255, 255, 0.55);
   text-decoration: none;
   transition: color 0.2s ease-out 0s;
@@ -13484,7 +13483,7 @@ html {
   text-decoration: none;
   border-radius: 8px;
   padding: 12px 20px;
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   font-weight: var(--fw-medium);
   font-family: var(--primary-font), sans-serif;
   transition: background-color 0.2s ease-out 0s;
@@ -13764,7 +13763,7 @@ html {
   color: #666666;
 }
 .nearby-list__url {
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   color: #11994f;
   text-decoration: none;
   display: block;
@@ -13777,7 +13776,7 @@ html {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   color: rgba(255, 255, 255, 0.55);
   text-decoration: none;
   white-space: nowrap;
@@ -13882,7 +13881,7 @@ html {
   gap: 32px;
 }
 .plan-visit-card__save {
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   font-weight: var(--fw-semibold);
   color: #fff;
   white-space: nowrap;
@@ -13891,7 +13890,7 @@ html {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   color: rgba(255, 255, 255, 0.65);
   text-decoration: none;
   transition: color 0.2s ease-out 0s;
@@ -13982,7 +13981,7 @@ html {
 @media (max-width: 480px) {
   .news-tab {
     padding: 10px 28px;
-    font-size: var(--fs-sm);
+    font-size: var(--fs-base);
   }
 }
 
@@ -14157,7 +14156,7 @@ html {
   border: 1px solid var(--color-primary);
   border-radius: 12px;
   color: var(--color-primary);
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   font-weight: var(--fw-medium);
   font-family: var(--primary-font), sans-serif;
   cursor: pointer;
@@ -14229,7 +14228,7 @@ html {
 }
 
 .nd-article-date {
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   color: rgba(255, 255, 255, 0.4);
   flex-shrink: 0;
   padding-top: 8px;
@@ -14311,7 +14310,7 @@ html {
     font-size: var(--fs-lg);
   }
   .nd-article-text {
-    font-size: var(--fs-sm);
+    font-size: var(--fs-base);
   }
 }
 .section-contact-header {
@@ -14396,7 +14395,7 @@ html {
   }
 }
 .event-promo-card__subtitle {
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   color: #f7e7cd;
   margin: 0;
   line-height: 1.6;
@@ -14572,7 +14571,7 @@ html {
   gap: 10px;
 }
 .contact-form__label {
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   font-weight: var(--fw-medium);
   color: rgba(255, 255, 255, 0.7);
 }
@@ -14623,7 +14622,7 @@ html {
   display: block;
 }
 .contact-form__phone-code {
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   color: rgba(255, 255, 255, 0.6);
   white-space: nowrap;
 }
@@ -14818,7 +14817,7 @@ html {
   background-color: var(--color-cta);
   color: #fff;
   border-radius: 16px;
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   font-weight: var(--fw-medium);
   font-family: var(--primary-font), sans-serif;
   text-decoration: none;
@@ -14910,7 +14909,7 @@ html {
   }
 }
 .workshop-card__desc {
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   color: var(--white);
   margin: 0;
   line-height: 1.75;
@@ -14936,7 +14935,7 @@ html {
   background-color: var(--color-cta);
   color: #fff;
   border-radius: 16px;
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   font-weight: var(--fw-medium);
   font-family: var(--primary-font), sans-serif;
   text-decoration: none;
@@ -15001,7 +15000,7 @@ html {
   border: 1px solid #cf632d;
   background: transparent;
   color: #cf632d;
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   font-weight: var(--fw-medium);
   cursor: pointer;
   transition: all 0.2s ease-out 0s;
@@ -15148,7 +15147,7 @@ html {
 .shop-item-card__name {
   grid-column: 1;
   grid-row: 1;
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   color: rgba(255, 255, 255, 0.8);
   margin: 0;
   line-height: 1.4;
@@ -15161,7 +15160,7 @@ html {
   gap: 8px;
 }
 .shop-item-card__price {
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   font-weight: var(--fw-semibold);
   color: var(--color-text);
 }
@@ -15189,7 +15188,7 @@ html {
   color: #fff;
   border: none;
   border-radius: 8px;
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   font-weight: var(--fw-medium);
   font-family: var(--primary-font), sans-serif;
   cursor: pointer;
@@ -15293,7 +15292,7 @@ html {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   color: rgba(31, 26, 18, 0.6);
   text-decoration: none;
   transition: color 0.2s ease-out 0s;
@@ -15434,7 +15433,7 @@ html {
   padding: 24px 24px 16px;
 }
 .bt-venue-card__name {
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   font-weight: var(--fw-medium);
   color: var(--color-text);
 }
@@ -15491,7 +15490,7 @@ html {
   backdrop-filter: blur(10px);
   border-radius: 8px;
   padding: 8px 24px;
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   font-weight: var(--fw-semibold);
   color: rgba(255, 255, 255, 0.8);
   letter-spacing: 0.05em;
@@ -15515,7 +15514,7 @@ html {
   border: 1px solid #cf632d;
   background: transparent;
   color: #cf632d;
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   font-weight: var(--fw-medium);
   font-family: var(--primary-font), sans-serif;
   cursor: pointer;
@@ -15651,7 +15650,7 @@ html {
   display: flex;
   align-items: flex-start;
   gap: 12px;
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   color: rgba(255, 255, 255, 0.65);
   line-height: 1.5;
 }
@@ -15744,7 +15743,7 @@ html {
   border: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(255, 255, 255, 0.04);
   color: rgba(255, 255, 255, 0.7);
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   font-weight: var(--fw-medium);
   font-family: var(--primary-font), sans-serif;
   cursor: pointer;
@@ -15797,7 +15796,7 @@ html {
   color: var(--color-text);
 }
 .bt-visitor-age__price {
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   color: rgba(255, 255, 255, 0.4);
 }
 
@@ -15857,7 +15856,7 @@ html {
   border: 1px solid #cf632d;
   background: transparent;
   color: #cf632d;
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   font-weight: var(--fw-medium);
   font-family: var(--primary-font), sans-serif;
   cursor: pointer;
@@ -16151,7 +16150,7 @@ html {
 }
 
 .bt-info-label {
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   color: var(--white);
   margin: 0;
 }
@@ -16508,7 +16507,7 @@ html {
 }
 .evx-host__contact-item {
   color: var(--color-text);
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   text-decoration: none;
   transition: color 0.2s ease-out;
 }
@@ -16720,7 +16719,7 @@ html {
   margin-bottom: 18px;
 }
 .eva-field__hint {
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   color: rgba(255, 255, 255, 0.4);
   margin-top: 10px;
 }
@@ -17003,7 +17002,7 @@ html {
   gap: 10px;
 }
 .eva-contact__label {
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   color: rgba(255, 255, 255, 0.6);
 }
 
