@@ -11687,7 +11687,7 @@ html {
   color: rgba(255, 255, 255, 0.6);
   font-size: var(--fs-base);
   font-weight: var(--fw-medium);
-  padding: 12px 40px;
+  padding: 12px 20px;
   border-radius: 16px;
   border: 2px solid var(--color-cta);
   text-align: center;
@@ -11706,7 +11706,7 @@ html {
   color: var(--color-cta);
   font-size: var(--fs-base);
   font-weight: var(--fw-medium);
-  padding: 12px 40px;
+  padding: 12px 20px;
   margin-left: -48px;
   border-radius: 16px;
   border: 2px solid var(--color-cta);
@@ -17386,8 +17386,653 @@ html {
   background-color: #cf632d;
 }
 
+[data-theme=light] .venues-sec .page-heading {
+  color: var(--black);
+}
+
+[data-theme=light] .venue-card {
+  background: linear-gradient(90deg, #ececec 0%, #e9dfd0 100%);
+}
+
+[data-theme=light] .venue-card__name {
+  color: var(--black);
+}
+
+[data-theme=light] .venue-card__more {
+  color: #cf632d;
+}
+
+[data-theme=light] .venue-card__logo-placeholder {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme=light] .venue-card__glow {
+  background: rgba(199, 138, 95, 0.4);
+}
+
+[data-theme=light] .venue-card__bg-pattern {
+  opacity: 0.12;
+}
+
+[data-theme=light] .venue-card__img {
+  filter: drop-shadow(0 18px 40px rgba(80, 50, 20, 0.22));
+}
+
+[data-theme=light] .venue-card--soon .venue-card__img {
+  filter: grayscale(1) drop-shadow(0 18px 40px rgba(0, 0, 0, 0.18));
+}
+
+[data-theme=light] .venue-card__badge {
+  color: var(--white);
+}
+
+[data-theme=light] .breadcrumb-item.active {
+  color: var(--black);
+}
+
+[data-theme=light] .event-card {
+  background-color: #cbb99e;
+}
+
+[data-theme=light] .btn-book-event {
+  background-color: #cf632d;
+}
+[data-theme=light] .btn-book-event:hover {
+  background-color: #d86429;
+}
+
+[data-theme=light] .events-nav {
+  color: #cf632d;
+}
+
+[data-theme=light] .fort-info-strip__value {
+  color: var(--dark-450);
+}
+
+[data-theme=light] .fort-info-strip__sep {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+[data-theme=light] .fort-info-strip__handle {
+  color: var(--dark-450);
+}
+
+[data-theme=light] .nearby-card {
+  background-color: #cfe8d4;
+}
+
+[data-theme=light] .nearby-card__title {
+  color: var(--black);
+}
+
+[data-theme=light] .nearby-list__name {
+  color: var(--black);
+}
+
+[data-theme=light] .nearby-list__url {
+  color: #0b7a3e;
+}
+
+[data-theme=light] .nearby-list__map-link {
+  color: rgba(0, 0, 0, 0.55);
+}
+[data-theme=light] .nearby-list__map-link:hover {
+  color: var(--black);
+}
+
+[data-theme=light] .plan-visit-card {
+  background-color: #e7d3c7;
+}
+
+[data-theme=light] .plan-visit-card__title {
+  color: var(--black);
+}
+
+[data-theme=light] .plan-visit-card__cta {
+  background-color: #cf632d;
+}
+[data-theme=light] .plan-visit-card__cta:hover {
+  background-color: #d86429;
+}
+
+[data-theme=light] .plan-visit-card__save {
+  color: var(--dark-550);
+}
+
+[data-theme=light] .plan-visit-card__app-link {
+  color: var(--dark-450);
+}
+[data-theme=light] .plan-visit-card__app-link:hover {
+  color: var(--black);
+}
+
+[data-theme=light] .bt-event-card {
+  background-color: #cdbb9c;
+}
+
+[data-theme=light] .bt-btn-book-event {
+  background-color: #cf632d;
+}
+
+[data-theme=light] .bt-venue-card {
+  background: #f0f0f0;
+}
+
+[data-theme=light] .bt-venue-card__radio-indicator {
+  border-color: rgba(0, 0, 0, 0.25);
+}
+
+[data-theme=light] .bt-venue-card__glow {
+  background: rgba(199, 138, 95, 0.4);
+}
+
+[data-theme=light] .bt-package-card {
+  background: #f0f0f0;
+}
+
+[data-theme=light] .bt-package-card--featured {
+  background: linear-gradient(180deg, #f9e7d9 0%, #fdf4ee 100%);
+}
+
+[data-theme=light] .bt-package-card__glow {
+  background: rgba(207, 99, 45, 0.28);
+}
+
+[data-theme=light] .bt-package-card__pattern {
+  opacity: 0.15;
+}
+
+[data-theme=light] .bt-package-card--featured .bt-package-card__pattern {
+  opacity: 0.5;
+}
+
+[data-theme=light] .bt-package-card__type {
+  color: #7c3b1c;
+}
+
+[data-theme=light] .bt-package-card__title {
+  color: var(--black);
+}
+
+[data-theme=light] .bt-package-card__feature {
+  color: var(--dark-450);
+}
+
+[data-theme=light] .bt-btn-package--chosen {
+  background: #cf632d;
+  border-color: #cf632d;
+}
+[data-theme=light] .bt-btn-package--chosen:hover {
+  background: #cf632d;
+  border-color: #cf632d;
+}
+
+[data-theme=light] .bt-visitors-card {
+  background: #f0f0f0;
+}
+
+[data-theme=light] .bt-visitor-type__label,
+[data-theme=light] .bt-visitor-age__label {
+  color: var(--color-text);
+}
+
+[data-theme=light] .bt-visitor-type-btn {
+  border-color: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.04);
+  color: var(--dark-550);
+}
+[data-theme=light] .bt-visitor-type-btn.is-active {
+  background: #d8c4a8;
+  border-color: #cf632d;
+  color: #1a1208;
+}
+
+[data-theme=light] .bt-visitor-age__info {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+[data-theme=light] .bt-visitor-age__price {
+  color: rgba(0, 0, 0, 0.45);
+}
+
+[data-theme=light] .bt-summary__label {
+  color: var(--dark-550);
+}
+
+[data-theme=light] .bt-summary__value {
+  color: var(--black);
+}
+
+[data-theme=light] .bt-summary__divider {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme=light] .bt-summary__total-icon {
+  border-color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.6);
+}
+
+[data-theme=light] .bt-calendar-card {
+  background: #f0f0f0;
+}
+
+[data-theme=light] .bt-cal-legend__item {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+[data-theme=light] .bt-cal-weekday {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+[data-theme=light] .bt-date-cell {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+[data-theme=light] .bt-date-cell__num {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+[data-theme=light] .bt-date-cell--exhibition {
+  background: #4fa869;
+}
+
+[data-theme=light] .bt-date-cell--public {
+  background: #caa079;
+}
+
+[data-theme=light] .bt-date-cell--public .bt-date-cell__num {
+  color: #2a1c0e;
+}
+
+[data-theme=light] .bt-date-cell--private {
+  background: #c2bab2;
+}
+
+[data-theme=light] .bt-date-cell--private .bt-date-cell__num {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+[data-theme=light] .bt-date-cell--today .bt-date-cell__num {
+  color: var(--black);
+}
+
+[data-theme=light] .bt-date-cell--selected {
+  background: #cf632d;
+  border-color: #cf632d;
+}
+
+[data-theme=light] .bt-info-card {
+  background: #f0f0f0;
+}
+
+[data-theme=light] .bt-info-label {
+  color: var(--color-text);
+}
+
+[data-theme=light] .bt-info-optional {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+[data-theme=light] .bt-info-phone-wrap {
+  background: var(--white);
+  border-color: rgba(0, 0, 0, 0.12);
+}
+
+[data-theme=light] .bt-info-flag {
+  border-right-color: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme=light] .bt-info-input {
+  background: var(--white);
+  border-color: rgba(0, 0, 0, 0.12);
+}
+[data-theme=light] .bt-info-input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+[data-theme=light] .bt-booking-summary-card {
+  background: #f0f0f0;
+}
+
+[data-theme=light] .bt-booking-row {
+  border-bottom-color: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme=light] .bt-booking-row__label {
+  color: var(--dark-450);
+}
+
+[data-theme=light] .bt-booking-row__icon img {
+  filter: brightness(0);
+  opacity: 0.55;
+}
+
+[data-theme=light] .bt-booking-row__value {
+  color: var(--black);
+}
+[data-theme=light] .bt-booking-row__value--muted {
+  color: rgba(0, 0, 0, 0.35);
+}
+
+[data-theme=light] .evx-video__play {
+  background: #cf632d;
+}
+[data-theme=light] .evx-video__play:hover {
+  background: #d86429;
+}
+
+[data-theme=light] .evx-host__cta {
+  background: #cf632d;
+}
+[data-theme=light] .evx-host__cta:hover {
+  background: #d86429;
+}
+
+[data-theme=light] .evx-host__contact-sep {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+[data-theme=light] .evf-feature__desc,
+[data-theme=light] .evf-feature__lead,
+[data-theme=light] .evf-feature__list {
+  color: var(--dark-450);
+}
+
+[data-theme=light] .evf-feature__list::marker {
+  color: var(--dark-450);
+}
+
+[data-theme=light] .eva-form__card {
+  background: #f2f2f2;
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme=light] .eva-field__label {
+  color: var(--dark-550);
+}
+
+[data-theme=light] .eva-field__hint {
+  color: rgba(0, 0, 0, 0.45);
+}
+
+[data-theme=light] .eva-type__btn,
+[data-theme=light] .eva-venues__btn {
+  border-color: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.04);
+  color: var(--dark-550);
+}
+[data-theme=light] .eva-type__btn:hover,
+[data-theme=light] .eva-venues__btn:hover {
+  color: var(--color-text);
+}
+[data-theme=light] .eva-type__btn.is-active,
+[data-theme=light] .eva-venues__btn.is-active {
+  border-color: #cf632d;
+  background: #d8c4a8;
+  color: #1a1208;
+}
+
+[data-theme=light] .eva-input {
+  background: rgba(0, 0, 0, 0.04);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+[data-theme=light] .eva-input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+[data-theme=light] .eva-cal-card {
+  background: rgba(0, 0, 0, 0.02);
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme=light] .eva-cal-legend__item {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+[data-theme=light] .eva-cal-weekday {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+[data-theme=light] .eva-date-cell {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+[data-theme=light] .eva-date-cell__num {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+[data-theme=light] .eva-date-cell--exhibition {
+  background: #4fa869;
+}
+
+[data-theme=light] .eva-date-cell--public {
+  background: #caa079;
+}
+
+[data-theme=light] .eva-date-cell--public .eva-date-cell__num {
+  color: #2a1c0e;
+}
+
+[data-theme=light] .eva-date-cell--private {
+  background: #c2bab2;
+}
+
+[data-theme=light] .eva-date-cell--private .eva-date-cell__num {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+[data-theme=light] .eva-date-cell--today .eva-date-cell__num {
+  color: var(--black);
+}
+
+[data-theme=light] .eva-date-cell--selected {
+  background: #cf632d;
+  border-color: #cf632d;
+}
+
+[data-theme=light] .eva-contact__label {
+  color: var(--dark-550);
+}
+
+[data-theme=light] .eva-optional {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+[data-theme=light] .eva-phone {
+  background: rgba(0, 0, 0, 0.04);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme=light] .eva-phone__flag {
+  border-right-color: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme=light] .news-tabs {
+  background: rgba(0, 0, 0, 0.05);
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme=light] .news-tab {
+  color: var(--dark-550);
+}
+[data-theme=light] .news-tab.is-active {
+  background-color: #cf632d;
+  color: #fff;
+}
+[data-theme=light] .news-tab:not(.is-active):hover {
+  color: var(--color-text);
+}
+
+[data-theme=light] .news-feed__label {
+  color: var(--dark-450);
+}
+
+[data-theme=light] .news-item__excerpt {
+  color: var(--dark-450);
+}
+
+[data-theme=light] .news-item__read-more {
+  color: #cf632d;
+}
+[data-theme=light] .news-item__read-more:hover {
+  color: #cf632d;
+}
+
+[data-theme=light] .btn-gallery-more {
+  border-color: #cf632d;
+  color: #cf632d;
+}
+
+[data-theme=light] .nd-article-header {
+  border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme=light] .nd-article-date {
+  color: rgba(0, 0, 0, 0.45);
+}
+
+[data-theme=light] .nd-article-text {
+  color: var(--dark-450);
+}
+
+[data-theme=light] .event-promo-card {
+  background-color: #b6a78f;
+}
+
+[data-theme=light] .event-promo-card__title {
+  color: #1f1a12;
+}
+
+[data-theme=light] .event-promo-card__subtitle {
+  color: rgba(0, 0, 0, 0.55);
+}
+
+[data-theme=light] .btn-event-promo {
+  background-color: #cf632d;
+}
+
+[data-theme=light] .contact-form-card {
+  background: #ededed;
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme=light] .contact-form-card__divider {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme=light] .contact-inquiry__btn {
+  background: rgba(0, 0, 0, 0.05);
+  color: var(--dark-550);
+}
+
+[data-theme=light] .contact-inquiry__radio:checked ~ .contact-inquiry__btn {
+  background: #d8c4a8;
+  border-color: #cf632d;
+  color: #1a1208;
+}
+
+[data-theme=light] .contact-form__label {
+  color: var(--dark-550);
+}
+
+[data-theme=light] .contact-form__input,
+[data-theme=light] .contact-form__textarea {
+  background: rgba(0, 0, 0, 0.04);
+  border-color: rgba(0, 0, 0, 0.12);
+}
+[data-theme=light] .contact-form__input::placeholder,
+[data-theme=light] .contact-form__textarea::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+[data-theme=light] .contact-form__phone-wrap {
+  background: rgba(0, 0, 0, 0.04);
+  border-color: rgba(0, 0, 0, 0.12);
+}
+
+[data-theme=light] .contact-form__phone-flag {
+  border-right-color: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme=light] .contact-form__phone-code {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+[data-theme=light] .contact-form__phone-chevron {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+[data-theme=light] .btn-contact-submit {
+  background-color: #cf632d;
+}
+
+[data-theme=light] .shop-featured-card {
+  background-color: #bcad92;
+}
+
+[data-theme=light] .btn-buy-now {
+  background-color: #cf632d;
+}
+
+[data-theme=light] .btn-workshop {
+  background-color: #cf632d;
+}
+
+[data-theme=light] .shop-items-title {
+  color: var(--color-text);
+}
+
+[data-theme=light] .btn-shop-action:hover {
+  color: #cf632d;
+  background: rgba(207, 99, 45, 0.1);
+}
+
+[data-theme=light] .shop-item-card {
+  background: #ededed;
+}
+
+[data-theme=light] .shop-item-card__img-wrap {
+  background: #ededed;
+}
+
+[data-theme=light] .shop-item-card__info {
+  background-color: #f6e4d7;
+}
+
+[data-theme=light] .shop-item-card__name {
+  color: #1a1208;
+}
+
+[data-theme=light] .shop-item-card__price-original {
+  color: rgba(0, 0, 0, 0.35);
+}
+
+[data-theme=light] .shop-item-card__price-sep {
+  color: rgba(0, 0, 0, 0.25);
+}
+
+[data-theme=light] .btn-add-cart {
+  background-color: #cf632d;
+}
+
+[data-theme=light] .btn-add-cart--added {
+  background: rgba(0, 0, 0, 0.06);
+  color: rgba(0, 0, 0, 0.4);
+}
+[data-theme=light] .btn-add-cart--added:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
+
 [data-theme=light] .footer__bg {
   background: linear-gradient(180deg, #ffffff 0%, #ffffff 22.12%, #cca789 60.58%, #a97851 75.48%, #351f0e 100%);
+}
+
+[data-theme=light] .footer__nav-link {
+  color: var(--white);
+}
+
+[data-theme=light] .footer__nav-link:hover {
+  color: var(--color-brand);
 }
 
 /*# sourceMappingURL=style.css.map */
