@@ -202,57 +202,6 @@ returnTopButton.addEventListener("click", scrollToTop);
   });
 })();
 
-// ─── Hero — Magnetic play/pause ───────────────────────────────────────────────
-(function () {
-  const magnetic = document.getElementById("heroPlayMagnetic");
-  const btn = document.getElementById("heroPlayBtn");
-  const video = document.getElementById("heroVideo");
-
-  if (!magnetic || !btn || !video || !window.gsap) return;
-
-  const isTouchDevice = () => window.matchMedia("(hover: none)").matches;
-
-  // ── Magnetic movement ──────────────────────────────────────────────────────
-  magnetic.addEventListener("mousemove", function (e) {
-    if (isTouchDevice()) return;
-
-    const rect = magnetic.getBoundingClientRect();
-    const centerX = rect.left + rect.width / 2;
-    const centerY = rect.top + rect.height / 2;
-    const dx = e.clientX - centerX;
-    const dy = e.clientY - centerY;
-
-    gsap.to(btn, {
-      x: dx * 0.38,
-      y: dy * 0.38,
-      duration: 0.35,
-      ease: "power2.out",
-    });
-  });
-
-  magnetic.addEventListener("mouseleave", function () {
-    // Elastic snap back — the signature of a premium magnetic button
-    gsap.to(btn, {
-      x: 0,
-      y: 0,
-      duration: 0.8,
-      ease: "elastic.out(1.1, 0.4)",
-    });
-  });
-
-  // ── Play / Pause toggle ────────────────────────────────────────────────────
-  btn.addEventListener("click", function () {
-    if (video.paused) {
-      video.play().catch(() => {});
-      btn.classList.remove("is-paused");
-      btn.setAttribute("aria-label", "Pause video");
-    } else {
-      video.pause();
-      btn.classList.add("is-paused");
-      btn.setAttribute("aria-label", "Play video");
-    }
-  });
-})();
 
 // ─── App section — scroll-triggered sequence ─────────────────────────────────
 (function () {
