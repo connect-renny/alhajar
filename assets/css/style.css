@@ -15977,17 +15977,14 @@ html {
 }
 
 .bt-calendar-months {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 36px;
-}
-@media (max-width: 767px) {
-  .bt-calendar-months {
-    grid-template-columns: 1fr;
-    gap: 28px;
-  }
+  display: flex;
+  justify-content: center;
 }
 
+.bt-cal-month {
+  width: 100%;
+  max-width: 460px;
+}
 .bt-cal-month__title {
   font-size: var(--fs-base);
   font-weight: var(--fw-medium);

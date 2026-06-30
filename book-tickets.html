@@ -1125,19 +1125,13 @@
           "-" +
           String(_today.getDate()).padStart(2, "0");
 
-        for (var offset = 0; offset < 2; offset++) {
+        for (var offset = 0; offset < 1; offset++) {
           var rawMonth = btCalMonth + offset;
           var y = btCalYear + Math.floor(rawMonth / 12);
           var m = ((rawMonth % 12) + 12) % 12;
 
           var monthEl = document.createElement("div");
           monthEl.className = "bt-cal-month";
-
-          // Title
-          var titleEl = document.createElement("h3");
-          titleEl.className = "bt-cal-month__title";
-          titleEl.textContent = MONTH_NAMES[m] + " " + y;
-          monthEl.appendChild(titleEl);
 
           // Legend
           var legEl = document.createElement("div");
@@ -1222,8 +1216,7 @@
         // Update header label
         var labelEl = document.getElementById("btCalLabel");
         if (labelEl) {
-          labelEl.textContent =
-            "Today " + _today.getDate() + " " + MONTH_NAMES[_today.getMonth()];
+          labelEl.textContent = MONTH_NAMES[btCalMonth] + " " + btCalYear;
         }
       }
 

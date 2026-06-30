@@ -859,17 +859,14 @@
 
 // ── Two-month grid ────────────────────────────────────────────────────────────
 .bt-calendar-months {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 36px;
-
-  @media (max-width: 767px) {
-    grid-template-columns: 1fr;
-    gap: 28px;
-  }
+  display: flex;
+  justify-content: center;
 }
 
 .bt-cal-month {
+  width: 100%;
+  max-width: 460px;
+
   &__title {
     font-size: var(--fs-base);
     font-weight: var(--fw-medium);
