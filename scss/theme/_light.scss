@@ -422,10 +422,6 @@
   background: #f0f0f0;
 }
 
-[data-theme="light"] .bt-package-card--featured {
-  background: linear-gradient(180deg, #f9e7d9 0%, #fdf4ee 100%);
-}
-
 [data-theme="light"] .bt-package-card__glow {
   background: rgba(207, 99, 45, 0.28);
 }
@@ -476,7 +472,7 @@
   color: var(--dark-550);
 
   &.is-active {
-    background: #d8c4a8;
+    background: #b39c8f;
     border-color: #cf632d;
     color: #1a1208;
   }
@@ -572,7 +568,7 @@
 }
 
 [data-theme="light"] .bt-info-phone-wrap {
-  background: var(--white);
+  background: #cccccc;
   border-color: rgba(0, 0, 0, 0.12);
 }
 
@@ -581,7 +577,7 @@
 }
 
 [data-theme="light"] .bt-info-input {
-  background: var(--white);
+  background: #cccccc;
   border-color: rgba(0, 0, 0, 0.12);
 
   &::placeholder {

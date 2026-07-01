@@ -1,126 +1,58 @@
+// ─── Preloader ────────────────────────────────────────────────────────────────
 .loader-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: fixed;
-  inset: 0;
-  background-color: transparent;
+  background-color: rgb(18, 18, 18);
+
+  &.is-hidden {
+    display: none;
+  }
+}
+
+// loader.svg centred inside a 150×150 box. The SVG is used as a mask so the
+// glyph itself is painted with background-color, which cycles through the
+// six brand colours (500ms each) via the keyframes below.
+.loader__icon {
+  width: 100px;
+  height: 100px;
+  background-color: #c4baa3;
+  -webkit-mask: url("../images/loader.svg") center / contain no-repeat;
+  mask: url("../images/loader.svg") center / contain no-repeat;
+  animation: loader-color-cycle 2s linear infinite;
+}
+
+// 6 colours across the 2s loop. `linear` interpolates background-color
+// between each keyframe, so the glyph fades smoothly from one colour
+// to the next instead of snapping.
+@keyframes loader-color-cycle {
+  0% {
+    background-color: #c4baa3;
+  }
+  16.666% {
+    background-color: #0d7a3f;
+  }
+  33.333% {
+    background-color: #cf632d;
+  }
+  50% {
+    background-color: #d98257;
+  }
+  66.666% {
+    background-color: #41ad73;
+  }
+  83.333% {
+    background-color: #76856b;
+  }
+  100% {
+    background-color: #c4baa3;
+  }
+}
+
+// Lock page scrolling while the preloader is active
+body.is-loading {
   overflow: hidden;
-  z-index: 99999;
-
-  > .loader {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    z-index: 2;
-  }
-}
-
-#loader-percent {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  font-variant-numeric: tabular-nums;
-}
-
-.loader-percent-digit {
-  display: inline-block;
-  width: 0.62em;
-  height: 1em;
-  overflow: hidden;
-}
-
-.loader-percent-strip {
-  display: flex;
-  flex-direction: column;
-  will-change: transform;
-
-  span {
-    display: block;
-    height: 1em;
-    line-height: 1;
-  }
-}
-
-.loader-percent-symbol {
-  display: inline-block;
-  margin-left: 0.08em;
-  font-size: 0.5em;
-  line-height: 1.15;
-}
-
-.loader-line {
-  width: min(150px, calc(100vw - 48px));
-  height: 2px;
-  background: rgba(207, 99, 45, 0.2);
-  border-radius: 0.25rem;
-  margin: 1.5rem 0;
-  overflow: hidden;
-
-  &__fill {
-    width: 0%;
-    height: 100%;
-    background: var(--color-primary);
-    border-radius: 0.25rem;
-  }
-}
-
-.loader-progress {
-  color: var(--color-primary);
-  font-size: 1rem;
-  font-weight: var(--fw-bold);
-  line-height: 1;
-  text-align: center;
-}
-
-.loader-shutter {
-  position: fixed;
-  inset: 0;
-  display: flex;
-  z-index: 1;
-}
-
-.loader {
-  position: relative;
-  overflow: hidden;
-  &__logo {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 150px;
-    height: 150px;
-    margin: 0 auto 1.5rem;
-    overflow: hidden;
-  }
-
-  &__logo-icon {
-    width: 100px;
-    position: relative;
-    z-index: 1;
-
-    img {
-      width: 100%;
-    }
-  }
-
-  &__shade {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 100%;
-    background-color: var(--color-bg);
-    overflow: hidden;
-  }
-
-  &__shutter-panel {
-    flex: 1 1 0;
-    background-color: #f7e7cd;
-    transform-origin: top center;
-    will-change: transform;
-  }
 }

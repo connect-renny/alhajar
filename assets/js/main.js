@@ -25,94 +25,30 @@ function raf(time) {
 requestAnimationFrame(raf);
 
 // Preloader
-window.addEventListener("load", function () {
-  var loaderOverlay = document.querySelector(".loader-overlay");
-  var loaderPercent = document.getElementById("loader-percent");
-  var loaderLine = document.querySelector(".loader-line__fill");
-  var loaderShutters = document.querySelectorAll(".loader__shutter-panel");
-  var logoIcon = document.querySelector(".loader__logo-icon");
-  var loaderShade = document.querySelector(".loader__shade");
+(function () {
+  var overlay = document.querySelector(".loader-overlay");
+  if (!overlay) return;
 
-  if (!loaderOverlay || !loaderPercent) return;
+  function dismiss() {
+    overlay.classList.add("is-hidden");
+    document.body.classList.remove("is-loading"); // re-enable scrolling
 
-  // Build rolling digit reels
-  function buildLoaderDigit(targetDigit, index) {
-    var reel = document.createElement("span");
-    var strip = document.createElement("span");
-    var target = parseInt(targetDigit, 10);
-    var loops = 3 + index;
-    var finalStep = loops * 10 + target;
-
-    reel.className = "loader-percent-digit";
-    strip.className = "loader-percent-strip";
-    reel.dataset.finalStep = finalStep;
-
-    for (var i = 0; i <= finalStep; i++) {
-      var s = document.createElement("span");
-      s.textContent = i % 10;
-      strip.appendChild(s);
+    // Start the home hero video only after the preloader has been dismissed
+    var hero = document.getElementById("heroVideo");
+    if (hero) {
+      var played = hero.play();
+      if (played && typeof played.catch === "function") {
+        played.catch(function () {});
+      }
     }
-    reel.appendChild(strip);
-    return reel;
   }
 
-  loaderPercent.innerHTML = "";
-  "100".split("").forEach(function (digit, index) {
-    loaderPercent.appendChild(buildLoaderDigit(digit, index));
-  });
-
-  var percentSymbol = document.createElement("span");
-  percentSymbol.className = "loader-percent-symbol";
-  percentSymbol.textContent = "%";
-  loaderPercent.appendChild(percentSymbol);
-
-  if (window.gsap) {
-    var loaderTimeline = gsap.timeline({
-      delay: 0.25,
-      onComplete: function () {
-        loaderOverlay.style.display = "none";
-      },
-    });
-
-    loaderTimeline
-      // Phase 1 — count-up + progress bar (simultaneous)
-      .to(".loader-percent-strip", {
-        y: function (_index, strip) {
-          var reel = strip.closest(".loader-percent-digit");
-          return "-" + reel.dataset.finalStep + "em";
-        },
-        duration: 1.9,
-        ease: "power4.out",
-        stagger: 0.12,
-      })
-      .to(loaderLine, { width: "100%", duration: 1.8, ease: "power3.out" }, 0)
-      // Phase 2 — logo slides up out of frame
-      .to(logoIcon, { y: "-250%", duration: 0.55, ease: "power3.in" })
-      // Phase 3 — shade collapses
-      .to(loaderShade, { height: 0, duration: 0.65, ease: "power3.inOut" })
-      // Phase 4 — hide bar and counter
-      .to([".loader-line", ".loader-progress"], {
-        opacity: 0,
-        duration: 0.3,
-        ease: "power2.out",
-      })
-      // Phase 5 — shutters fold away
-      .to(loaderShutters, {
-        scaleY: 0,
-        transformOrigin: "top center",
-        duration: 0.85,
-        ease: "expo.inOut",
-        stagger: 0.09,
-      });
+  if (document.readyState === "complete") {
+    dismiss();
   } else {
-    // GSAP not available — simple fallback
-    loaderPercent.textContent = "100%";
-    if (loaderLine) loaderLine.style.width = "100%";
-    setTimeout(function () {
-      loaderOverlay.style.display = "none";
-    }, 700);
+    window.addEventListener("load", dismiss);
   }
-});
+})();
 
 // Navbar fixed on scroll
 window.addEventListener("scroll", function () {

@@ -26,32 +26,10 @@
     <link href="assets/css/style.css" rel="stylesheet" />
   </head>
 
-  <body>
+  <body class="is-loading">
     <!-- ═══════════════════════════ PRELOADER ════════════════════════════════ -->
     <div class="loader-overlay" aria-label="Loading page" aria-live="polite">
-      <div class="loader-shutter">
-        <div class="loader__shutter-panel"></div>
-        <div class="loader__shutter-panel"></div>
-        <div class="loader__shutter-panel"></div>
-        <div class="loader__shutter-panel"></div>
-        <div class="loader__shutter-panel"></div>
-        <div class="loader__shutter-panel"></div>
-        <div class="loader__shutter-panel"></div>
-      </div>
-      <div class="loader">
-        <div class="loader__logo">
-          <div class="loader__shade"></div>
-          <div class="loader__logo-icon">
-            <img src="assets/images/loader.svg" alt="Jibal Al Hajar" />
-          </div>
-        </div>
-        <div class="loader-line">
-          <div class="loader-line__fill"></div>
-        </div>
-        <div class="loader-progress">
-          <span id="loader-percent">000</span>
-        </div>
-      </div>
+      <div class="loader__icon"></div>
     </div>
     <!-- /preloader -->
 
@@ -205,7 +183,6 @@
           <video
             id="heroVideo"
             preload="auto"
-            autoplay
             muted
             loop
             playsinline
