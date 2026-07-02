@@ -3,6 +3,10 @@
 // ─── Page Header ─────────────────────────────────────────────────────────────
 .section-news-header {
   padding: 48px 0 0;
+
+  @media (max-width: 575px) {
+    padding: 36px 0 0;
+  }
 }
 
 .news-page-title {
@@ -11,6 +15,11 @@
   color: var(--color-text);
   margin: 0 0 48px;
   line-height: 1.15;
+
+  @media (max-width: 767px) {
+    font-size: var(--fs-2xl);
+    margin: 0 0 28px;
+  }
 }
 
 // ─── Tab Switcher ─────────────────────────────────────────────────────────────
@@ -18,6 +27,10 @@
   display: flex;
   justify-content: center;
   margin-bottom: 64px;
+
+  @media (max-width: 767px) {
+    margin-bottom: 36px;
+  }
 }
 
 .news-tabs {
@@ -60,6 +73,10 @@
 // ─── News Feed ────────────────────────────────────────────────────────────────
 .section-news-feed {
   padding: 0 0 100px;
+
+  @media (max-width: 575px) {
+    padding: 0 0 48px;
+  }
 }
 
 .news-feed__label {
@@ -197,6 +214,10 @@
 // ─── Gallery Panel ────────────────────────────────────────────────────────────
 .section-news-gallery {
   padding: 0 0 100px;
+
+  @media (max-width: 575px) {
+    padding: 0 0 48px;
+  }
 }
 
 .gallery-category {
@@ -294,6 +315,10 @@
 /* ─── Article Section ────────────────────────────────────────────────────────*/
 .section-nd-article {
   padding: 0 0 80px;
+
+  @media (max-width: 575px) {
+    padding: 0 0 44px;
+  }
 }
 
 .nd-article-header {
@@ -352,6 +377,10 @@
 /* ─── Gallery Section ────────────────────────────────────────────────────────*/
 .section-nd-gallery {
   padding: 0 0 80px;
+
+  @media (max-width: 575px) {
+    padding: 0 0 44px;
+  }
   background-color: var(--color-bg);
 }
 

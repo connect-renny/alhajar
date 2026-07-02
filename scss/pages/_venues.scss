@@ -3,6 +3,10 @@
 .venues-sec {
   background-color: var(--color-bg);
   padding: 48px 0 80px;
+
+  @media (max-width: 575px) {
+    padding: 36px 0 44px;
+  }
 }
 
 // ─── Venue List ───────────────────────────────────────────────────────────────
@@ -10,6 +14,10 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+
+  @media (max-width: 575px) {
+    gap: 24px;
+  }
 }
 
 // ─── Venue Card ───────────────────────────────────────────────────────────────
@@ -212,6 +220,7 @@
     &__content {
       flex: none;
       padding: 28px 24px;
+      gap: 14px;
     }
 
     &__visual {
@@ -224,6 +233,29 @@
 
     &__name {
       font-size: var(--fs-lg);
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .venue-card {
+    &__content {
+      padding: 22px 18px;
+    }
+
+    &__logo,
+    &__logo-placeholder {
+      width: 36px;
+      height: 36px;
+    }
+
+    &__visual {
+      min-height: 170px;
+    }
+
+    &__badge {
+      padding: 7px 18px;
+      font-size: var(--fs-xs);
     }
   }
 }

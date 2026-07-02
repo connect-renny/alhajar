@@ -3,6 +3,10 @@
 // ─── Page Header ─────────────────────────────────────────────────────────────
 .bt-section-header {
   padding: 48px 0 0;
+
+  @media (max-width: 575px) {
+    padding: 36px 0 0;
+  }
 }
 
 .bt-page-title {
@@ -546,6 +550,10 @@
 // ─── Visitors Section ─────────────────────────────────────────────────────────
 .bt-section-visitors {
   padding: 0 0 100px;
+
+  @media (max-width: 575px) {
+    padding: 0 0 48px;
+  }
 }
 
 .bt-visitors-card {
@@ -813,6 +821,10 @@
   background: #1d1d1d;
   border-radius: 20px;
   padding: 28px 28px 32px;
+
+  @media (max-width: 575px) {
+    padding: 20px 14px 24px; // more room for the 7-column date grid on phones
+  }
 }
 
 // ── Calendar nav header ───────────────────────────────────────────────────────
@@ -822,6 +834,11 @@
   justify-content: center;
   gap: 20px;
   margin-bottom: 32px;
+
+  @media (max-width: 575px) {
+    gap: 12px;
+    margin-bottom: 24px;
+  }
 }
 
 .bt-cal-nav-btn {
@@ -1144,6 +1161,10 @@
 // ─── Final Booking Summary Card ───────────────────────────────────────────────
 .bt-section-booking-summary {
   padding: 0 0 100px;
+
+  @media (max-width: 575px) {
+    padding: 0 0 48px;
+  }
 }
 
 .bt-booking-summary-card {

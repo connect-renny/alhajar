@@ -1,6 +1,10 @@
 // ─── Lenis smooth scroll ──────────────────────────────────────────────────────
 html {
   scroll-behavior: auto;
+  // Clip horizontal overflow at the root so fixed off-canvas elements
+  // (e.g. the mobile drawer parked off-screen at translateX(100%)) can't
+  // create a horizontal scrollbar. body/main clipping can't catch fixed els.
+  overflow-x: hidden;
 }
 
 .lenis.lenis-smooth {
@@ -25,9 +29,24 @@ html {
   }
 }
 
+// Clip horizontal overflow from AOS/decorative transforms so animated
+// elements never introduce a horizontal scrollbar. `clip` (not `hidden`)
+// avoids creating a scroll container or affecting vertical overflow.
+main {
+  overflow-x: clip;
+}
+
 // Inner pages need clearance below the fixed header
 .main-inner {
   padding-top: 150px;
+
+  @media (max-width: 767px) {
+    padding-top: 110px;
+  }
+
+  @media (max-width: 575px) {
+    padding-top: 96px;
+  }
 }
 
 // Common heading for all inner pages

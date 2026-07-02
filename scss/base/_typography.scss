@@ -57,6 +57,7 @@ body {
   font-size: 1rem;
   background-color: #121212;
   color: var(--color-text-body);
+  overflow-x: hidden; // guard against horizontal scroll on small screens
   transition:
     background-color var(--transition-duration) ease,
     color var(--transition-duration) ease;

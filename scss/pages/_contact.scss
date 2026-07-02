@@ -3,6 +3,10 @@
 // ─── Page Header ─────────────────────────────────────────────────────────────
 .section-contact-header {
   padding: 48px 0 0;
+
+  @media (max-width: 575px) {
+    padding: 36px 0 0;
+  }
 }
 
 .contact-page-title {
@@ -11,6 +15,11 @@
   color: var(--color-text);
   margin: 0 0 48px;
   line-height: 1.15;
+
+  @media (max-width: 767px) {
+    font-size: var(--fs-2xl);
+    margin: 0 0 28px;
+  }
 }
 
 // ─── Event Promo Banner ───────────────────────────────────────────────────────
@@ -129,6 +138,10 @@
 // ─── Contact Form Section ─────────────────────────────────────────────────────
 .section-contact-form {
   padding: 0 0 100px;
+
+  @media (max-width: 575px) {
+    padding: 0 0 48px;
+  }
 }
 
 .contact-form-title {

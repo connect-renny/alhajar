@@ -8,6 +8,10 @@
 .evx-hero {
   padding: 24px 0 64px;
 
+  @media (max-width: 575px) {
+    padding: 20px 0 40px;
+  }
+
   &__title {
     margin: 0;
     color: var(--color-text);
@@ -111,6 +115,10 @@
 // ─── Host your events ──────────────────────────────────────────────────────
 .evx-host {
   padding: 0 0 100px;
+
+  @media (max-width: 575px) {
+    padding: 0 0 48px;
+  }
 
   &__card {
     position: relative;
@@ -262,6 +270,10 @@
 // ─── Event feature rows ────────────────────────────────────────────────────
 .evf {
   padding: 0 0 120px;
+
+  @media (max-width: 575px) {
+    padding: 0 0 56px;
+  }
 }
 
 .evf__divider {
@@ -405,6 +417,10 @@
 // ─── Check Availability ────────────────────────────────────────────────────
 .eva {
   padding: 0 0 60px;
+
+  @media (max-width: 575px) {
+    padding: 0 0 40px;
+  }
 }
 
 .eva__title {
