@@ -1,0 +1,977 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Jibal Al Hajar Heritage Collection — Discover Oman's Venues Heritage"
+    />
+    <title>Muttrah Fort - Jibal Al Hajar</title>
+    <link rel="icon" href="favicon.ico" />
+
+    <!-- Bootstrap Icons -->
+    <link href="assets/css/bootstrap-icons.min.css" rel="stylesheet" />
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- <link href="assets/css/bootstrap.rtl.min.css" rel="stylesheet" /> -->
+    <!-- Swiper -->
+    <link href="assets/css/swiper-bundle.css" rel="stylesheet" />
+    <!-- AOS -->
+    <link href="assets/css/aos.css" rel="stylesheet" />
+    <!-- Custom styles -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ═══════════════════════════ HEADER ═══════════════════════════════════ -->
+    <header class="header" id="header">
+      <div class="header__inner">
+        <!-- Logo -->
+        <a href="index.html" class="header__logo">
+          <img
+            src="assets/images/logo-dark.svg"
+            alt="Jibal Al Hajar"
+            class="logo-dark"
+          />
+          <img
+            src="assets/images/logo-light.svg"
+            alt="Jibal Al Hajar"
+            class="logo-light"
+          />
+        </a>
+
+        <!-- Nav pill -->
+        <nav class="nav-main" aria-label="Main navigation">
+          <ul class="nav-main__list">
+            <li class="nav-main__item">
+              <a href="index.html" class="nav-main__link">Home</a>
+            </li>
+            <li class="nav-main__item active">
+              <a href="venues.html" class="nav-main__link">Venues</a>
+            </li>
+            <li class="nav-main__item">
+              <a href="book-tickets.html" class="nav-main__link"
+                >Book Tickets</a
+              >
+            </li>
+            <li class="nav-main__item">
+              <a href="events.html" class="nav-main__link">Events</a>
+            </li>
+            <li class="nav-main__item">
+              <a href="highlights.html" class="nav-main__link">Highlights</a>
+            </li>
+            <li class="nav-main__item">
+              <a href="contact.html" class="nav-main__link">Contact Us</a>
+            </li>
+            <li class="nav-main__item">
+              <a href="shop.html" class="nav-main__link">Shop</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Controls -->
+        <div class="header__controls">
+          <button class="btn-lang" aria-label="Switch language">EN</button>
+          <button
+            class="btn-theme"
+            onclick="toggleTheme()"
+            aria-label="Toggle theme"
+          >
+            <i class="bi bi-sun btn-theme__icon--sun"></i>
+            <i class="bi bi-moon btn-theme__icon--moon"></i>
+          </button>
+          <button
+            class="btn-hamburger"
+            id="btnHamburger"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- /header -->
+
+    <!-- Mobile backdrop -->
+    <div class="mobile-backdrop" id="mobileBackdrop"></div>
+
+    <!-- Mobile drawer -->
+    <nav
+      class="mobile-drawer"
+      id="mobileDrawer"
+      aria-label="Mobile navigation"
+      aria-hidden="true"
+    >
+      <div class="mobile-drawer__head">
+        <a href="index.html" class="mobile-drawer__logo">
+          <img
+            src="assets/images/logo-dark.svg"
+            alt="Jibal Al Hajar"
+            class="logo-dark"
+          />
+          <img
+            src="assets/images/logo-light.svg"
+            alt="Jibal Al Hajar"
+            class="logo-light"
+          />
+        </a>
+        <button
+          class="mobile-drawer__close"
+          id="btnDrawerClose"
+          aria-label="Close menu"
+        >
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+
+      <ul class="mobile-drawer__list">
+        <li class="mobile-drawer__item">
+          <a href="index.html" class="mobile-drawer__link">Home</a>
+        </li>
+        <li class="mobile-drawer__item active">
+          <a href="venues.html" class="mobile-drawer__link">Venues</a>
+        </li>
+        <li class="mobile-drawer__item">
+          <a href="book-tickets.html" class="mobile-drawer__link"
+            >Book Tickets</a
+          >
+        </li>
+        <li class="mobile-drawer__item">
+          <a href="events.html" class="mobile-drawer__link">Events</a>
+        </li>
+        <li class="mobile-drawer__item">
+          <a href="highlights.html" class="mobile-drawer__link">Highlights</a>
+        </li>
+        <li class="mobile-drawer__item">
+          <a href="contact.html" class="mobile-drawer__link">Contact Us</a>
+        </li>
+        <li class="mobile-drawer__item">
+          <a href="shop.html" class="mobile-drawer__link">Shop</a>
+        </li>
+      </ul>
+
+      <div class="mobile-drawer__foot">
+        <button class="btn-lang">EN</button>
+        <button
+          class="btn-theme"
+          onclick="toggleTheme()"
+          aria-label="Toggle theme"
+        >
+          <i class="bi bi-sun btn-theme__icon--sun"></i>
+          <i class="bi bi-moon btn-theme__icon--moon"></i>
+        </button>
+      </div>
+    </nav>
+
+    <main class="main-inner">
+      <!-- ══════════════════════════ PAGE HEADER ══════════════════════════ -->
+      <section class="page-header-sec pt-5 pb-4">
+        <div class="container">
+          <nav aria-label="breadcrumb" class="page-header__breadcrumb mb-2">
+            <ol class="breadcrumb mb-0">
+              <li class="breadcrumb-item">
+                <a href="venues.html">Venues</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Muttrah Fort
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </section>
+      <!-- /page-header -->
+
+      <!-- ══════════════════════ FORT IMAGE + DESCRIPTION ═════════════════ -->
+      <section class="section-fort-showcase">
+        <div class="container">
+          <!-- Fort illustration -->
+          <div
+            class="fort-showcase__img-wrap"
+            data-aos="fade-up"
+            data-aos-duration="800"
+          >
+            <img
+              src="assets/images/muttrah-fort.png"
+              alt="Muttrah Fort"
+              class="fort-showcase__img"
+            />
+          </div>
+
+          <!-- Description -->
+          <div
+            class="fort-showcase__desc"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="100"
+          >
+            <p class="fort-info__value">
+              Muttrah Fort (placeholder) overlooks the historic Muttrah
+              Corniche and harbour in Old Muscat, Oman. Built by the Portuguese
+              in the 1580s, it has long stood guard over one of the oldest
+              trading ports in the region.
+            </p>
+            <p class="fort-info__value">
+              Perched on the rocky headland above Muttrah Souq, the fort offers
+              sweeping views across the bay and the old town. This is
+              placeholder content &mdash; the full history and details for
+              Muttrah Fort will be added soon.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- /section-fort -->
+
+      <!-- ══════════════════════ EVENTS SECTION ══════════════════════════════ -->
+      <section class="section-events" id="section-events">
+        <div class="container">
+          <!-- Decorative icon -->
+          <div class="fort-intro__icon">
+            <img
+              src="assets/images/secion-icon.svg"
+              alt=""
+              aria-hidden="true"
+            />
+          </div>
+
+          <h2 class="section-events__title">Events</h2>
+
+          <!-- Slider area -->
+          <div class="events-slider-wrap">
+            <!-- Prev -->
+            <button
+              class="events-nav events-nav--prev"
+              id="eventsPrev"
+              aria-label="Previous event"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12.5 15L7.5 10L12.5 5"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+
+            <div class="swiper events-swiper">
+              <div class="swiper-wrapper">
+                <!-- ── Slide 1 ── -->
+                <div class="swiper-slide">
+                  <div class="event-card">
+                    <div class="event-card__img-wrap">
+                      <img
+                        src="assets/images/event-item-01.png"
+                        alt="Musical Event"
+                        class="event-card__img"
+                      />
+                    </div>
+                    <div class="event-card__content">
+                      <h3 class="event-card__title">Musical Event</h3>
+                      <div class="event-card__meta">
+                        <div class="event-card__meta-item">
+                          <span class="event-card__meta-icon">
+                            <svg
+                              width="28"
+                              height="28"
+                              viewBox="0 0 28 28"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                              aria-hidden="true"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M14.2922 9.91663C13.1664 9.91663 12.2506 10.8325 12.2506 11.9595C12.2506 13.0853 13.1664 14 14.2922 14C15.4181 14 16.3339 13.0853 16.3339 11.9595C16.3339 10.8325 15.4181 9.91663 14.2922 9.91663M14.2922 15.75C12.2016 15.75 10.5006 14.0501 10.5006 11.9595C10.5006 9.86763 12.2016 8.16663 14.2922 8.16663C16.3829 8.16663 18.0839 9.86763 18.0839 11.9595C18.0839 14.0501 16.3829 15.75 14.2922 15.75"
+                                fill="black"
+                              />
+                              <mask
+                                id="mask0_106_3489"
+                                style="mask-type: luminance"
+                                maskUnits="userSpaceOnUse"
+                                x="4"
+                                y="2"
+                                width="20"
+                                height="24"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  clip-rule="evenodd"
+                                  d="M4.66666 2.33337H23.9161V25.0834H4.66666V2.33337Z"
+                                  fill="white"
+                                />
+                              </mask>
+                              <g mask="url(#mask0_106_3489)">
+                                <path
+                                  fill-rule="evenodd"
+                                  clip-rule="evenodd"
+                                  d="M14.2911 4.08337C9.94874 4.08337 6.41608 7.64987 6.41608 12.0319C6.41608 17.6074 12.9774 23.0394 14.2911 23.3287C15.6047 23.0382 22.1661 17.6062 22.1661 12.0319C22.1661 7.64987 18.6334 4.08337 14.2911 4.08337V4.08337ZM14.2911 25.0834C12.1981 25.0834 4.66608 18.606 4.66608 12.0319C4.66608 6.68387 8.98391 2.33337 14.2911 2.33337C19.5982 2.33337 23.9161 6.68387 23.9161 12.0319C23.9161 18.606 16.3841 25.0834 14.2911 25.0834V25.0834Z"
+                                  fill="black"
+                                />
+                              </g>
+                            </svg>
+                          </span>
+                          <div class="event-card__meta-text">
+                            <span class="event-card__meta-label">Address</span>
+                            <span class="event-card__meta-value"
+                              >Sultanate of Oman, Muttrah, Muscat
+                              Governorate</span
+                            >
+                          </div>
+                        </div>
+                        <div class="event-card__meta-item">
+                          <span class="event-card__meta-icon">
+                            <svg
+                              width="28"
+                              height="28"
+                              viewBox="0 0 28 28"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                              aria-hidden="true"
+                            >
+                              <path
+                                d="M19.88 6.80164H8.11995C5.86479 6.80164 4.03662 8.62981 4.03662 10.885V20.7083C4.03662 22.9635 5.86479 24.7916 8.11995 24.7916H19.88C22.1351 24.7916 23.9633 22.9635 23.9633 20.7083V10.885C23.9633 8.62981 22.1351 6.80164 19.88 6.80164Z"
+                                stroke="black"
+                                stroke-width="1.5"
+                                stroke-miterlimit="10"
+                                stroke-linecap="round"
+                              />
+                              <path
+                                d="M19.4017 3.20825L19.9967 6.80159"
+                                stroke="black"
+                                stroke-width="1.5"
+                                stroke-miterlimit="10"
+                                stroke-linecap="round"
+                              />
+                              <path
+                                d="M8.58651 3.20825L8.00317 6.80159"
+                                stroke="black"
+                                stroke-width="1.5"
+                                stroke-miterlimit="10"
+                                stroke-linecap="round"
+                              />
+                              <path
+                                d="M4.03662 12.7982H23.9633"
+                                stroke="black"
+                                stroke-width="1.5"
+                                stroke-miterlimit="10"
+                                stroke-linecap="round"
+                              />
+                              <path
+                                d="M9.11188 19.9965H12.7052"
+                                stroke="black"
+                                stroke-width="1.5"
+                                stroke-miterlimit="10"
+                                stroke-linecap="round"
+                              />
+                            </svg>
+                          </span>
+                          <div class="event-card__meta-text">
+                            <span class="event-card__meta-label">Date</span>
+                            <span class="event-card__meta-value"
+                              >12 May 2026</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <a href="book-tickets.html" class="btn-book-event"
+                        >Book Event</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- /Slide 1 -->
+              </div>
+            </div>
+
+            <!-- Next -->
+            <button
+              class="events-nav events-nav--next"
+              id="eventsNext"
+              aria-label="Next event"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  d="M7.5 5L12.5 10L7.5 15"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- /section-events -->
+
+      <!-- ══════════════════════ PLAN & BOOK YOUR VISIT ═══════════════════════ -->
+      <section class="section-plan-visit">
+        <div class="container">
+          <div class="fort-intro__icon">
+            <img
+              src="assets/images/secion-icon.svg"
+              alt=""
+              aria-hidden="true"
+            />
+          </div>
+
+          <div
+            class="plan-visit-card"
+            data-aos="fade-up"
+            data-aos-duration="700"
+          >
+            <!-- Left: content -->
+            <div class="plan-visit-card__content">
+              <h2 class="plan-visit-card__title">Plan &amp; book your visit</h2>
+              <a href="book-tickets.html" class="plan-visit-card__cta"
+                >Continue to Booking</a
+              >
+              <!-- HIDDEN UNTIL APP LAUNCH
+<div class="plan-visit-card__app-row">
+                <span class="plan-visit-card__save">Want to save 10%?</span>
+                <a href="#" class="plan-visit-card__app-link">
+                  Book in the app instead
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M3.95801 9.77157H16.458"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M11.4165 4.75116L16.4582 9.77116L11.4165 14.792"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+-->
+            </div>
+
+            <!-- Right: visual -->
+            <div class="plan-visit-card__visual">
+              <img
+                src="assets/images/plan-visit.png"
+                alt="Muttrah Fort"
+                class="plan-visit-card__img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /section-plan-visit -->
+
+      <!-- ══════════════════════ INFORMATION SECTION ══════════════════════════ -->
+      <section class="section-fort-info">
+        <div class="container">
+          <h2 class="section-fort-info__title">Information</h2>
+
+          <!-- Contact & Hours strip -->
+          <div class="fort-info-strip">
+            <div class="fort-info-strip__item">
+              <span class="fort-info-strip__icon">
+                <i class="bi bi-telephone"></i>
+              </span>
+              <div>
+                <p class="fort-info-strip__label">PHONE</p>
+                <p class="fort-info-strip__value">77000909</p>
+              </div>
+            </div>
+            <span class="fort-info-strip__sep" aria-hidden="true"></span>
+            <div class="fort-info-strip__item">
+              <span class="fort-info-strip__icon">
+                <i class="bi bi-envelope"></i>
+              </span>
+              <div>
+                <p class="fort-info-strip__label">EMAIL</p>
+                <p class="fort-info-strip__value">info@alhajarforts.om</p>
+              </div>
+            </div>
+            <span class="fort-info-strip__sep" aria-hidden="true"></span>
+            <div class="fort-info-strip__item">
+              <span class="fort-info-strip__icon">
+                <i class="bi bi-clock"></i>
+              </span>
+              <div>
+                <p class="fort-info-strip__label">Working Hours</p>
+                <p class="fort-info-strip__value">8:00am - 5:00pm</p>
+              </div>
+            </div>
+            <span class="fort-info-strip__sep" aria-hidden="true"></span>
+            <div class="fort-info-strip__item">
+              <span class="fort-info-strip__icon">
+                <i class="bi bi-geo-alt"></i>
+              </span>
+              <div>
+                <p class="fort-info-strip__label">Office Address</p>
+                <p class="fort-info-strip__value">
+                  P.O. Box:1645 - PC:111, Ghala Al Sanaiah, Muscat, Oman
+                </p>
+              </div>
+            </div>
+            <span class="fort-info-strip__sep" aria-hidden="true"></span>
+            <div class="fort-info-strip__item">
+              <span class="fort-info-strip__icon">
+                <i class="bi bi-clock"></i>
+              </span>
+              <div>
+                <p class="fort-info-strip__label">Opening Hours</p>
+                <p class="fort-info-strip__value">8:00am - 11:00pm</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Instagram strip -->
+          <div class="fort-info-strip fort-info-strip--insta">
+            <div class="fort-info-strip__item">
+              <span class="fort-info-strip__icon">
+                <i class="bi bi-instagram"></i>
+              </span>
+              <div>
+                <p class="fort-info-strip__label">Instagram Pages</p>
+              </div>
+            </div>
+            <span class="fort-info-strip__sep" aria-hidden="true"></span>
+            <a href="#" class="fort-info-strip__handle">muttrahfort</a>
+            <span class="fort-info-strip__sep" aria-hidden="true"></span>
+            <a href="#" class="fort-info-strip__handle">muttrahfort</a>
+            <span class="fort-info-strip__sep" aria-hidden="true"></span>
+            <a href="#" class="fort-info-strip__handle">fortcafe.om</a>
+            <span class="fort-info-strip__sep" aria-hidden="true"></span>
+            <a href="#" class="fort-info-strip__handle">alsharqihouse</a>
+            <span class="fort-info-strip__sep" aria-hidden="true"></span>
+            <a href="#" class="fort-info-strip__handle">mezrad.om</a>
+            <span class="fort-info-strip__sep" aria-hidden="true"></span>
+            <a href="#" class="fort-info-strip__handle">mesamuscat</a>
+          </div>
+
+          <!-- Map -->
+          <div class="fort-map">
+            <img
+              src="assets/images/google-map.jpg"
+              alt="Muttrah Fort location on Google Maps"
+              class="fort-map__img"
+            />
+            <a
+              href="https://maps.google.com/?q=Muttrah+Fort,+Muscat,+Oman"
+              class="fort-map__btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Open in Google Maps</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- /section-fort-info -->
+
+      <!-- ══════════════════════ NEARBY PLACES ════════════════════════ -->
+      <section class="section-nearby">
+        <div class="container">
+          <div class="nearby-card">
+            <div class="nearby-card__content">
+              <h2 class="nearby-card__title">Nearby Places</h2>
+              <ul class="nearby-list">
+                <li class="nearby-list__item">
+                  <div class="nearby-list__info">
+                    <p class="nearby-list__name">
+                      Mesa <span class="nearby-list__type">(Restaurant)</span>
+                    </p>
+                    <a
+                      href="https://www.mesa.restaurant.com"
+                      class="nearby-list__url"
+                      target="_blank"
+                      rel="noopener"
+                      >www.mesa.restaurant.com</a
+                    >
+                  </div>
+                  <a
+                    href="#"
+                    class="nearby-list__map-link"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Open in Google Map
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M3 8h10M9 4l4 4-4 4"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="nearby-list__item">
+                  <div class="nearby-list__info">
+                    <p class="nearby-list__name">
+                      Albait Alsharqi
+                      <span class="nearby-list__type">(House)</span>
+                    </p>
+                    <a
+                      href="https://www.albaitalsharqi.om"
+                      class="nearby-list__url"
+                      target="_blank"
+                      rel="noopener"
+                      >www.albaitalsharqi.om</a
+                    >
+                  </div>
+                  <a
+                    href="#"
+                    class="nearby-list__map-link"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Open in Google Map
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M3 8h10M9 4l4 4-4 4"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="nearby-card__visual">
+              <img
+                src="assets/images/near-place.png"
+                alt="Nearby place"
+                class="nearby-card__img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /section-nearby -->
+
+      <!-- ══════════════════════ GALLERY ════════════════════════ -->
+      <section class="section-gallery">
+        <div class="container">
+          <h2 class="section-gallery__title">Gallery</h2>
+          <div class="gallery-grid">
+            <div
+              class="gallery-item"
+              data-gallery-src="assets/images/gallery-large-01.jpg"
+            >
+              <div class="gallery-item__inner">
+                <img
+                  src="assets/images/gallery-thumb-01.jpg"
+                  alt="Muttrah Fort gallery photo 1"
+                  class="gallery-item__img"
+                />
+                <div class="gallery-item__overlay">
+                  <span class="gallery-item__zoom-icon">
+                    <svg
+                      width="28"
+                      height="28"
+                      viewBox="0 0 28 28"
+                      fill="none"
+                      aria-hidden="true"
+                    >
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="8"
+                        stroke="#fff"
+                        stroke-width="1.8"
+                      />
+                      <path
+                        d="M18 18l6 6"
+                        stroke="#fff"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M9 12h6M12 9v6"
+                        stroke="#fff"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="gallery-item"
+              data-gallery-src="assets/images/gallery-large-02.jpg"
+            >
+              <div class="gallery-item__inner">
+                <img
+                  src="assets/images/gallery-thumb-02.jpg"
+                  alt="Muttrah Fort gallery photo 2"
+                  class="gallery-item__img"
+                />
+                <div class="gallery-item__overlay">
+                  <span class="gallery-item__zoom-icon">
+                    <svg
+                      width="28"
+                      height="28"
+                      viewBox="0 0 28 28"
+                      fill="none"
+                      aria-hidden="true"
+                    >
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="8"
+                        stroke="#fff"
+                        stroke-width="1.8"
+                      />
+                      <path
+                        d="M18 18l6 6"
+                        stroke="#fff"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M9 12h6M12 9v6"
+                        stroke="#fff"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="gallery-item"
+              data-gallery-src="assets/images/gallery-large-03.jpg"
+            >
+              <div class="gallery-item__inner">
+                <img
+                  src="assets/images/gallery-thumb-03.jpg"
+                  alt="Muttrah Fort gallery photo 3"
+                  class="gallery-item__img"
+                />
+                <div class="gallery-item__overlay">
+                  <span class="gallery-item__zoom-icon">
+                    <svg
+                      width="28"
+                      height="28"
+                      viewBox="0 0 28 28"
+                      fill="none"
+                      aria-hidden="true"
+                    >
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="8"
+                        stroke="#fff"
+                        stroke-width="1.8"
+                      />
+                      <path
+                        d="M18 18l6 6"
+                        stroke="#fff"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M9 12h6M12 9v6"
+                        stroke="#fff"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /section-gallery -->
+    </main>
+
+    <!-- ═══════════════════════════════════════════ FOOTER ═══════════════════════════════════════════ -->
+    <footer class="footer">
+      <div class="footer__bg"></div>
+      <div class="fort-intro__icon">
+        <img src="assets/images/secion-icon.svg" alt="" aria-hidden="true" />
+      </div>
+      <!-- Fort visual -->
+      <div class="footer__visual">
+        <img
+          src="assets/images/fort-footer.png"
+          alt="Jibal Al Hajar Fort"
+          class="footer__fort-img"
+        />
+        <div class="footer__fade" aria-hidden="true"></div>
+      </div>
+
+      <!-- Nav bar -->
+      <div class="footer__bar">
+        <div class="footer__pill">
+          <!-- Logo -->
+          <a href="index.html" class="footer__logo">
+            <img
+              src="assets/images/alhajar-logo-footer.svg"
+              alt="Jibal Al Hajar"
+            />
+          </a>
+
+          <!-- Separator -->
+          <span class="footer__sep" aria-hidden="true"></span>
+
+          <!-- Nav links -->
+          <nav class="footer__nav" aria-label="Footer navigation">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a href="index.html" class="footer__nav-link">Home</a>
+              </li>
+              <li class="footer__nav-sep" aria-hidden="true"></li>
+              <li class="footer__nav-item">
+                <a href="venues.html" class="footer__nav-link">Venues</a>
+              </li>
+              <li class="footer__nav-sep" aria-hidden="true"></li>
+              <li class="footer__nav-item">
+                <a href="book-tickets.html" class="footer__nav-link"
+                  >Book Tickets</a
+                >
+              </li>
+              <li class="footer__nav-sep" aria-hidden="true"></li>
+              <li class="footer__nav-item">
+                <a href="events.html" class="footer__nav-link">Events</a>
+              </li>
+              <li class="footer__nav-sep" aria-hidden="true"></li>
+              <li class="footer__nav-item">
+                <a href="highlights.html" class="footer__nav-link">Highlights</a>
+              </li>
+              <li class="footer__nav-sep" aria-hidden="true"></li>
+              <li class="footer__nav-item">
+                <a href="contact.html" class="footer__nav-link">Contact Us</a>
+              </li>
+              <li class="footer__nav-sep" aria-hidden="true"></li>
+              <li class="footer__nav-item">
+                <a href="shop.html" class="footer__nav-link">Shop</a>
+              </li>
+              <!-- HIDDEN UNTIL APP LAUNCH
+              <li class="footer__nav-sep" aria-hidden="true"></li>
+              <li class="footer__nav-item">
+                <a href="#section-download-app" class="footer__nav-link"
+                  >Download App</a
+                >
+              </li>
+              -->
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <!-- /footer -->
+
+    <!-- Return to top -->
+    <a href="javascript:;" id="return-top" class="return-top">
+      <svg class="return-top__ring" viewBox="0 0 50 50" aria-hidden="true">
+        <circle class="return-top__ring-track" cx="25" cy="25" r="22" />
+        <circle class="return-top__ring-progress" cx="25" cy="25" r="22" />
+      </svg>
+      <img src="assets/images/up-icon.svg" alt="Back to top" />
+    </a>
+
+    <!-- Gallery Lightbox -->
+    <div
+      class="gallery-lightbox"
+      id="galleryLightbox"
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Image viewer"
+    >
+      <div class="gallery-lightbox__backdrop" id="lightboxBackdrop"></div>
+      <div class="gallery-lightbox__content">
+        <button
+          class="gallery-lightbox__close"
+          id="lightboxClose"
+          aria-label="Close"
+        >
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M2 2l14 14M16 2L2 16"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+        <img src="" alt="" class="gallery-lightbox__img" id="lightboxImg" />
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- Smooth Scroll -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <!-- AOS -->
+    <script src="assets/js/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+    <script>
+      AOS.init({ once: true, offset: 60 });
+    </script>
+  </body>
+</html>
