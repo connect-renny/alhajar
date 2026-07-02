@@ -876,18 +876,13 @@
             today.getDate(),
           );
 
-          for (var offset = 0; offset < 2; offset++) {
+          for (var offset = 0; offset < 1; offset++) {
             var raw = viewMonth + offset;
             var y = viewYear + Math.floor(raw / 12);
             var m = ((raw % 12) + 12) % 12;
 
             var monthEl = document.createElement("div");
             monthEl.className = "eva-cal-month";
-
-            var titleEl = document.createElement("h3");
-            titleEl.className = "eva-cal-month__title";
-            titleEl.textContent = MONTHS[m] + " " + y;
-            monthEl.appendChild(titleEl);
 
             var legEl = document.createElement("div");
             legEl.className = "eva-cal-legend";
@@ -958,12 +953,7 @@
           }
 
           var label = document.getElementById("evaCalLabel");
-          if (label)
-            label.textContent =
-              "Today " +
-              today.getDate() +
-              " " +
-              MONTHS[today.getMonth()];
+          if (label) label.textContent = MONTHS[viewMonth] + " " + viewYear;
         }
 
         var prev = document.getElementById("evaCalPrev");

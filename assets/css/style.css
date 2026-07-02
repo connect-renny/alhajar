@@ -17106,15 +17106,13 @@ body.is-loading {
 }
 
 .eva-cal-months {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 36px;
+  display: flex;
+  justify-content: center;
 }
-@media (max-width: 767px) {
-  .eva-cal-months {
-    grid-template-columns: 1fr;
-    gap: 28px;
-  }
+
+.eva-cal-month {
+  width: 100%;
+  max-width: 460px;
 }
 
 .eva-cal-month__title {
@@ -18407,4 +18405,6 @@ body.is-loading {
 
 [data-theme=light] .footer__nav-link:hover {
   color: var(--color-brand);
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
