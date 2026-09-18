@@ -29,14 +29,10 @@
   &__frame {
     position: relative;
     width: 100%;
-    aspect-ratio: 1216 / 320;
+    aspect-ratio: 16 / 9;
     border-radius: 18px;
     overflow: hidden;
     background: var(--color-bg-card);
-
-    @media (max-width: 991px) {
-      aspect-ratio: 16 / 9;
-    }
 
     @media (max-width: 575px) {
       aspect-ratio: 4 / 3;

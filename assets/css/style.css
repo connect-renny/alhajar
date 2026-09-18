@@ -16569,15 +16569,10 @@ body.is-loading {
 .evx-video__frame {
   position: relative;
   width: 100%;
-  aspect-ratio: 1216/320;
+  aspect-ratio: 16/9;
   border-radius: 18px;
   overflow: hidden;
   background: var(--color-bg-card);
-}
-@media (max-width: 991px) {
-  .evx-video__frame {
-    aspect-ratio: 16/9;
-  }
 }
 @media (max-width: 575px) {
   .evx-video__frame {
@@ -18406,5 +18401,3 @@ body.is-loading {
 [data-theme=light] .footer__nav-link:hover {
   color: var(--color-brand);
 }
-
-/*# sourceMappingURL=style.css.map */
